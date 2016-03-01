@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     less = require('gulp-less');
 
 var paths = {
-    templates: 'src/**/*.html',
+    templates: 'src/views/*.html',
     scripts: 'src/assets/js/**/*.js',
     styles: 'src/assets/css/**/*.css',  
     images: 'src/assets/images/**/*',

@@ -1,9 +1,9 @@
-{% extends "_layout.html" %}
+{% extends "layout/_layout.html" %}
 {% block page-container %}
 	<main>
 		<!--banner-->
 		<div class="banner">
-			<img src="../assets/images/upload/banner.jpg" alt="myface">
+			<img src="assets/images/upload/banner.jpg" alt="myface">
 		</div><!--/.banner-->
 		<!--nav-filter-->
 		<div class="nav-filter">
@@ -15,67 +15,31 @@
 		  <a class href="#" target="_blank">Giỏ hàng</a>
 		</div><!--nav-filter-->
 		<!--product-block-->
-		<div class="product-block">
-			<ul class="products-list product-list-in-box">
-        <li class="item">
+		<div class="product-list-group">
+			<div class="products-list product-list-in-box">
+        <!--item-->
+        <div class="item">
           <div class="product-img">
-            <img src="dist/img/default-50x50.gif" alt="Product Image">
+            <img src="assets/images/upload/product/product.jpg" alt="Product Image">
           </div>
           <div class="product-info">
-            <a href="javascript::;" class="product-title">Samsung TV
-              <span class="label label-warning pull-right">$1800</span></a>
-                <span class="product-description">
-                  Samsung 32" 1080p 60Hz LED Smart HDTV.
-                </span>
+            <a href="#" class="product-title">
+              <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span>
+              <span class="label label-warning pull-right">Sale</span>
+            </a>
+            <span class="product-description">
+              Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu đem lại nét thanh lịch, sang trọng cho phái mạnh khi ...                
+            </span>
           </div>
-        </li>
-        <!-- /.item -->
-        <li class="item">
-          <div class="product-img">
-            <img src="dist/img/default-50x50.gif" alt="Product Image">
-          </div>
-          <div class="product-info">
-            <a href="javascript::;" class="product-title">Bicycle
-              <span class="label label-info pull-right">$700</span></a>
-                <span class="product-description">
-                  26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                </span>
-          </div>
-        </li>
-        <!-- /.item -->
-        <li class="item">
-          <div class="product-img">
-            <img src="dist/img/default-50x50.gif" alt="Product Image">
-          </div>
-          <div class="product-info">
-            <a href="javascript::;" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
-                <span class="product-description">
-                  Xbox One Console Bundle with Halo Master Chief Collection.
-                </span>
-          </div>
-        </li>
-        <!-- /.item -->
-        <li class="item">
-          <div class="product-img">
-            <img src="dist/img/default-50x50.gif" alt="Product Image">
-          </div>
-          <div class="product-info">
-            <a href="javascript::;" class="product-title">PlayStation 4
-              <span class="label label-success pull-right">$399</span></a>
-                <span class="product-description">
-                  PlayStation 4 500GB Console (PS4)
-                </span>
-          </div>
-        </li>
-        <!-- /.item -->
-      </ul>
+        </div><!-- /.item -->
+      </div>
 		</div><!--/.product-block-->
 		<!--pagination-->
 		<nav>
 		  <ul class="pagination">
 		    <li>
 		      <a href="#" aria-label="Previous">
-		        <span aria-hidden="true">&laquo;</span>
+		        <span aria-hidden="true">Trang trước</span>
 		      </a>
 		    </li>
 		    <li><a href="#">1</a></li>
@@ -85,7 +49,7 @@
 		    <li><a href="#">5</a></li>
 		    <li>
 		      <a href="#" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
+		        <span aria-hidden="true">Trang sau</span>
 		      </a>
 		    </li>
 		  </ul>
