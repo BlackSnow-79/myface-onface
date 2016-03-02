@@ -1,58 +1,69 @@
 {% extends "layout/_layout.html" %}
 {% block page-container %}
-	<main>
-		<!--banner-->
-		<div class="banner">
-			<img src="assets/images/upload/banner.jpg" alt="myface">
-		</div><!--/.banner-->
-		<!--nav-filter-->
-		<div class="nav-filter">
-			<select class="selectpicker filter-product">
-		    <option>Tất cả sản phẩm</option>
-		    <option>Thời trang nam</option>
-		    <option>Thời trang nữ</option>
-		  </select>
-		  <a class href="#" target="_blank">Giỏ hàng</a>
-		</div><!--nav-filter-->
-		<!--product-block-->
-		<div class="product-list-group">
-			<div class="products-list product-list-in-box">
-        <!--item-->
-        <div class="item">
-          <div class="product-img">
-            <img src="assets/images/upload/product/product.jpg" alt="Product Image">
-          </div>
-          <div class="product-info">
-            <a href="#" class="product-title">
+<main class="container product-onface">
+	<!--banner-->
+	<div class="banner">
+		<img src="assets/images/upload/banner.jpg" alt="myface">
+	</div><!--/.banner-->
+	<!--nav-filter-->
+	<div class="nav-filter">
+    <div class="select-filter">
+  		<select class="selectpicker form-control">
+  	    <option>Tất cả sản phẩm</option>
+  	    <option>Thời trang nam</option>
+  	    <option>Thời trang nữ</option>
+  	  </select>
+    </div>
+	  <a class="btn btn-default btn-cart" href="#"><i class="fa fa-shopping-cart"></i>Giỏ hàng<span></span>(2)</a>
+	</div><!--nav-filter-->
+	<div class="product-container">
+    <!--product-block-->
+		<div class="products-block">   
+      {% for x in [1,2,3,4,5] %}   
+      <!--item-->
+      <div class="item">
+        <a class="product-img" href="product-onface-detail.html">
+          <img src="assets/images/upload/product/product.jpg" alt="myface">
+        </a>
+        <div class="product-info">
+          <div class="product-header">
+            <a class="product-title" href="product-onface-detail.html">
               <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span>
-              <span class="label label-warning pull-right">Sale</span>
+              <span class="label label-warning">Sale</span>
             </a>
-            <span class="product-description">
-              Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu đem lại nét thanh lịch, sang trọng cho phái mạnh khi ...                
-            </span>
+            <div class="price-block">
+              <span class="price current">235.000<sup>đ</sup></span>
+              <span class="price original">325.000<sup>đ</sup></span> 
+            </div>
           </div>
-        </div><!-- /.item -->
-      </div>
-		</div><!--/.product-block-->
-		<!--pagination-->
-		<nav>
-		  <ul class="pagination">
-		    <li>
-		      <a href="#" aria-label="Previous">
-		        <span aria-hidden="true">Trang trước</span>
-		      </a>
-		    </li>
-		    <li><a href="#">1</a></li>
-		    <li><a href="#">2</a></li>
-		    <li><a href="#">3</a></li>
-		    <li><a href="#">4</a></li>
-		    <li><a href="#">5</a></li>
-		    <li>
-		      <a href="#" aria-label="Next">
-		        <span aria-hidden="true">Trang sau</span>
-		      </a>
-		    </li>
-		  </ul>
-		</nav><!--/.pagination-->
-	</main>
+          <div class="block">
+            <a class="btn btn-default btn-buy" href="product-onface-detail.html">Mua ngay <i class="fa fa-angle-right"></i></a>
+          </div>
+          <p class="product-description">
+            Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu đem lại nét thanh lịch, sang trọng cho phái mạnh khi ...              
+          </p>
+        </div>
+      </div><!-- /.item -->
+      {% endfor %}
+    </div>
+	</div><!--/.product-list-group-->
+	<!--pagination-->
+	<nav class="pagination-page">
+	  <ul class="pagination">
+	    <li>
+	      <a href="#" aria-label="Previous">
+	        <span aria-hidden="true">Trang đầu</span>
+	      </a>
+	    </li>
+	    <li><a href="#">1</a></li>
+	    <li><a href="#">2</a></li>
+	    <li><a href="#">3</a></li>
+	    <li>
+	      <a href="#" aria-label="Next">
+	        <span aria-hidden="true">Trang sau</span>
+	      </a>
+	    </li>
+	  </ul>
+	</nav><!--/.pagination-->
+</main>
 {% endblock %}

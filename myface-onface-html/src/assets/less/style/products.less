@@ -1,0 +1,62 @@
+/*
+ * Component: Products List
+ * ------------------------
+ */
+.products-block {
+  width: 100%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > .item {
+    .border-radius(@box-border-radius);
+    border: 1px solid @box-border-color;
+    .clearfix();
+    padding: 0;
+    margin: 0 0 15px;
+    background: #fff;
+    &:hover {
+      .box-shadow(@box-boxshadow);
+    }
+  }
+  .product-img {
+    display: block;
+    float: left;
+    width: 164px;
+    height: 164px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .product-info {
+    margin-left: 194px;
+    padding: 20px 15px;
+    position: relative;
+  }
+  .product-header {
+    margin-right: 110px;
+  }
+  .product-title {
+    margin: 0 0 15px;
+  }
+  .product-description {
+    margin-right: 140px;
+  }
+  .btn-buy {
+    width: 110px;
+    float: right;
+  }
+}
+.price {
+  position: relative;
+  &.current{
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  &.original {
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+}
