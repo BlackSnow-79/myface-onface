@@ -3,36 +3,54 @@
 @font-family-sans-serif-onface: Arial, sans-serif;
 //COLORS
 //--------------------------------------------------------
-//Primary
-@light-blue: #3c8dbc;
-//Danger
 @red: #dd4b39;
-//Success
 @green: #00a65a;
-//Info
 @aqua: #00c0ef;
-//Warning
 @yellow: #f39c12;
-@blue: #0073b7;
+@blue: #2bc5f8;
+@light-blue: #3c8dbc;
 @navy: #001F3F;
 @teal: #39CCCC;
 @olive: #3D9970;
 @lime: #01FF70;
-@orange: #FF851B;
+@orange: #ff5722;
 @fuchsia: #F012BE;
 @purple: #605ca8;
 @maroon: #D81B60;
-@black: #111;
+@black: #212121;
 @gray: #d2d6de;
+//Primary
+@primary-color: @orange;
+//Secondary
+@secondary-color: @blue;
+//Danger
+@danger-color: @red;
+//Success
+@success: @green;
+//Info
+@info-color: @aqua;
+//Warning
+@warning: @yellow;
+//text
+@text-color-1: @black;
+@text-color-2: #727272;
+@text-color-3: #b6b6b6;
+//background
+//line
+@line-color-1: #dfdfdf;
+@line-color-2: #ebebeb;
+@line-color-3: #d3eafd;
 
 //LAYOUT
 //--------------------------------------------------------
 //Link colors (Aka: <a> tags)
-@link-color: @light-blue;
+@link-color: @primary-color;
 @link-hover-color: lighten(@link-color, 15%);
 //Body background (Affects main content background only)
 @body-bg: #ecf0f5;
-
+//BORDER
+//--------------------------------------------------------
+@border: 1px solid @line-color-1;
 //BOXES
 //--------------------------------------------------------
 @box-border-color: #f4f4f4;

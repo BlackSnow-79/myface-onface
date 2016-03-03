@@ -1,3 +1,20 @@
 .pagination-page {
 	text-align: center;
+	.pagination {
+		margin: 15px 0;
+		>li {
+			>a {
+				color: @text-color-2;
+				margin: 0 5px;
+				border-radius: 3px;
+			}
+			&.active {
+				a {
+					color: #fff;
+					background-color: #c4cde0;
+					border-color: #c4cde0;
+				}
+			}
+		}
+	}
 }

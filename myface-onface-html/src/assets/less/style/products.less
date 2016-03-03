@@ -40,12 +40,20 @@
   }
   .product-title {
     margin: 0 0 15px;
+    font-size: 14px;
+    color: @black;
+    &:hover,
+    &:active,
+    &:focus {
+      color: @link-color;
+}
   }
   .product-description {
     margin-right: 140px;
   }
   .btn-buy {
     width: 110px;
+    text-transform: capitalize;
     float: right;
   }
 }
@@ -54,9 +62,20 @@
   &.current{
     font-size: 16px;
     margin-right: 10px;
+    color: @primary-color;
   }
   &.original {
     font-size: 13px;
     text-decoration: line-through;
+    color: @text-color-3;
   }
+}
+.sale-tag {
+  padding: 6px 15px;
+  margin: 0 0 0 10px;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #fff;
+  .border-radius(3px);
+  background-color: @primary-color;
 }

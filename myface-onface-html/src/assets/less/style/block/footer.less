@@ -1,0 +1,30 @@
+footer {
+	width: 100%;
+	padding: 20px 0;
+	position: relative;
+	color: @text-color-3;
+	&:before {
+		content: "";
+		width: 58px;
+		height: 1px;
+		background-color: @line-color-2;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -29px;
+	}
+	p {
+		margin: 0 0;
+	}
+	a {
+		display: inline-block;
+		text-decoration: underline;
+	}
+}
+.footer-link-1 {
+	color: @blue;
+	border-color: @blue;
+}
+.footer-link-2 {
+	border-color: @orange;
+}
