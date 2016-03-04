@@ -4,15 +4,23 @@
 		margin: 15px 0;
 		>li {
 			>a {
+				font-size: 13px;
 				color: @text-color-2;
 				margin: 0 5px;
 				border-radius: 3px;
+				&:hover,
+				&:active,
+				&:focus {
+					color: #fff;
+					background-color: @add-color-1;
+					border-color: @add-color-1;
+				}
 			}
 			&.active {
 				a {
 					color: #fff;
-					background-color: #c4cde0;
-					border-color: #c4cde0;
+					background-color: @add-color-1;
+					border-color: @add-color-1;
 				}
 			}
 		}

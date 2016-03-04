@@ -16,7 +16,7 @@
     margin: 0 0 15px;
     background: #fff;
     &:hover {
-      .box-shadow(@box-boxshadow);
+      .box-shadow(0 0 3px rgba(182,182,182,.8));
     }
   }
   .product-img {
@@ -24,6 +24,7 @@
     float: left;
     width: 164px;
     height: 164px;
+    .border-radius(4px, 0, 4px, 0);
     overflow: hidden;
     img {
       width: 100%;
@@ -39,9 +40,10 @@
     margin-right: 110px;
   }
   .product-title {
-    margin: 0 0 15px;
+    display: block;
+    margin: 0 0 10px;
     font-size: 14px;
-    color: @black;
+    color: @text-color-1;
     &:hover,
     &:active,
     &:focus {
@@ -50,10 +52,10 @@
   }
   .product-description {
     margin-right: 140px;
+    color: @text-color-1;
   }
   .btn-buy {
     width: 110px;
-    text-transform: capitalize;
     float: right;
   }
 }
@@ -71,11 +73,23 @@
   }
 }
 .sale-tag {
+  position: relative;
   padding: 6px 15px;
   margin: 0 0 0 10px;
   font-size: 13px;
   text-transform: capitalize;
   color: #fff;
-  .border-radius(3px);
+  .border-radius(3px, 0 , 3px, 0);
   background-color: @primary-color;
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    border-top: 14px solid transparent;
+    border-left: 10px solid @primary-color;
+    border-bottom: 13px solid transparent;
+  }
 }
