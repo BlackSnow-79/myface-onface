@@ -309,7 +309,7 @@ sup {
 }
 .products-block .product-title {
   display: block;
-  margin: 0 0 10px;
+  margin: 0 0 15px;
   font-size: 14px;
   color: #212121;
 }
@@ -324,9 +324,12 @@ sup {
 }
 .products-block .btn-buy {
   width: 110px;
+  padding: 6px 20px;
   float: right;
 }
 .price {
+  width: 100%;
+  line-height: 1;
   position: relative;
 }
 .price.current {
@@ -392,7 +395,7 @@ sup {
 .pagination-page .pagination > li > a {
   font-size: 13px;
   color: #727272;
-  margin: 0 5px;
+  margin: 0 3px;
   border-radius: 3px;
 }
 .pagination-page .pagination > li > a:hover,
