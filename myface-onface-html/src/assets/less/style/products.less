@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   > .item {
-    .border-radius(@box-border-radius);
+    .border-radius(2px);
     border: 1px solid @box-border-color;
     .clearfix();
     padding: 0;
@@ -24,7 +24,7 @@
     float: left;
     width: 164px;
     height: 164px;
-    .border-radius(4px, 0, 4px, 0);
+    .border-radius(2px, 0, 2px, 0);
     overflow: hidden;
     img {
       width: 100%;
@@ -32,8 +32,8 @@
     }
   }
   .product-info {
-    margin-left: 194px;
-    padding: 20px 15px;
+    margin-left: 179px;
+    padding: 15px;
     position: relative;
   }
   .product-header {
@@ -74,8 +74,8 @@
 }
 .sale-tag {
   position: relative;
-  padding: 6px 15px;
-  margin: 0 0 0 10px;
+  padding: 5px 10px 5px 15px;
+  margin: 0;
   font-size: 13px;
   text-transform: capitalize;
   color: #fff;
@@ -88,7 +88,7 @@
     position: absolute;
     top: 0;
     right: -10px;
-    border-top: 14px solid transparent;
+    border-top: 12px solid transparent;
     border-left: 10px solid @primary-color;
     border-bottom: 13px solid transparent;
   }

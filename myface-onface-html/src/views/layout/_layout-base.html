@@ -28,15 +28,17 @@
 	<![endif]-->
 </head>
 <body class="{% block bodyclass%}{% endblock %}">
-	<!--header-->
-	{% block header%}{% endblock %}
-	<!--page-container-->
-	{% block page-container %}{% endblock %}
-	<!--footer-->
-	{% block footer%}{% endblock %}
-	<!--modal-->
-	{% block modal%}{% endblock %}
-	<!--script-->
-	{% include "../block/_script.html" %}
+	<div class="{% block page-containerclass%}{% endblock %}">
+		<!--header-->
+		{% block header%}{% endblock %}
+		<!--page-container-->
+		{% block page-container %}{% endblock %}
+		<!--footer-->
+		{% block footer%}{% endblock %}
+		<!--modal-->
+		{% block modal%}{% endblock %}
+		<!--script-->
+		{% include "../block/_script.html" %}
+	</div>
 </body>
 </html>
