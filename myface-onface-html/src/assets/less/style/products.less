@@ -1,5 +1,5 @@
 /*
- * Component: Products List
+ * Component: Products-block
  * ------------------------
  */
 .products-block {
@@ -40,15 +40,6 @@
     margin-right: 110px;
   }
   .product-title {
-    display: block;
-    margin: 0 0 15px;
-    font-size: 14px;
-    color: @text-color-1;
-    &:hover,
-    &:active,
-    &:focus {
-      color: @link-color;
-}
   }
   .product-description {
     margin-right: 140px;
@@ -59,6 +50,21 @@
     padding: 6px 20px;
     float: right;
   }
+}
+.product-title {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: @text-color-1;
+  &:hover,
+  &:active,
+  &:focus {
+    color: @link-color;
+  }
+}
+.price-block {
+  width: 100%;
+  height: 18px;
 }
 .price {
   width: 100%;

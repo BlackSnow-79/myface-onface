@@ -1,10 +1,6 @@
 {% extends "layout/_layout.html" %}
 {% block page-container %}
 <main>
-	<!--banner-->
-	<div class="banner">
-		<img src="assets/images/upload/banner/banner.jpg" alt="myface">
-	</div><!--/.banner-->
 	<!--nav-filter-->
 	<div class="nav-filter">
     <div class="select-filter">
@@ -21,68 +17,145 @@
 	</div><!--nav-filter-->
 	<!--product-container-->
 	<div class="product-container">
-    <!--products-gallery-->
-		<div class="products-gallery">   
-    </div><!--./products-gallery-->
-    <!--product-info-->
-    <div class="product-info">
-    </div><!--./product-info-->
+    <!--product-info-block-->
+    <div class="product-info-block">
+      <!--products-gallery-->
+  		<div class="col-xs-6 product-gallery">
+        <div class="stage">
+          <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+        </div>
+        <div class="thumnail">
+          <ul class="items">
+            <li class="item active">
+              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+            </li>
+            {% for x in [1,2,3,4,5] %}
+            <li class="item">
+              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+            </li>
+            {% endfor %}
+          </ul>
+        </div>   
+      </div><!--./products-gallery-->
+      <!--product-info-->
+      <div class="col-xs-6 product-info">
+        <div class="product-header">
+          <h1 class="product-title">
+            <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span>
+            <span class="sale-tag">sale</span>
+          </h1>
+          <div class="price-block">
+            <span class="price current">235.000<sup>đ</sup></span>
+            <span class="price original">325.000<sup>đ</sup></span> 
+          </div>
+          <div class="product-property">
+            <div class="item-property">
+              <div class="item-property-label">
+                <span>Màu sắc:</span>
+              </div>
+              <ul class="item-property-values">
+                <li class="property-select active">
+                  <a class="" href="#"><span class="text">Xanh dương</span></a>
+                </li>
+                <li class="property-select">
+                  <a class="" href="#"><span class="text">Xanh lá</span></a>
+                </li>
+                <li class="property-select">
+                  <a class="" href="#"><span class="text">Xanh cổ vịt</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-property">
+              <div class="item-property-label">
+                <span>Kích thước:</span>
+              </div>
+              <ul class="item-property-values">
+                <li class="property-select active">
+                  <a class="" href="#"><span class="text">XS</span></a>
+                </li>
+                <li class="property-select">
+                  <a class="" href="#"><span class="text">M</span></a>
+                </li>
+                <li class="property-select">
+                  <a class="" href="#"><span class="text">XL</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-property">
+              <div class="item-property-label">
+                <span>Số lượng:</span>
+              </div>
+              <div class="item-property-values">
+                <input type="number" min="1" class="form-control" value="1">
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <a class="btn btn-primary btn-action" href="#"><i class="fa fa-shopping-cart"></i><span>Cho vào giỏ hàng</span></a>
+          </div>
+        </div>
+      </div><!--./product-info-->
+    </div><!--/.product-info-block-->
     <!--product-description-->
     <div class="product-description">
-      <div class="tab">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a id="product-des-1" href="#product-des-1">Giới thiệu sản phẩm</a>
+          </li>
+          <li><a id="product-des-2" href="#product-des-2">Thông số sản phẩm</a></li>
+        </ul>
       </div>
-      <div class="tab-content active" id="">
+      <div class="tab-content active" id="product-des-1">
         <div class="product-intro">
           <div style="text-align: justify;">
             <strong>Lime Orange - Áo Sơ Mi Màu Trắng LO52964-01</strong> - mang tông màu trắng tinh khôi như nắng mai cùng chất liệu vải voan mềm rũ, mang đến cho bạn gái nét đẹp dịu dàng, nữ tính, không kém phần quyến rũ. Đặc biệt chi tiết cổ lật tạo điểm nhấn cá tính và ấn tương trong phong cách thời trang của bạn. Bạn gái sẽ vô cùng tự tin dạo bước trên phố hay tham gia các buổi họp mặt bạn bè vui nhộn, đầy thú vị.<br>
             <br>
             <strong>Thông tin chi tiết sản phẩm:&nbsp;</strong><br>
-            <br>
-            - Chất liệu vải voan mềm nhẹ, thoáng mát<br>
-            - Màu: trắng<br>
-            - Cổ V lật cách điệu<br>
-            - Tay dài, có nút cài ở gấu tay áo, khoét giọt nước cách điệu<br>
-            - Vạt bầu<br>
-            - Áo không co giãn
+            <ul>
+              <li>Vải màu đậm không giặt bằng xà bông có độ tẩy cao</li>
+              <li>Nên lộn trái sản phẩm khi phơi</li>
+              <li>Không phơi sản phẩm màu ở nơi nắng gắt</li>
+              <li>Không ngâm hay giặt sản phẩm màu trắng chung với sản phẩm màu khác</li>
+            </ul>
             <p style="text-align: center;">
-              <img src="https://mymall.vn/static/images/2015/11/13/1447408333_1.jpg" style="font-family: arial, helvetica, sans-serif; font-size: 14px; height: 500px; width: 500px;">
+              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
             </p>
           </div>
         </div>
         <h2>Thông số sản phẩm</h2>
-        <table class="table table-bordered" id="">
+        <table class="table table-bordered table-label">
           <tbody>
             <tr class="row-info">
-                <td><strong>Độ cồn</strong></td>
-                <td>5%</td>
+              <td><strong>Độ cồn</strong></td>
+              <td>5%</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Xuất xứ</strong></td>
-                <td>Việt Nam</td>
+              <td><strong>Xuất xứ</strong></td>
+              <td>Việt Nam</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Hướng dẫn sử dụng</strong></td>
-                <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
+              <td><strong>Hướng dẫn sử dụng</strong></td>
+              <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Hướng dẫn bảo quản</strong></td>
-                <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
+              <td><strong>Hướng dẫn bảo quản</strong></td>
+              <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Quy cách đóng gói</strong></td>
-                <td>24 lon/thùng</td>
+              <td><strong>Quy cách đóng gói</strong></td>
+              <td>24 lon/thùng</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Thành phần nguyên liệu</strong></td>
-                <td>Nước, mạch nha, gạo, hoa bia</td>
+              <td><strong>Thành phần nguyên liệu</strong></td>
+              <td>Nước, mạch nha, gạo, hoa bia</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Hạn sử dụng</strong></td>
-                <td>12 tháng</td>
+              <td><strong>Hạn sử dụng</strong></td>
+              <td>12 tháng</td>
             </tr>
             <tr class="row-info">
-                <td><strong>Dung tích</strong></td>
-                <td>330 (ml)</td>
+              <td><strong>Dung tích</strong></td>
+              <td>330 (ml)</td>
             </tr>
           </tbody>
         </table><!-- /.table -->    
