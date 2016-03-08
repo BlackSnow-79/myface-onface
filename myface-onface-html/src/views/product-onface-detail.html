@@ -49,7 +49,7 @@
             <span class="price original">325.000<sup>đ</sup></span> 
           </div>
           <div class="product-property">
-            <div class="item-property">
+            <div class="item-property color-property">
               <div class="item-property-label">
                 <span>Màu sắc:</span>
               </div>
@@ -65,7 +65,7 @@
                 </li>
               </ul>
             </div>
-            <div class="item-property">
+            <div class="item-property size-property">
               <div class="item-property-label">
                 <span>Kích thước:</span>
               </div>
@@ -81,12 +81,16 @@
                 </li>
               </ul>
             </div>
-            <div class="item-property">
+            <div class="item-property amount-property">
               <div class="item-property-label">
                 <span>Số lượng:</span>
               </div>
               <div class="item-property-values">
-                <input type="number" min="1" class="form-control" value="1">
+                <select class="selectpicker select-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
               </div>
             </div>
           </div>
@@ -97,68 +101,64 @@
       </div><!--./product-info-->
     </div><!--/.product-info-block-->
     <!--product-description-->
-    <div class="product-description">
-      <div class="tabs">
-        <ul class="nav nav-tabs">
-          <li class="active"><a id="product-des-1" href="#product-des-1">Giới thiệu sản phẩm</a>
-          </li>
-          <li><a id="product-des-2" href="#product-des-2">Thông số sản phẩm</a></li>
-        </ul>
-      </div>
-      <div class="tab-content active" id="product-des-1">
-        <div class="product-intro">
-          <div style="text-align: justify;">
-            <strong>Lime Orange - Áo Sơ Mi Màu Trắng LO52964-01</strong> - mang tông màu trắng tinh khôi như nắng mai cùng chất liệu vải voan mềm rũ, mang đến cho bạn gái nét đẹp dịu dàng, nữ tính, không kém phần quyến rũ. Đặc biệt chi tiết cổ lật tạo điểm nhấn cá tính và ấn tương trong phong cách thời trang của bạn. Bạn gái sẽ vô cùng tự tin dạo bước trên phố hay tham gia các buổi họp mặt bạn bè vui nhộn, đầy thú vị.<br>
-            <br>
-            <strong>Thông tin chi tiết sản phẩm:&nbsp;</strong><br>
-            <ul>
-              <li>Vải màu đậm không giặt bằng xà bông có độ tẩy cao</li>
-              <li>Nên lộn trái sản phẩm khi phơi</li>
-              <li>Không phơi sản phẩm màu ở nơi nắng gắt</li>
-              <li>Không ngâm hay giặt sản phẩm màu trắng chung với sản phẩm màu khác</li>
-            </ul>
-            <p style="text-align: center;">
-              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
-            </p>
-          </div>
+    <div class="product-detail">
+      <ul class="nav nav-tabs">
+        <li class="active"><a id="product-des-1" href="#product-des-1">Giới thiệu sản phẩm</a>
+        </li>
+        <li><a id="product-des-2" href="#product-des-2">Thông số sản phẩm</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="product-intro" id="product-des-1">
+          <p>Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu thuộc thương hiệu G2000 đem lại nét thanh lịch, sang trọng cho phái mạnh khi đi làm, đi họp hay tham gia các buổi gặp mặt quan trọng.</p>
+          <ul style="list-style: square; line-height: 1">
+            <li><p>Vải màu đậm không giặt bằng xà bông có độ tẩy cao</p></li>
+            <li><p>Nên lộn trái sản phẩm khi phơ</p></li>
+            <li><p>Không phơi sản phẩm màu ở nơi nắng gắt</p></li>
+            <li><p>Không ngâm hay giặt sản phẩm màu trắng chung với sản phẩm màu khác</p></li>
+          </ul>
+          <p style="text-align: center;">
+            <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+          </p>
         </div>
-        <h2>Thông số sản phẩm</h2>
-        <table class="table table-bordered table-label">
-          <tbody>
-            <tr class="row-info">
-              <td><strong>Độ cồn</strong></td>
-              <td>5%</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Xuất xứ</strong></td>
-              <td>Việt Nam</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Hướng dẫn sử dụng</strong></td>
-              <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Hướng dẫn bảo quản</strong></td>
-              <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Quy cách đóng gói</strong></td>
-              <td>24 lon/thùng</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Thành phần nguyên liệu</strong></td>
-              <td>Nước, mạch nha, gạo, hoa bia</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Hạn sử dụng</strong></td>
-              <td>12 tháng</td>
-            </tr>
-            <tr class="row-info">
-              <td><strong>Dung tích</strong></td>
-              <td>330 (ml)</td>
-            </tr>
-          </tbody>
-        </table><!-- /.table -->    
+        <div class="product-intro" id="product-des-2">
+          <h2 class="title">Thông số sản phẩm</h2>
+          <table class="table table-bordered table-label">
+            <tbody>
+              <tr class="row-info">
+                <td><strong>Độ cồn</strong></td>
+                <td>5%</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Xuất xứ</strong></td>
+                <td>Việt Nam</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Hướng dẫn sử dụng</strong></td>
+                <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Hướng dẫn bảo quản</strong></td>
+                <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Quy cách đóng gói</strong></td>
+                <td>24 lon/thùng</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Thành phần nguyên liệu</strong></td>
+                <td>Nước, mạch nha, gạo, hoa bia</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Hạn sử dụng</strong></td>
+                <td>12 tháng</td>
+              </tr>
+              <tr class="row-info">
+                <td><strong>Dung tích</strong></td>
+                <td>330 (ml)</td>
+              </tr>
+            </tbody>
+          </table><!-- /.table -->
+        </div>    
       </div>
       <div class="block text-center">
         <a class="btn btn-primary btn-action" href="#"><i class="fa fa-shopping-cart"></i><span>Cho vào giỏ hàng</span></a>

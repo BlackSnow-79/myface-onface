@@ -4,4 +4,7 @@ $(document).ready(function() {
 	  style: 'blue-dropdown',
 	});
 
+	$('.select-amount').selectpicker({
+	  style: 'amount-dropdown'
+	});
 });

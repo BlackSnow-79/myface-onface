@@ -24,9 +24,54 @@
 	.clearfix;
 	.page-margin-bottom;
 }
-.product-description {
+.product-detail {
 	width: 100%;
-}
-.tabs {
-	width: 100%;
+	.title {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+	img {
+		margin: 15px auto;
+	}
+	.nav-tabs {
+		li {
+			margin-bottom: 0;
+			a {
+				padding: 10px 0;
+				margin: 0 10px;
+				color: @text-color-1;
+				border-color: transparent;
+				border-width: 0 0 3px 0;
+				&:hover,
+			  &:active{
+			    background-color: transparent;
+			    color: @primary-color;
+			  }
+			  &:focus {
+			  	background-color: transparent;
+			  	color: @text-color-1;
+			  }
+			}
+			&:first-child {
+				a {	
+					margin-left: 0;
+				}
+			}
+			&.active {
+				a {
+					border-color: @gray;
+					border-width: 0 0 3px 0;
+					&:hover,
+				  &:active,
+				  &:focus {
+				  	color: @text-color-1;
+				    border-color: @gray;
+				  }
+				}
+			}
+		}
+	}
+	.tab-content {
+		padding: 20px 0;
+	}
 }

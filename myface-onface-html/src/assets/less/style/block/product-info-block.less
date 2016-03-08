@@ -21,7 +21,6 @@
 		overflow: hidden;
 		img {
 			width: 100%;
-
 		}
 	}
 	.thumnail {
@@ -37,24 +36,32 @@
 			.item {
 				width: 65px;
 				height: 65px;
+				border: 1px solid transparent;
 				margin-right: 8px;
 				display: inline-block;
+				&.active{
+					border-color: @line-color-1;
+				}
+				&:hover {
+					border-color: @line-color-1;
+				}
 			}
 		}
 	}
 }
 .product-property {
 	width: 100%;
-	margin: 20px 0;
-	padding: 15px 0;
+	margin: 22px 0;
+	padding: 20px 0;
 	border: solid @line-color-1;
 	border-width: 1px 0 1px 0;
 }
 .item-property {
 	display: table-row;
+	margin-bottom: 2px;
 	.item-property-label {
     display: table-cell;
-    width: 96px;
+    width: 85px;
     line-height: 34px;
     vertical-align: top;
     padding-bottom: 8px;
@@ -63,13 +70,38 @@
     line-height: 34px;
 		display: table-cell;
 		.horizontal-list();
-		a {
-	    min-width: 34px;
-	    padding: 6px 12px;
-	    border: @border;
-	    .border-radius(2px); 
-	    text-align: center;
-	    color: @text-color-1;
+		.property-select {
+			margin: 0 2px 8px 0;
+			>a {
+		    min-width: 34px;
+		    height: 34px;
+		    display: block;
+		    line-height: 26px;
+		    padding: 4px 20px;
+		    border: @border;
+		    .border-radius(2px); 
+		    text-align: center;
+		    color: @text-color-1;
+		    &:hover {
+		    	border-color: @primary-color;
+		    }
+			}
+			&.active {
+				a {
+					background-color: @secondary-color;
+					color: #fff;
+					border-color: @secondary-color;
+				}
+			}
+		}
+	}
+	&.size-property{
+		.property-select {
+			>a {
+		    padding: 4px;
+			}
 		}
 	}
 }
+
+

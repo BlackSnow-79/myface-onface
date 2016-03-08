@@ -5,13 +5,37 @@
 	font-weight: bold;
 	background-color: transparent;
 	border: 0;
-	&:hover,
-  &:active,
-  &:focus,
-  &:active:hover,
-  &:active:focus {
+		&:hover,
+	  &:active,
+	  &:focus,
+	  &:active:hover,
+	  &:active:focus {
 		color: @primary-color;
 		outline: 0;
+	}
+	.btn-group.open & {
+		webkit-box-shadow: none;
+    box-shadow: none;
+	}
+}
+.amount-dropdown {
+	min-width: auto;
+	width: 68px !important;
+  height: 40px;
+  padding-left: 20px;
+  background-color: transparent;
+  color: @black;
+  border-color: @line-color-1;
+  .caret {
+		border-width: 0 !important;
+		position: relative;
+    font: normal normal normal 14px/1 FontAwesome;
+		&:before {
+			content: "\f107";
+			position: absolute;
+			top: -6px;
+			right: 2px;
+		}
 	}
 	.btn-group.open & {
 		webkit-box-shadow: none;
