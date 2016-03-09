@@ -1,88 +1,83 @@
-<div class="modal" id="invoice-modal">
-  <div class="modal-dialog modal-md">
+<div class="modal modal-secondary invoice-modal" id="invoice-modal">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Tạo đơn hàng mới</h4>
+        <h1 class="modal-title">Giỏ hàng của bạn: <span class="amount">(Đang có <span class="red-text">2</span> sản phẩm)</span></h1>
       </div>
       <div class="modal-body">
-        <div class="clearfix">
-          <label>1. Sản phẩm đã chọn:</label>
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="col-xs-4 text-center">Sản phẩm</th>
-                <th class="col-xs-2 text-center">Giá bán</th>
-                <th class="col-xs-2 text-center">Số lượng</th>
-                <th class="col-xs-2 text-center">Thành tiền</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="products-list">
-                  <div class="item">
-                    <div class="product-img">
-                      <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
-                    </div>
-                    <div class="product-info">
-                      <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
-                    </div>
+        <table class="table table-nopadding invoice-table">
+          <thead>
+            <tr>
+              <th class="col-xs-8 text-left">Sản phẩm</th>
+              <th class="col-xs-2 text-center">Số lượng</th>
+              <th class="col-xs-2 text-right">Giá tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="item">
+                  <div class="product-img">
+                    <a href="#"><img src="assets/images/upload/product/product-2.jpg" alt="myface"></a>
                   </div>
-                </td>
-                <td class="text-center">
-                  <span>1.000.000<ins>đ</ins></span>
-                </td>
-                <td class="text-right">01</td>
-                <td class="text-center">
-                  <label>1.000.000<ins>đ</ins></label>
-                </td>
-              </tr>
-              <tr>
-                <td class="products-list">
-                  <div class="item">
-                    <div class="product-img">
-                      <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
-                    </div>
-                    <div class="product-info">
-                      <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
-                    </div>
+                  <div class="product-info">
+                    <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
                   </div>
-                </td>
-                <td class="text-center">
-                  <span>1.000.000<ins>đ</ins></span>
-                </td>
-                <td class="text-right">01</td>
-                <td class="text-center">
-                  <label>1.000.000<ins>đ</ins></label>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <select class="selectpicker select-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
+              </td>
+              <td class="text-right">
+                <span class="price">1.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="item">
+                  <div class="product-img">
+                    <a href="#"><img src="assets/images/upload/product/product-2.jpg" alt="myface"></a>
+                  </div>
+                  <div class="product-info">
+                    <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <select class="selectpicker select-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
+              </td>
+              <td class="text-right">
+                <span class="price">10.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td class="text-center">
+                <span class="invoice-price-label">Tổng cộng:</span>
+              </td>
+              <td class="text-right">
+                <span class="price orange-text">11.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
         <div class="clearfix">
-          <label>2. Phương thức thanh toán:</label>
-          <div class="radio">
-            <label class="radio-material-blue">
-              <input type="radio" name="address" id="" value="" checked=""><span class="circle"></span><span class="check">Thanh toán khi giao hàng</span>                               
-            </label>
-          </div>
-          <div class="radio">
-            <label class="radio-material-blue">
-              <input type="radio" name="address" id="" value="" checked=""><span class="circle"></span><span class="check">Thanh toán online (internet banking)</span>                               
-            </label>
-          </div>
+          <a class="pull-right btn btn-primary" href="" onclick="window.open('checkout-step-1.html','_blank')">Đặt hàng <i class="fa fa-angle-right"></i></a>
         </div>
-        <div class="clearfix">
-          <label>3. Tổng tiền thanh toán:</label>
-          <div class="col-xs-12">
-            <h4 class="pull-right green-highlight">2.000.000<ins>đ</ins></h4>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <input type="submit" class="btn btn-lime" value="Hoàn tất đơn hàng">
-        <a href="" class="btn btn-default">Đóng</a>
       </div>
     </div>
   <!-- /.modal-content -->

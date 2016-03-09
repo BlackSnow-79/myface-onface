@@ -1,3 +1,66 @@
+/*
+ * Component: Table
+ * ----------------
+ */
+.table {
+  //Cells
+  > tbody{
+    > tr {
+      > th,
+      > td {
+        border-bottom: 1px solid @box-border-color;
+      }
+    }
+  }
+  //thead cells
+  > thead > tr > th {
+    border-bottom: 1px double @box-border-color;
+  }
+  //progress bars in tables
+  tr td .progress {
+    margin-top: 5px;
+  }
+  &.table-nopadding {
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          padding: 13px 0;
+        }
+      }
+    }
+  }
+}
+//Bordered Table
+.table-bordered {
+  border: 1px solid @box-border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid @box-border-color;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+.table.no-border {
+  &,
+  td,
+  th {
+    border: 0;
+  }
+}
+//table-product-detail
 .table-label {
   > thead,
   > tbody,

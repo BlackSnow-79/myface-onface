@@ -1,0 +1,41 @@
+.modal-secondary {
+	margin: 90px 0;
+	.modal-dialog {
+		width: 682px;
+	}
+	.modal-content { 
+		.box-shadow(0 1px 1px rgba(255, 255, 255, .1));
+		.border-radius(@box-border-radius);
+		border-color: transparent;
+	}
+	.modal-header {
+		padding: 10px 15px;
+		background-color: @secondary-color;
+		border-radius: 3px 3px 0 0;
+		border: 1px solid @secondary-color;
+		.modal-title {
+			color: #fff;
+			font-size: 20px;
+		}
+		.amount {
+			font-size: 14px;
+		}
+	}
+	.modal-body {
+		border: 1px solid @line-color-1;
+		border-top: 0;
+		border-bottom: 0;
+		padding: 0 15px 15px;
+	}
+	.close {
+		color: #fff;
+		opacity: 1;
+		margin-top: -3px;
+		margin-right: -5px;
+	}
+}
+.modal-footer {
+	border: 1px solid @line-color-1;
+	border-top: 0;
+	border-radius: 0 0 3px 3px;
+}
