@@ -25,16 +25,20 @@
           <img src="assets/images/upload/product/product-2.jpg" alt="myface">
         </div>
         <div class="thumnail">
-          <ul class="items">
-            <li class="item active">
-              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
-            </li>
-            {% for x in [1,2,3,4,5] %}
-            <li class="item">
-              <img src="assets/images/upload/product/product-2.jpg" alt="myface">
-            </li>
-            {% endfor %}
-          </ul>
+          <span class="slider-control slider-prev"><i class="fa fa-angle-left"></i></span>
+          <div class="thumnail-inner">
+            <ul class="items">
+              <li class="item active">
+                <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+              </li>
+              {% for x in [1,2,3,4,5] %}
+              <li class="item">
+                <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <span class="slider-control slider-next"><i class="fa fa-angle-right"></i></span>
         </div>   
       </div><!--./products-gallery-->
       <!--product-info-->
@@ -102,7 +106,7 @@
     </div><!--/.product-info-block-->
     <!--product-description-->
     <div class="product-detail">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs product-detail-nav">
         <li class="active"><a id="product-des-1" href="#product-des-1">Giới thiệu sản phẩm</a>
         </li>
         <li><a id="product-des-2" href="#product-des-2">Thông số sản phẩm</a></li>
