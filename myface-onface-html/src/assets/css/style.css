@@ -109,7 +109,8 @@ sup {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.btn:focus {
+.btn:focus,
+.btn:active:focus {
   outline: none;
 }
 .btn.btn-file {
@@ -387,6 +388,7 @@ sup {
 }
 .products-block .product-header {
   height: 78px;
+  display: table;
 }
 .products-block .product-header .product-title {
   float: left;
@@ -914,6 +916,9 @@ footer a {
 }
 .product-detail .tab-content {
   padding: 20px 0;
+}
+.checkout .footer-link-1 {
+  color: #6b82ae;
 }
 select.bs-select-hidden,
 select.selectpicker {
