@@ -84,8 +84,22 @@
   }
 }
 .btn-secondary {
+  color: #fff;
   background-color: @btn-color-2;
   border-color: darken(@btn-color-2, 5%);
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover,
+  &:active:focus {
+    color: #fff;
+    background-color: @btn-color-2-hover;
+    border-color: @btn-color-2-hover;
+  }
+}
+.btn-tertiary {
+  background-color: @btn-color-3;
+  border-color: darken(@btn-color-3, 5%);
   &:hover,
   &:active,
   &:focus,
@@ -127,6 +141,10 @@
   }
   i {
     margin-right: 5px;
+  }
+  &:hover,
+  &:active {
+    color: @primary-color;
   }
 }
 
