@@ -7,53 +7,76 @@
 		  <div class="panel-body">
 		    <div class="row">
 		    	<div class="col-xs-7 form-horizontal">
-	    			<div class="form-group">
+	    			<div class="form-group checkout-group-1">
               <label for="" class="col-xs-4 control-label">Họ tên người nhận hàng</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group checkout-group-2">
               <label for="" class="col-xs-4 control-label">Số điện thoại</label>
               <div class="col-sm-8">
                 <input type="tel" class="form-control">
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group checkout-group-3">
               <label for="" class="col-xs-4 control-label">Email</label>
               <div class="col-sm-8">
                 <input type="email" class="form-control">
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="divider"></div>
-            <div class="form-group">
+            <div class="form-group checkout-group-4">
               <label for="" class="col-xs-4 control-label">Tỉnh/Thành phố</label>
               <div class="col-sm-8">
-                <input type="email" class="form-control">
+                <select class="selectpicker default-dropdown">
+                  <option>Hồ Chí Minh</option>
+                  <option>Hà Nội</option>
+                  <option>Đồng Nai</option>
+                </select>
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group checkout-group-5">
               <label for="" class="col-xs-4 control-label">Quận/Huyện - Phường/Xã</label>
               <div class="col-sm-8">
-                <input type="email" class="form-control">
+              	<div class="city-2">
+									<select class="selectpicker default-dropdown">
+	                  <option>Quận 1</option>
+	                  <option>Quận 2</option>
+	                  <option>Quận 3</option>
+	                </select>
+								</div>
+								<div class="city-3">
+									<select class="selectpicker default-dropdown">
+	                  <option>Phường 1</option>
+	                  <option>Phường 2</option>
+	                  <option>Phường 3</option>
+	                </select>
+								</div>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group checkout-group-6">
               <label for="" class="col-xs-4 control-label">Tên đường/Phố</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-group checkout-group-7">
               <label for="" class="col-xs-4 control-label">Số nhà/Ngõ/Ngách/Hẽm</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
+                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="divider"></div>
             <div class="col-xs-12">
-	            <div class="form-group">
-	              <label>Bạn cần Shop lưu ý điều gì khi giao hàng không?</label>
+	            <div class="form-group checkout-group-8">
+	              <label for="" class="control-label">Bạn cần Shop lưu ý điều gì khi giao hàng không?</label>
 	              <textarea class="form-control" rows="3"></textarea>
 	            </div>
 	          </div>
@@ -65,11 +88,11 @@
 			    		<span class="note">(Qui trình xử lý đơn hàng sẽ chậm hơn một chút)</span>
 			    		<input type="text" class="form-control" placeholder="Nhập số  điện thoại - ví dụ: 0902389789">
 			    	</div>
-		    		<div class="">
-		    			<p>Nếu bạn thích trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
-		    			<p><a class="btn btn-secondary btn-login" href="login.html">Đăng nhập</a><p>
-		    			<p>
-		    				<a class="btn btn-secondary btn-login" href="register.html">Đăng ký tài khoản</a>
+		    		<div class="box box-login">
+		    			<p class="row-login-1">Nếu bạn thích trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
+		    			<p class="row-login-2"><a class="btn btn-secondary btn-login" href="login.html">Đăng nhập</a><p>
+		    			<p class="row-login-3">
+		    				<a class="btn btn-secondary btn-register" href="register.html">Đăng ký tài khoản</a>
 		    				<span class="note">(chỉ mất chưa tới 3 phút)</span>
 		    			</p>
 		    		</div>
@@ -85,9 +108,13 @@
 		</div>
 		<div class="box">
 			<p>Nhập mã giảm giá của bạn (nếu có)</p>
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="">
-				<input type="submit" class="form-control" value="Áp dụng">
+			<div class=" form-inline">
+			 	<div class="form-group">
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<input type="submit" class="form-control" value="Áp dụng">
+				</div>
 			</div>
 		</div>
 		<div class="box-cart">

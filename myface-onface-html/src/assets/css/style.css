@@ -13,7 +13,7 @@ body {
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #212121;
@@ -37,7 +37,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /* General Links */
 a {
@@ -50,19 +50,6 @@ a:focus {
   text-decoration: none;
   color: #ff916f;
 }
-img {
-  max-width: 100%;
-}
-.block {
-  width: 100%;
-  display: table;
-}
-sup {
-  margin-left: 2px;
-  top: -0.4em;
-  text-decoration: underline;
-  font-size: 65%;
-}
 .orange-text {
   color: #ff5722;
 }
@@ -71,6 +58,32 @@ sup {
 }
 .green-text {
   color: #3ac562;
+}
+.note {
+  color: #727272;
+  font-size: 13px;
+  font-style: italic;
+}
+label.error {
+  color: #dd4b39;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+sup {
+  margin-left: 2px;
+  top: -0.4em;
+  text-decoration: underline;
+  font-size: 65%;
+}
+img {
+  max-width: 100%;
+}
+.block {
+  width: 100%;
+  display: table;
 }
 .page-margin-bottom {
   margin-bottom: 80px;
@@ -300,6 +313,20 @@ sup {
 /*form-horizontal*/
 .form-horizontal .control-label {
   text-align: left;
+}
+.form-horizontal .form-inline .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-horizontal .form-group {
+  margin-bottom: 8px;
+}
+.form-inline-group .form-group {
+  width: 50%;
+}
+.form-inline-group .form-group .form-control {
+  min-width: auto;
+  width: 100%;
 }
 /*
  * Component: Table
@@ -557,6 +584,33 @@ sup {
   webkit-box-shadow: none;
   box-shadow: none;
 }
+.default-dropdown {
+  min-width: auto;
+  width: 68px !important;
+  height: 40px;
+  padding-left: 20px;
+  background-color: transparent;
+  color: #212121;
+  border-color: #dfdfdf;
+  min-width: 100px;
+  width: auto !important;
+  padding-left: 0;
+}
+.default-dropdown .caret {
+  border-width: 0 !important;
+  position: relative;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.default-dropdown .caret:before {
+  content: "\f107";
+  position: absolute;
+  top: -6px;
+  right: 2px;
+}
+.btn-group.open .default-dropdown {
+  webkit-box-shadow: none;
+  box-shadow: none;
+}
 .pagination-page {
   text-align: center;
 }
@@ -610,7 +664,7 @@ sup {
   border: 1px solid #dfdfdf;
   border-top: 0;
   border-bottom: 0;
-  padding: 0 15px 15px;
+  padding: 15px;
 }
 .modal-secondary .close {
   color: #fff;
@@ -622,6 +676,14 @@ sup {
   border: 1px solid #dfdfdf;
   border-top: 0;
   border-radius: 0 0 3px 3px;
+}
+.panel-default {
+  border-color: #dde0ef;
+}
+.panel-default > .panel-heading {
+  color: #212121;
+  background-color: #dde0ef;
+  border-color: #dde0ef;
 }
 footer {
   width: 100%;
@@ -784,6 +846,7 @@ footer a {
 }
 .invoice-modal .modal-body {
   border-radius: 0 0 3px 3px;
+  padding-top: 0;
 }
 .invoice-modal .btn {
   width: 138px;
@@ -872,6 +935,22 @@ footer a {
 .product-onface {
   width: 780px;
   border: 1px solid #e9eaed;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+.product-onface h1,
+.product-onface h2,
+.product-onface h3,
+.product-onface h4,
+.product-onface h5,
+.product-onface h6,
+.product-onface .h1,
+.product-onface .h2,
+.product-onface .h3,
+.product-onface .h4,
+.product-onface .h5,
+.product-onface .h6 {
+  font-family: Arial, sans-serif;
 }
 .nav-filter {
   width: 100%;
@@ -939,14 +1018,78 @@ footer a {
 .product-detail .tab-content {
   padding: 20px 0;
 }
+.checkout header {
+  height: 70px;
+  overflow: hidden;
+}
+.checkout header .shop-logo {
+  position: relative;
+  padding-left: 30px;
+}
+.checkout header .shop-logo:before {
+  content: "\f104";
+  font: normal normal normal 14px/1 FontAwesome;
+  width: 15px;
+  text-align: left;
+  color: #ff5722;
+  position: absolute;
+  left: 15px;
+  top: 25px;
+}
+.checkout header .shop-logo a {
+  display: block;
+  padding: 23px 0;
+}
+.checkout header .logo-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4355a5;
+  display: none;
+}
 .checkout-step-1 .control-label {
   padding-right: 0;
   font-weight: normal;
+}
+.checkout-group-8 .control-label {
+  margin-bottom: 10px;
 }
 .btn-checkout {
   width: 100%;
   font-size: 18px;
   font-weight: bold;
+}
+.hotline {
+  float: right;
+  padding: 20px 15px;
+}
+.hotline span {
+  display: block;
+}
+.hotline-number {
+  color: #ff5722;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.city-2,
+.city-3 {
+  width: 49%;
+  float: left;
+}
+.city-2 .default-dropdown,
+.city-3 .default-dropdown {
+  width: 100% !important;
+  height: auto;
+}
+.city-2 .default-dropdown .dropdown-toggle,
+.city-3 .default-dropdown .dropdown-toggle {
+  width: 100%;
+}
+.city-3 {
+  float: right;
+}
+.box-login .btn {
+  width: 160px;
 }
 select.bs-select-hidden,
 select.selectpicker {

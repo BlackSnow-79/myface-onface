@@ -1,5 +1,32 @@
 .checkout {
-	
+	header {	
+		height: 70px;
+		overflow: hidden;
+		.shop-logo {
+			position: relative;
+			padding-left:  30px;
+			&:before {
+				content: "\f104";
+				font: normal normal normal 14px/1 FontAwesome;
+				width: 15px;
+				text-align: left;
+				color: @primary-color;
+				position: absolute;
+				left: 15px;
+				top: 25px;
+			}
+			a {
+				display: block;
+				padding: 23px 0;
+			}
+		}
+		.logo-text {
+			font-size: 26px;
+			font-weight: bold;
+			color: @secondary-color;
+			display: none;
+		}
+	}
 }
 .checkout-step-1 {
 	.control-label {
@@ -7,8 +34,46 @@
 		font-weight: normal;
 	}
 }
+.checkout-group-8 {
+	.control-label {
+		margin-bottom: 10px;
+	}
+}
 .btn-checkout {
 	width: 100%;
 	font-size: 18px;
 	font-weight: bold;
+}
+.hotline {
+	float: right;
+	padding: 20px 15px;
+	span {
+		display: block;
+	}
+}
+.hotline-number {
+	.orange-text();
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.city-2,
+.city-3 {
+	width: 49%;
+	float: left;
+	.default-dropdown {
+		width: 100% !important;
+		height: auto;
+		.dropdown-toggle {
+			width: 100%;
+		}
+	}
+}
+.city-3 {
+	float: right;
+}
+.box-login {
+	.btn {
+		width: 160px;
+	}
 }
