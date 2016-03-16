@@ -1,7 +1,12 @@
 .checkout {
+	.container {
+		padding: 0;
+	}
 	header {	
 		height: 70px;
 		overflow: hidden;
+		border-bottom: @border;
+		margin-bottom: 15px;
 		.shop-logo {
 			position: relative;
 			padding-left:  30px;
@@ -27,6 +32,80 @@
 			display: none;
 		}
 	}
+	.divider {
+	  border-style: dashed;
+	}
+	.cart-table {
+		.cart-title {
+			label,
+			.cart-amount {
+				margin-bottom: 0;
+			}
+			.cart-amount {
+				span {
+					font-weight: bold;
+					color: @primary-color;
+				}
+			}
+
+		}
+		> thead,
+	  > tbody,
+	  > tfoot {
+	    > tr {
+	      > th,
+	      > td {
+	        font-weight: normal;
+	        border: 0;
+	      }
+	    }
+	  }
+	  > thead,
+	  > tbody,
+	  > tfoot {
+	    > tr {
+	      > th{
+	        width: 70%;
+	      }
+	    }
+	  }
+		.product {
+			> th {
+        font-size: 11px;
+        font-family: Arial, sans-serif;
+      }
+      .amount {
+      	color: @green;
+      }
+		}
+		> thead,
+	  > tbody,
+	  > tfoot {
+	    > tr {
+	      > td {
+	        text-align: right;
+	      }
+	    }
+	  }
+	  .ship-row {
+	  	>th {
+	  		font-style: italic;
+	  	}
+	  }
+	  .ship-text {
+	  	color: @primary-color;
+	  }
+	  .total-price {
+	  	> th,
+      > td {
+		  	font-size: 16px;
+		  	font-weight: bold;
+      }
+	  	.price {
+	  		color: @primary-color;
+	  	}
+	  }
+	}
 }
 .checkout-step-1 {
 	.control-label {
@@ -36,6 +115,7 @@
 }
 .checkout-group-8 {
 	.control-label {
+		padding-top: 0;
 		margin-bottom: 10px;
 	}
 }
@@ -57,6 +137,15 @@
 	font-weight: bold;
 	font-size: 16px;
 }
+.checkout-group-4 {
+	.default-dropdown {
+		width: 100% !important;
+		height: auto;
+		.dropdown-toggle {
+			width: 100%;
+		}
+	}
+}
 .city-2,
 .city-3 {
 	width: 49%;
@@ -73,7 +162,26 @@
 	float: right;
 }
 .box-login {
+	margin-top: 150px;
+	padding-top: 10px;
+	border-top: @border;
 	.btn {
 		width: 160px;
 	}
+}
+.checkout-box-2 {
+	.coupon-input {
+		width: 160px;
+	}
+}
+.box-cart {
+	.box();
+	padding: 0;
+	.table {
+		margin-bottom: 0;
+	}
+}
+.cart-change {
+	.footer-link-1;
+	text-decoration: underline;
 }

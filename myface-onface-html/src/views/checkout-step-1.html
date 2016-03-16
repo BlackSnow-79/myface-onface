@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="form-group checkout-group-5">
-              <label for="" class="col-xs-4 control-label">Quận/Huyện - Phường/Xã</label>
+              <label for="" class="col-xs-4 control-label">Quận/Huyện-Phường/Xã</label>
               <div class="col-sm-8">
               	<div class="city-2">
 									<select class="selectpicker default-dropdown">
@@ -49,6 +49,7 @@
 	                  <option>Quận 2</option>
 	                  <option>Quận 3</option>
 	                </select>
+	                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
 								</div>
 								<div class="city-3">
 									<select class="selectpicker default-dropdown">
@@ -56,6 +57,7 @@
 	                  <option>Phường 2</option>
 	                  <option>Phường 3</option>
 	                </select>
+	                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
 								</div>
               </div>
             </div>
@@ -77,18 +79,18 @@
             <div class="col-xs-12">
 	            <div class="form-group checkout-group-8">
 	              <label for="" class="control-label">Bạn cần Shop lưu ý điều gì khi giao hàng không?</label>
-	              <textarea class="form-control" rows="3"></textarea>
+	              <textarea class="form-control" rows="4"></textarea>
 	            </div>
 	          </div>
 		    	</div>
 
 		    	<div class="col-xs-5">
-		    		<div class="">
+		    		<div class="box-tel">
 			    		<p>Hoặc bạn chỉ cần để lại <strong>số điện thoại</strong>, Shop sẽ liên hệ lấy thông tin giao hàng sớm nhất.</p>
-			    		<span class="note">(Qui trình xử lý đơn hàng sẽ chậm hơn một chút)</span>
+			    		<p class="note">(Qui trình xử lý đơn hàng sẽ chậm hơn một chút)</p>
 			    		<input type="text" class="form-control" placeholder="Nhập số  điện thoại - ví dụ: 0902389789">
 			    	</div>
-		    		<div class="box box-login">
+		    		<div class="box-login">
 		    			<p class="row-login-1">Nếu bạn thích trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
 		    			<p class="row-login-2"><a class="btn btn-secondary btn-login" href="login.html">Đăng nhập</a><p>
 		    			<p class="row-login-3">
@@ -102,42 +104,60 @@
 		</div>
 	</div>
 	<div class="col-xs-3">
-		<div class="box">
-			<p>Đơn hàng của bạn cần trên 150.000đ để được miễn phí vận chuyển tại TP.HCM, Hà Nội.</p>
-			<span>(trên 300.000đ đối với Tỉnh/Thành khác)</span>
+		<div class="box checkout-box-1">
+			<p>Đơn hàng của bạn cần trên <strong>150.000</strong>đ để được <strong>miễn phí</strong> vận chuyển tại TP.HCM, Hà Nội.</p>
+			<span>(trên <strong>300.000</strong>đ đối với Tỉnh/Thành khác)</span>
 		</div>
-		<div class="box">
+		<div class="box checkout-box-2">
 			<p>Nhập mã giảm giá của bạn (nếu có)</p>
-			<div class=" form-inline">
-			 	<div class="form-group">
-					<input type="text" class="form-control" placeholder="">
-				</div>
-				<div class="form-group">
-					<input type="submit" class="form-control" value="Áp dụng">
-				</div>
+			<div class="form-inline">
+				<input type="text" class="form-control coupon-input" placeholder="">
+				<input type="submit" class="btn-secondary form-control" value="Áp dụng">
 			</div>
 		</div>
 		<div class="box-cart">
-		  <div class="box">
-		    <h2>Đơn hàng</h2>(<span>1</span> sản phẩm)
-		    <div class="cart-items">
-		      <div class="list_item cart-item">
-		        <span>1 x</span> <span>Quechua Arpenaz 18 Backpack Red</span>
-		        <span class="price">199,000</span>
-		        <p class="variant-title"></p>
-		      </div>
-		    </div>
-		    <div class="total-price">
-		      Tạm tính <label>199,000</label>
-		    </div>
-		    <div class="shiping-price">
-		      Phí vận chuyển <label>0</label>
-		    </div>
-		    <div class="total-checkout">
-		      Tổng cộng <span>199,000</span>
-		    </div>
-		  </div>
-		  <button type="submit" class="btn btn-primary btn-checkout">Tiếp tục</button>
+			<div class="table-responsive">
+	      <table class="table cart-table">
+		      <thead>
+		        <tr class="cart-title">
+		          <th>
+		          	<label>Đơn hàng</label>
+		          	<p class="cart-amount">(<span>03</span> sản phẩm)</p>
+		          </th>
+		          <td>
+		          	<a class="cart-change" href="#">Thay đổi</a>
+		          </td>
+		        </tr>	
+		      </thead>
+	        <tbody>
+	        	{% for x in [1,2,3] %}
+	        	<tr class="product">
+		          <th><span class="amount">01 x</span> <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span></th>
+		          <td><span class="price">- 35.000<sup>đ</sup></span></td>
+		        </tr>
+		        {% endfor %}
+		        <tr>
+		          <th>Tạm tính:</th>
+		          <td><span class="price">1.435.000<sup>đ</sup></span></td>
+		        </tr>
+		        <tr>
+		          <th>Mã giảm giá:</th>
+		          <td><span class="price">- 35.000<sup>đ</sup></span></td>
+		        </tr>
+		        <tr class="ship-row">
+		          <th>Phí vận chuyển</th>
+		          <td><span class="ship-text">Miễn phí</span></td>
+		        </tr>
+		      </tbody>
+		      <tfoot>
+		        <tr class="total-price">
+		          <th>Tổng cộng</th>
+		          <td><span class="price">1.435.000<sup>đ</sup></span></td>
+		        </tr>
+		      </tfoot>
+	      </table>
+	      <button type="submit" class="btn btn-primary btn-checkout">Tiếp tục</button>
+	    </div>
 		</div>
 	</div>
 </main>

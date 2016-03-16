@@ -14,8 +14,9 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.25;
   color: #212121;
   overflow-x: hidden;
   overflow-y: auto;
@@ -84,6 +85,18 @@ img {
 .block {
   width: 100%;
   display: table;
+}
+.divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #dfdfdf;
+  margin: 20px 0;
+}
+.box {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
 }
 .page-margin-bottom {
   margin-bottom: 80px;
@@ -335,6 +348,14 @@ img {
 .table > tbody > tr > th,
 .table > tbody > tr > td {
   border-bottom: 1px solid #dfdfdf;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
 }
 .table > thead > tr > th {
   border-bottom: 1px double #dfdfdf;
@@ -644,7 +665,7 @@ img {
 .modal-secondary .modal-content {
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  border-radius: 3px;
   border-color: transparent;
 }
 .modal-secondary .modal-header {
@@ -681,6 +702,8 @@ img {
   border-color: #dde0ef;
 }
 .panel-default > .panel-heading {
+  font-size: 16px;
+  font-weight: bold;
   color: #212121;
   background-color: #dde0ef;
   border-color: #dde0ef;
@@ -846,7 +869,6 @@ footer a {
 }
 .invoice-modal .modal-body {
   border-radius: 0 0 3px 3px;
-  padding-top: 0;
 }
 .invoice-modal .btn {
   width: 138px;
@@ -870,6 +892,7 @@ footer a {
   margin-bottom: 20px;
 }
 .invoice-table {
+  margin-top: -15px;
   margin-bottom: 0;
 }
 .invoice-table .product-img {
@@ -1018,9 +1041,14 @@ footer a {
 .product-detail .tab-content {
   padding: 20px 0;
 }
+.checkout .container {
+  padding: 0;
+}
 .checkout header {
   height: 70px;
   overflow: hidden;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 15px;
 }
 .checkout header .shop-logo {
   position: relative;
@@ -1046,11 +1074,63 @@ footer a {
   color: #4355a5;
   display: none;
 }
+.checkout .divider {
+  border-style: dashed;
+}
+.checkout .cart-table .cart-title label,
+.checkout .cart-table .cart-title .cart-amount {
+  margin-bottom: 0;
+}
+.checkout .cart-table .cart-title .cart-amount span {
+  font-weight: bold;
+  color: #ff5722;
+}
+.checkout .cart-table > thead > tr > th,
+.checkout .cart-table > tbody > tr > th,
+.checkout .cart-table > tfoot > tr > th,
+.checkout .cart-table > thead > tr > td,
+.checkout .cart-table > tbody > tr > td,
+.checkout .cart-table > tfoot > tr > td {
+  font-weight: normal;
+  border: 0;
+}
+.checkout .cart-table > thead > tr > th,
+.checkout .cart-table > tbody > tr > th,
+.checkout .cart-table > tfoot > tr > th {
+  width: 70%;
+}
+.checkout .cart-table .product > th {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+.checkout .cart-table .product .amount {
+  color: #3ac562;
+}
+.checkout .cart-table > thead > tr > td,
+.checkout .cart-table > tbody > tr > td,
+.checkout .cart-table > tfoot > tr > td {
+  text-align: right;
+}
+.checkout .cart-table .ship-row > th {
+  font-style: italic;
+}
+.checkout .cart-table .ship-text {
+  color: #ff5722;
+}
+.checkout .cart-table .total-price > th,
+.checkout .cart-table .total-price > td {
+  font-size: 16px;
+  font-weight: bold;
+}
+.checkout .cart-table .total-price .price {
+  color: #ff5722;
+}
 .checkout-step-1 .control-label {
   padding-right: 0;
   font-weight: normal;
 }
 .checkout-group-8 .control-label {
+  padding-top: 0;
   margin-bottom: 10px;
 }
 .btn-checkout {
@@ -1071,6 +1151,13 @@ footer a {
   font-weight: bold;
   font-size: 16px;
 }
+.checkout-group-4 .default-dropdown {
+  width: 100% !important;
+  height: auto;
+}
+.checkout-group-4 .default-dropdown .dropdown-toggle {
+  width: 100%;
+}
 .city-2,
 .city-3 {
   width: 49%;
@@ -1088,8 +1175,31 @@ footer a {
 .city-3 {
   float: right;
 }
+.box-login {
+  margin-top: 150px;
+  padding-top: 10px;
+  border-top: 1px solid #dfdfdf;
+}
 .box-login .btn {
   width: 160px;
+}
+.checkout-box-2 .coupon-input {
+  width: 160px;
+}
+.box-cart {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.box-cart .table {
+  margin-bottom: 0;
+}
+.cart-change {
+  color: #4355a5;
+  border-color: #4355a5;
+  text-decoration: underline;
 }
 select.bs-select-hidden,
 select.selectpicker {
