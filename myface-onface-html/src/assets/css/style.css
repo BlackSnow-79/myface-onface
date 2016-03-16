@@ -1111,6 +1111,9 @@ footer a {
 .checkout .cart-table > tfoot > tr > td {
   text-align: right;
 }
+.checkout .cart-table thead {
+  border-bottom: 1px solid #dfdfdf;
+}
 .checkout .cart-table .ship-row > th {
   font-style: italic;
 }
