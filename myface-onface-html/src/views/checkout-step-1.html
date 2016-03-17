@@ -1,28 +1,28 @@
 {% extends "layout/_layout-checkout.html" %}
 {% block page-container %}
 <main class="container checkout-step-1">
-	<div class="col-xs-9">
+	<div class="col-xs-12 col-lg-9">
 		<div class="panel panel-default">
 		  <div class="panel-heading">Địa chỉ nhận hàng</div>
 		  <div class="panel-body">
 		    <div class="row">
-		    	<div class="col-xs-7 form-horizontal">
+		    	<div class="col-lg-7 form-horizontal">
 	    			<div class="form-group checkout-group-1">
-              <label for="" class="col-xs-4 control-label">Họ tên người nhận hàng</label>
+              <label for="" class="col-lg-4 control-label">Họ tên người nhận hàng</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="form-group checkout-group-2">
-              <label for="" class="col-xs-4 control-label">Số điện thoại</label>
+              <label for="" class="col-lg-4 control-label">Số điện thoại</label>
               <div class="col-sm-8">
                 <input type="tel" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="form-group checkout-group-3">
-              <label for="" class="col-xs-4 control-label">Email</label>
+              <label for="" class="col-lg-4 control-label">Email</label>
               <div class="col-sm-8">
                 <input type="email" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
@@ -30,7 +30,7 @@
             </div>
             <div class="divider"></div>
             <div class="form-group checkout-group-4">
-              <label for="" class="col-xs-4 control-label">Tỉnh/Thành phố</label>
+              <label for="" class="col-lg-4 control-label">Tỉnh/Thành phố</label>
               <div class="col-sm-8">
                 <select class="selectpicker default-dropdown">
                   <option>Hồ Chí Minh</option>
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="form-group checkout-group-5">
-              <label for="" class="col-xs-4 control-label">Quận/Huyện-Phường/Xã</label>
+              <label for="" class="col-lg-4 control-label">Quận/Huyện-Phường/Xã</label>
               <div class="col-sm-8">
               	<div class="city-2">
 									<select class="selectpicker default-dropdown">
@@ -62,21 +62,21 @@
               </div>
             </div>
             <div class="form-group checkout-group-6">
-              <label for="" class="col-xs-4 control-label">Tên đường/Phố</label>
+              <label for="" class="col-lg-4 control-label">Tên đường/Phố</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="form-group checkout-group-7">
-              <label for="" class="col-xs-4 control-label">Số nhà/Ngõ/Ngách/Hẽm</label>
+              <label for="" class="col-lg-4 control-label">Số nhà/Ngõ/Ngách/Hẽm</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="divider"></div>
-            <div class="col-xs-12">
+            <div class="col-lg-12">
 	            <div class="form-group checkout-group-8">
 	              <label for="" class="control-label">Bạn cần Shop lưu ý điều gì khi giao hàng không?</label>
 	              <textarea class="form-control" rows="4"></textarea>
@@ -84,14 +84,14 @@
 	          </div>
 		    	</div>
 
-		    	<div class="col-xs-5">
+		    	<div class="col-lg-5">
 		    		<div class="box-tel">
 			    		<p>Hoặc bạn chỉ cần để lại <strong>số điện thoại</strong>, Shop sẽ liên hệ lấy thông tin giao hàng sớm nhất.</p>
-			    		<p class="note">(Qui trình xử lý đơn hàng sẽ chậm hơn một chút)</p>
+			    		<p class="note">(Qui trình xử lý đơn hàng sẽ <span class="note-span">chậm</span> hơn một chút)</p>
 			    		<input type="text" class="form-control" placeholder="Nhập số  điện thoại - ví dụ: 0902389789">
 			    	</div>
 		    		<div class="box-login">
-		    			<p class="row-login-1">Nếu bạn thích trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
+		    			<p class="row-login-1">Nếu bạn <span class="note-span">thích</span> trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
 		    			<p class="row-login-2"><a class="btn btn-secondary btn-login" href="login.html">Đăng nhập</a><p>
 		    			<p class="row-login-3">
 		    				<a class="btn btn-secondary btn-register" href="register.html">Đăng ký tài khoản</a>
@@ -103,7 +103,7 @@
 		  </div>
 		</div>
 	</div>
-	<div class="col-xs-3">
+	<div class="col-xs-12 col-lg-3">
 		<div class="box checkout-box-1">
 			<p>Đơn hàng của bạn cần trên <strong>150.000</strong>đ để được <strong>miễn phí</strong> vận chuyển tại TP.HCM, Hà Nội.</p>
 			<span>(trên <strong>300.000</strong>đ đối với Tỉnh/Thành khác)</span>
@@ -115,50 +115,60 @@
 				<input type="submit" class="btn-secondary form-control" value="Áp dụng">
 			</div>
 		</div>
+		<!--box-cart-->
 		<div class="box-cart">
-			<div class="table-responsive">
-	      <table class="table cart-table">
-		      <thead>
-		        <tr class="cart-title">
-		          <th>
-		          	<label>Đơn hàng</label>
-		          	<p class="cart-amount">(<span>03</span> sản phẩm)</p>
-		          </th>
-		          <td>
-		          	<a class="cart-change" href="#">Thay đổi</a>
-		          </td>
-		        </tr>	
-		      </thead>
-	        <tbody>
-	        	{% for x in [1,2,3] %}
-	        	<tr class="product">
-		          <th><span class="amount">01 x</span> <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span></th>
-		          <td><span class="price">- 35.000<sup>đ</sup></span></td>
-		        </tr>
-		        {% endfor %}
-		        <tr class="cart-footer">
-		          <th>Tạm tính:</th>
-		          <td><span class="price">1.435.000<sup>đ</sup></span></td>
-		        </tr>
-		        <tr class="cart-footer">
-		          <th>Mã giảm giá:</th>
-		          <td><span class="price">- 35.000<sup>đ</sup></span></td>
-		        </tr>
-		        <tr class="cart-footer ship-row">
-		          <th>Phí vận chuyển</th>
-		          <td><span class="ship-text">Miễn phí</span></td>
-		        </tr>
-		      </tbody>
-		      <tfoot>
-		        <tr class="total-price">
-		          <th>Tổng cộng</th>
-		          <td><span class="price">1.435.000<sup>đ</sup></span></td>
-		        </tr>
-		      </tfoot>
-	      </table>
-	      <button type="submit" class="btn btn-primary btn-checkout">Tiếp tục</button>
-	    </div>
-		</div>
+			<div class="cart-table">
+				<div class="cart-header">
+	      	<div class="cart-row">
+	          <div class="cart-left">
+	          	<label>Đơn hàng</label>
+	          	<p class="cart-amount">(<span>03</span> sản phẩm)</p>
+	          </div>
+	          <div class="cart-right">
+	          	<a class="cart-change" href="#">Thay đổi</a>
+	          </div>
+	        </div>
+	      </div><!--/.cart-header-->
+        <div class="cart-product">
+        	{% for x in [1,2,3] %}
+        	<div class="cart-row">
+	          <div class="cart-left">
+	          	<span class="amount">01 x</span> 
+	          	<span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span>
+	          </div>
+	          <div class="cart-right">
+	          	<span class="price">1.435.000<sup>đ</sup></span>
+	          </div>
+	        </div>
+        	{% endfor %}
+	      </div><!--/.cart-product-->
+	      <div class="cart-body">
+	        <div class="cart-row sub-price">
+	          <div class="cart-left">Tạm tính:</div>
+	          <div class="cart-right"><span class="price">1.435.000<sup>đ</sup></span></div>
+	        </div>
+	        <div class="cart-row">
+	          <div class="cart-left">Mã giảm giá:</div>
+	          <div class="cart-right"><span class="price">- 35.000<sup>đ</sup></span></div>
+	        </div>
+	        <div class="cart-row ship-row">
+	          <div class="cart-left">Phí vận chuyển</div>
+	          <div class="cart-right"><span class="ship-text">Miễn phí</span></div>
+	        </div>
+	      </div><!--/.cart-body-->
+	      <div class="cart-footer">
+	        <div class="cart-row total-price">
+	          <div class="cart-left">Tổng cộng:</div>
+	          <div class="cart-right">
+	          	<span class="price">1.435.000<sup>đ</sup></span>
+	          </div>
+	        </div>
+	      </div><!--/.cart-footer-->
+        <div class="btn-checkout">
+					<button type="submit" class="btn btn-primary">Tiếp tục <i class="fa fa-angle-right"></i></button>
+				</div>
+      </div>
+		</div><!--/.box-cart-->
 	</div>
 </main>
 {% endblock %}
