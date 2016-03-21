@@ -95,7 +95,7 @@ img {
 .box {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
-  padding: 15px 10px;
+  padding: 10px 10px 15px;
   margin-bottom: 15px;
 }
 .page-margin-bottom {
@@ -340,6 +340,30 @@ img {
 .form-inline-group .form-group .form-control {
   min-width: auto;
   width: 100%;
+}
+.color-radio > label {
+  padding-left: 22px;
+}
+.color-radio input[type=radio] {
+  visibility: hidden;
+}
+.color-radio span:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #727272;
+  font-size: 18px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.color-radio input + span:before {
+  content: "\f1db";
+}
+.color-radio input:checked + span:before {
+  content: "\f058";
+  color: #ff5722;
+}
+.color-radio input:hover + span:before {
+  color: #ff5722;
 }
 /*
  * Component: Table
@@ -1044,6 +1068,9 @@ footer a {
 .checkout .container {
   padding: 0;
 }
+.checkout .checkout-step-3 {
+  padding-top: 40px;
+}
 .checkout header {
   height: 70px;
   overflow: hidden;
@@ -1054,9 +1081,13 @@ footer a {
   position: relative;
   padding-left: 30px;
 }
+.checkout header .shop-logo:hover:before {
+  color: #4355a5;
+}
 .checkout header .shop-logo:before {
   content: "\f104";
   font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
   width: 15px;
   text-align: left;
   color: #ff5722;
@@ -1066,13 +1097,14 @@ footer a {
 }
 .checkout header .shop-logo a {
   display: block;
-  padding: 23px 0;
+  padding: 20px 0;
 }
 .checkout header .logo-text {
-  font-size: 26px;
+  font-size: 27px;
   font-weight: bold;
+  margin: 0;
   color: #4355a5;
-  display: none;
+  word-spacing: 2px;
 }
 .checkout .divider {
   border-style: dashed;
@@ -1088,6 +1120,9 @@ footer a {
 .checkout-step-1 .control-label {
   padding-right: 0;
   font-weight: normal;
+}
+.checkout-step-1 textarea {
+  resize: none;
 }
 .checkout-group-8 .control-label {
   padding-top: 0;
@@ -1150,7 +1185,7 @@ footer a {
   border-top: 1px solid #dfdfdf;
 }
 .box-login .btn {
-  width: 160px;
+  width: 155px;
 }
 .checkout-box-2 .coupon-input {
   width: 160px;
@@ -1158,7 +1193,7 @@ footer a {
 .box-cart {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
-  padding: 15px 10px;
+  padding: 10px 10px 15px;
   margin-bottom: 15px;
   padding: 0;
 }
@@ -1273,6 +1308,7 @@ footer a {
 }
 .btn-pay {
   width: 240px;
+  margin-top: 15px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -1280,10 +1316,79 @@ footer a {
   margin-left: 5px;
   font-size: 20px;
 }
+.pay-form .radio {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.pay-form .radio:first-child {
+  margin-top: 4px;
+}
+.pay-form .radio label {
+  display: table-cell;
+}
+.pay-form .radio label ma input {
+  margin-top: 6px;
+}
+.pay-form .radio label img {
+  width: 46px;
+  height: 32px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
 .step-3-block {
+  position: relative;
   width: 100%;
   display: table;
-  padding: 0 10px;
+  padding: 0 15px 0 30px;
+}
+.step-3-block .step-block-title {
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.step-3-block .step-block-title > span {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  color: #3ac562;
+}
+.step-3-block .invoice-number {
+  font-size: 16px;
+  color: #3ac562;
+  font-weight: 500;
+}
+.step-3-block.st-bl-1 > p {
+  margin-bottom: 0;
+}
+.step-3-block.st-bl-1 + .divider {
+  margin-top: 15px;
+}
+.step-3-block.st-bl-3 {
+  color: #4355a5;
+  font-size: 18px;
+}
+.step-3-block.st-bl-3 .backshop-btn {
+  color: #4355a5;
+  position: relative;
+}
+.step-3-block.st-bl-3 .backshop-btn i {
+  position: absolute;
+  top: 2px;
+  left: 100%;
+  color: #ff5722;
+  margin-left: 10px;
+  font-size: 22px;
+}
+.step-3-block.st-bl-3 .backshop-btn:hover {
+  color: #ff5722;
+}
+.step-3-block.st-bl-3 .backshop-btn:hover .shop-name {
+  color: #ff5722;
+}
+.step-3-block .shop-name {
+  color: #4355a5;
+  font-weight: bold;
 }
 select.bs-select-hidden,
 select.selectpicker {

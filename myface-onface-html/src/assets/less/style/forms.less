@@ -119,3 +119,33 @@
     }
   }
 }
+
+//radio-button
+.color-radio {
+  > label {
+    padding-left: 22px;
+  }
+  input[type=radio] {
+    visibility: hidden;
+  }
+  span {
+    &:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      color: @text-color-2;    
+      font-size: 18px;
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+  input + span:before {
+    content: "\f1db";
+  }
+  input:checked + span:before {
+    content: "\f058";
+    color: @primary-color;
+  }
+  input:hover + span:before {
+    color: @primary-color; 
+  }
+}  
