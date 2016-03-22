@@ -1,6 +1,133 @@
 {% extends "layout/_layout-checkout.html" %}
+{% block header%}
+<header>
+	<div class="container">
+		<div class="col-xs-12 col-sm-6 col-lg-3 shop-logo">
+			<a href="#" title="DW Secret Saigon">
+				<h1 class="logo-text">DW Secret Saigon</h1>
+			</a>
+		</div>
+		<!--checkout-process-->
+		<div class="col-xs-12 col-lg-6 checkout-process">
+		</div><!--/.checkout-process-->
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="row hotline">
+				<span class="hotline-text">Hotline hỗ trợ:<a class="hotline-number" href="tel:+1900636099">1900 636 099</a></span>
+				<span class="note">(08-18h, T2-T7)</span>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
 {% block page-container %}
 <main class="container cart">
-	Giỏ hàng
+	<div class="col-xs-12 col-lg-9">
+		<div class="panel panel-default">
+		  <div class="panel-heading">Giỏ hàng của bạn <span class="amount">(Đang có<span class="orange-text">03</span> sản phẩm)</span></div>
+		  <div class="panel-body">
+		  	<table class="table table-nopadding invoice-table">
+          <thead>
+            <tr>
+              <th class="col-xs-8 text-left">Sản phẩm</th>
+              <th class="col-xs-2 text-center">Số lượng</th>
+              <th class="col-xs-2 text-right">Giá tiền</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="item">
+                  <div class="product-img">
+                    <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                    <span href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <select class="selectpicker select-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
+              </td>
+              <td class="text-right">
+                <span class="price">1.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="item">
+                  <div class="product-img">
+                    <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                    <span href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <select class="selectpicker select-amount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
+              </td>
+              <td class="text-right">
+                <span class="price">1.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td class="text-center">
+                <span class="invoice-price-label">Tổng cộng:</span>
+              </td>
+              <td class="text-right">
+                <span class="price orange-text">11.350.000<sup>đ</sup></span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+		  </div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-lg-3">
+		<div class="box checkout-box-1">
+			<p>Đơn hàng của bạn cần trên <strong>150.000</strong>đ để được <strong>miễn phí</strong> vận chuyển tại TP.HCM, Hà Nội.</p>
+			<span>(trên <strong>300.000</strong>đ đối với Tỉnh/Thành khác)</span>
+		</div>
+		<!--box-cart-->
+		<div class="box-cart">
+			<div class="cart-table">
+	      <div class="cart-body">
+	        <div class="cart-row sub-price">
+	          <div class="cart-left">Tạm tính:</div>
+	          <div class="cart-right"><span class="price">1.435.000<sup>đ</sup></span></div>
+	        </div>
+	        <div class="cart-row ship-row">
+	          <div class="cart-left">Phí vận chuyển</div>
+	          <div class="cart-right"><span class="ship-text">Miễn phí</span></div>
+	        </div>
+	      </div><!--/.cart-body-->
+	      <div class="cart-footer">
+	        <div class="cart-row total-price">
+	          <div class="cart-left">Tổng cộng:</div>
+	          <div class="cart-right">
+	          	<span class="price">1.435.000<sup>đ</sup></span>
+	          </div>
+	        </div>
+	      </div><!--/.cart-footer-->
+        <div class="btn-checkout">
+					<button type="submit" class="btn btn-primary">Đặt hàng <i class="fa fa-angle-right"></i></button>
+				</div>
+      </div>
+		</div><!--/.box-cart-->
+		<p class="cart-back-box"><a class="cart-back-btn" href="#">Mua thêm sản phẩm khác</a></p>
+	</div>
 </main>
 {% endblock %}
