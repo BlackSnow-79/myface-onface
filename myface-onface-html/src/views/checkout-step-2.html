@@ -1,4 +1,30 @@
 {% extends "layout/_layout-checkout.html" %}
+{% block header%}
+<header>
+	<div class="container">
+		<div class="col-xs-12 col-sm-6 col-lg-3 shop-logo">
+			<a href="#" title="DW Secret Saigon">
+				<h1 class="logo-text">DW Secret Saigon</h1>
+			</a>
+		</div>
+		<!--checkout-process-->
+		<div class="col-xs-12 col-lg-6 checkout-process">
+			<ul class="progressbar">
+				<li class="completed">Địa chỉ nhận hàng</li>
+				<li class="active">Thông tin thanh toán</li>
+				<li>Đặt hàng - xong</li>
+			</ul>
+		</div><!--/.checkout-process-->
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="row hotline">
+				<span class="hotline-text">Hotline hỗ trợ:<a class="hotline-number" href="tel:+1900636099">1900 636 099</a></span>
+				<span class="note">(08-18h, T2-T7)</span>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+<!--checkout-process-->
 {% block page-container %}
 <main class="container checkout-step-2">
 	<div class="col-xs-12 col-lg-9">
