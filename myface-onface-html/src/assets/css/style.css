@@ -94,7 +94,7 @@ img {
 }
 .box {
   border: 1px solid #dfdfdf;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 10px 10px 15px;
   margin-bottom: 15px;
 }
@@ -255,6 +255,7 @@ img {
  * ---------------
  */
 .form-control {
+  padding: 6px 8px;
   border-radius: 3px;
   box-shadow: none;
   border-color: #dfdfdf;
@@ -263,11 +264,20 @@ img {
   border-color: #82dafe;
   box-shadow: none;
 }
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
+.form-control::-moz-placeholder {
+  color: #727272;
+  font-style: italic;
+  opacity: 0.7;
+}
+.form-control:-ms-input-placeholder {
+  color: #727272;
+  font-style: italic;
+  opacity: 0.7;
+}
 .form-control::-webkit-input-placeholder {
-  color: #bbb;
-  opacity: 1;
+  color: #727272;
+  font-style: italic;
+  opacity: 0.7;
 }
 .form-control:not(select) {
   -webkit-appearance: none;
@@ -689,7 +699,7 @@ img {
 .modal-secondary .modal-content {
   -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
   border-color: transparent;
 }
 .modal-secondary .modal-header {
@@ -731,6 +741,61 @@ img {
   color: #212121;
   background-color: #dde0ef;
   border-color: #dde0ef;
+}
+/*progressbar*/
+.checkout-process {
+  padding: 40px 15px 0;
+}
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style-type: none;
+  color: #727272;
+  text-align: center;
+  width: auto;
+  padding: 0 40px;
+  float: left;
+  position: relative;
+}
+.progressbar li:before {
+  content: '';
+  width: 24px;
+  height: 27px;
+  background: url('../images/icons/c-cart.png') no-repeat;
+  position: absolute;
+  left: 50%;
+  top: -23px;
+  margin-left: -6px;
+  display: none;
+}
+.progressbar li:after {
+  content: '';
+  height: 1px;
+  background: #ebebeb;
+  position: absolute;
+  left: -40px;
+  right: -40px;
+  top: -10px;
+  z-index: -1;
+}
+.progressbar li:first-child {
+  padding: 0;
+}
+.progressbar li:first-child:after {
+  left: 0;
+}
+.progressbar li:last-child {
+  padding: 0;
+}
+.progressbar li.active {
+  color: #3ac562;
+}
+.progressbar li.active:before {
+  display: block;
+}
+.progressbar li.active:after {
+  background: #3ac562;
 }
 footer {
   width: 100%;
@@ -1192,7 +1257,7 @@ footer a {
 }
 .box-cart {
   border: 1px solid #dfdfdf;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 10px 10px 15px;
   margin-bottom: 15px;
   padding: 0;

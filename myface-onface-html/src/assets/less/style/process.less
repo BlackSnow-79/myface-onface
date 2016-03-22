@@ -1,0 +1,57 @@
+/*progressbar*/
+.checkout-process {
+	padding: 40px 15px 0;
+}
+.progressbar {
+	counter-reset: step;
+	li {
+		list-style-type: none;
+		color: @text-color-2;
+		text-align: center;
+		width: auto;
+		padding: 0 40px;
+		float: left;
+		position: relative;	
+		&:before {
+			content: '';
+			width: 24px;
+			height: 27px;
+			background: url('../images/icons/c-cart.png') no-repeat;
+			position: absolute;
+			left: 50%;
+			top: -23px;
+			margin-left: -6px;
+			display: none;
+		}
+		&:after {
+			content: '';
+			height: 1px;
+			background: @line-color-2;
+			position: absolute;
+			left: -40px;
+			right: -40px;
+			top: -10px;
+			z-index: -1;
+		}
+		&:first-child {
+			padding: 0;
+			&:after {
+				left: 0
+			}
+		}
+		&:last-child {
+			padding: 0;
+			&:after {
+			}
+		}
+		&.active {
+			color: @green;
+			&:before {
+				display: block;
+			}
+			&:after {
+				background: @green;
+			}
+		}
+	}
+}

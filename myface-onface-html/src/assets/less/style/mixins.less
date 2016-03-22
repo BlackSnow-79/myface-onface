@@ -33,3 +33,21 @@
   @start);
   filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
+.placeholder(@color, @font-style, @opacity) {
+  // Firefox
+  &::-moz-placeholder {
+    color: @color;
+    font-style: @font-style;
+    opacity: @opacity; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder {
+    color: @color; 
+    font-style: @font-style;
+    opacity: @opacity;
+  } // Internet Explorer 10+
+  &::-webkit-input-placeholder  {
+    color: @color; 
+    font-style: @font-style;
+    opacity: @opacity;
+  } // Safari and Chrome
+}
