@@ -1670,6 +1670,9 @@ footer a {
 .cart-back-btn:hover i {
   color: #4355a5;
 }
+.cart-emty {
+  text-align: center;
+}
 select.bs-select-hidden,
 select.selectpicker {
   display: none !important;
