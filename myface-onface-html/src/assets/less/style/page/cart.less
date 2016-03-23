@@ -1,9 +1,129 @@
+.gift {
+	&:before {
+    content: "-";
+    display: block;
+    line-height: 5px;
+    color: transparent;
+	}
+	.item {
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+	tr {
+		td {
+			position: relative;
+			@g-br: 1px dashed @green;
+			border-top: @g-br;
+			border-bottom: @g-br;
+			&:first-child{
+				border-radius: 4px 0 0 4px;
+				border-left: @g-br;
+			}
+			&:last-child {
+				border-radius: 0 4px 4px 0;
+				border-right: @g-br;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+.gift-icon {
+	width: 36px;
+	height: 32px;
+	display: block;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	background-color: transparent;
+	background: url('../images/icons/gift.png') no-repeat;
+}
 .cart {
+	min-width: 480px;
 	.amount {
 		font-weight: normal;
+		font-size: 13px;
 	}
 	.orange-text {
 		font-weight: bold;
+	}
+	.invoice-table {
+		margin-top: -15px;
+		border-collapse: separate;
+		border-spacing: 0 5px;
+		tbody {
+			tr {
+				td {
+					vertical-align: top;
+					border-bottom: 0;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					line-height: 1.3;
+					&:last-child {
+						font-weight: bold;
+					}
+				}
+				&:first-child {
+					td {
+					border-top: 0;
+					}
+				}
+			}
+			&.gift {
+				.gift;
+			}
+		}
+		> tbody + tbody {
+			border-top: 0;
+		}
+		.product-info {
+			> span {
+				display: block;
+			}
+			.product-title {
+				margin-bottom: 6px;
+			}
+			.gift-span {
+				color: @green;
+			}
+			.property-value {
+				color: @secondary-color;
+			}
+		}
+	}
+	.invoice-remove {
+    margin-top: 10px;
+		span {
+	    text-decoration: none;
+	    font-size: 14px;
+		}
+	}
+	.disable-amount {
+		min-width: auto;
+	  width: 65px !important;
+	  height: 34px;
+	  opacity: 1 !important;
+	  background-color: @bg-color-2;
+	  color: @text-color-1;
+	  border-color: @line-color-1;
+	}
+	.amount-dropdown {
+		width: 65px !important;
+		height: 34px;
+	}
+	.cart-table {
+		.cart-body {
+			border-top: 0;
+			padding-top: 5px;
+			.ship-row {
+				.cart-left,
+				.cart-right {
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+	.btn-checkout {
+		margin-top: 10px;
 	}
 }
 .cart-back-box {
@@ -11,5 +131,20 @@
 }
 .cart-back-btn {
 	text-align: center;
+	text-decoration: underline;
+	position: relative;
 	.footer-link-1;
+	i {
+		position: absolute;
+    left: 100%;
+    top: 1px;
+    margin-left: 10px;
+    color: @primary-color;
+    font-size: 18px;
+	}
+	&:hover {
+		i {
+			color: @secondary-color;
+		}
+	}
 }

@@ -23,27 +23,67 @@
 <main class="container cart">
 	<div class="col-xs-12 col-lg-9">
 		<div class="panel panel-default">
-		  <div class="panel-heading">Giỏ hàng của bạn <span class="amount">(Đang có<span class="orange-text">03</span> sản phẩm)</span></div>
+		  <div class="panel-heading">Giỏ hàng của bạn <span class="amount">(Đang có<span class="orange-text"> 03</span> sản phẩm)</span></div>
 		  <div class="panel-body">
 		  	<table class="table table-nopadding invoice-table">
           <thead>
             <tr>
-              <th class="col-xs-8 text-left">Sản phẩm</th>
-              <th class="col-xs-2 text-center">Số lượng</th>
-              <th class="col-xs-2 text-right">Giá tiền</th>
+              <th class="col-xs-5 text-left">Sản phẩm</th>
+              <th class="col-xs-2 text-center">Giá tiền</th>
+              <th class="col-xs-3 text-center">Số lượng</th>
+              <th class="col-xs-1 text-right">Thành tiền</th>
             </tr>
           </thead>
-          <tbody>
+          <!--gift-->
+          <tbody class="gift"> 
+          	{% for x in [1,2] %} 
+          	<tr>
+              <td>
+              	<span class="gift-icon"></span>
+                <div class="item">
+                  <div class="product-img">
+                    <img src="assets/images/upload/product/product-4.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                  	<span class="gift-span">[ Quà tặng]</span>
+                    <span class="product-title">Tai nghe siêu chất lượng Sennheiser HD229 Màu Đen</span>
+                    <span class="property">Màu: 
+                    	<span class="property-value">Đen</span>, Size: 
+                    	<span class="property-value">S</span>
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">
+                <span class="price">1.350.000<sup>đ</sup></span>
+              </td>
+              <td class="text-center">
+                <input class="btn disable-amount" value="1" disabled="">
+              </td>
+              <td class="text-right">
+                <span class="price">0<sup>đ</sup></span>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody><!--/.gift--> 
+          <tbody> 
             <tr>
               <td>
                 <div class="item">
                   <div class="product-img">
-                    <img src="assets/images/upload/product/product-2.jpg" alt="myface">
+                    <img src="assets/images/upload/product/product-4.jpg" alt="myface">
                   </div>
                   <div class="product-info">
-                    <span href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                    <span class="product-title">Tai nghe Sennheiser HD229 Đen</span>
+                    <span class="property">Màu: 
+                    	<span class="property-value">Đen</span>, Size: 
+                    	<span class="property-value">S</span>
+                    </span>
                   </div>
                 </div>
+              </td>
+              <td class="text-center">
+                <span class="price">1.350.000<sup>đ</sup></span>
               </td>
               <td class="text-center">
                 <select class="selectpicker select-amount">
@@ -64,9 +104,16 @@
                     <img src="assets/images/upload/product/product-2.jpg" alt="myface">
                   </div>
                   <div class="product-info">
-                    <span href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                    <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                    <span class="property">Màu: 
+                    	<span class="property-value">Đen</span>, Size: 
+                    	<span class="property-value">S</span>
+                    </span>
                   </div>
                 </div>
+              </td>
+              <td class="text-center">
+                <span class="price">1.350.000<sup>đ</sup></span>
               </td>
               <td class="text-center">
                 <select class="selectpicker select-amount">
@@ -81,17 +128,6 @@
               </td>
             </tr>
           </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td class="text-center">
-                <span class="invoice-price-label">Tổng cộng:</span>
-              </td>
-              <td class="text-right">
-                <span class="price orange-text">11.350.000<sup>đ</sup></span>
-              </td>
-            </tr>
-          </tfoot>
         </table>
 		  </div>
 		</div>
@@ -111,7 +147,7 @@
 	        </div>
 	        <div class="cart-row ship-row">
 	          <div class="cart-left">Phí vận chuyển</div>
-	          <div class="cart-right"><span class="ship-text">Miễn phí</span></div>
+	          <div class="cart-right"><span class="ship-text">Chưa có</span></div>
 	        </div>
 	      </div><!--/.cart-body-->
 	      <div class="cart-footer">
@@ -127,7 +163,7 @@
 				</div>
       </div>
 		</div><!--/.box-cart-->
-		<p class="cart-back-box"><a class="cart-back-btn" href="#">Mua thêm sản phẩm khác</a></p>
+		<p class="cart-back-box"><a class="cart-back-btn" href="myface-shop.html">Mua thêm sản phẩm khác <i class="fa fa-angle-right"></i></a></p>
 	</div>
 </main>
 {% endblock %}
