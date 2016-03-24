@@ -1233,6 +1233,27 @@ footer a {
     padding-right: 25px;
   }
 }
+.checkout-group-1 .rg-group-1-1 {
+  width: 22%;
+  float: left;
+}
+.checkout-group-1 .rg-group-1-1 .btn,
+.checkout-group-1 .rg-group-1-1 .default-dropdown {
+  min-width: auto;
+  height: auto;
+}
+.checkout-group-1 .rg-group-1-1 .btn.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn),
+.checkout-group-1 .rg-group-1-1 .default-dropdown.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+}
+.checkout-group-1 .rg-group-1-1 .btn .dropdown-toggle,
+.checkout-group-1 .rg-group-1-1 .default-dropdown .dropdown-toggle {
+  width: 100%;
+}
+.checkout-group-1 .rg-group-1-2 {
+  width: 76%;
+  float: right;
+}
 .checkout-group-8 .control-label {
   padding-top: 0;
   margin-bottom: 10px;
