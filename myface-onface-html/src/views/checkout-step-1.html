@@ -4,25 +4,25 @@
 	<div class="col-xs-12 col-lg-9">
 		<div class="panel panel-default">
 		  <div class="panel-heading">Địa chỉ nhận hàng</div>
-		  <div class="panel-body">
+		  <div class="panel-body form-horizontal">
 		    <div class="row">
-		    	<div class="col-lg-7 form-horizontal">
+		    	<div class="col-md-7">
 	    			<div class="form-group checkout-group-1">
-              <label for="" class="col-lg-4 control-label">Họ tên người nhận hàng</label>
+              <label for="" class="col-sm-4 control-label">Họ tên người nhận hàng</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
-            <div class="form-group checkout-group-2">
-              <label for="" class="col-lg-4 control-label">Số điện thoại</label>
+            <div class="form-group checkouta-group-2">
+              <label for="" class="col-sm-4 control-label">Số điện thoại</label>
               <div class="col-sm-8">
                 <input type="tel" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="form-group checkout-group-3">
-              <label for="" class="col-lg-4 control-label">Email</label>
+              <label for="" class="col-sm-4 control-label">Email</label>
               <div class="col-sm-8">
                 <input type="email" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
@@ -30,7 +30,7 @@
             </div>
             <div class="divider"></div>
             <div class="form-group checkout-group-4">
-              <label for="" class="col-lg-4 control-label">Tỉnh/Thành phố</label>
+              <label for="" class="col-sm-4 control-label">Tỉnh/Thành phố</label>
               <div class="col-sm-8">
                 <select class="selectpicker default-dropdown">
                   <option>Hồ Chí Minh</option>
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="form-group checkout-group-5">
-              <label for="" class="col-lg-4 control-label">Quận/Huyện-Phường/Xã</label>
+              <label for="" class="col-sm-4 control-label">Quận/Huyện-Phường/Xã</label>
               <div class="col-sm-8">
               	<div class="city-2">
 									<select class="selectpicker default-dropdown">
@@ -62,14 +62,14 @@
               </div>
             </div>
             <div class="form-group checkout-group-6">
-              <label for="" class="col-lg-4 control-label">Tên đường/Phố</label>
+              <label for="" class="col-sm-4 control-label">Tên đường/Phố</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
               </div>
             </div>
             <div class="form-group checkout-group-7">
-              <label for="" class="col-lg-4 control-label">Số nhà/Ngõ/Ngách/Hẽm</label>
+              <label for="" class="col-sm-4 control-label">Số nhà/Ngõ/Ngách/Hẽm</label>
               <div class="col-sm-8">
                 <input type="text" class="form-control">
                 <label for="" class="error">Vui lòng nhập đủ thông tin</label>
@@ -84,19 +84,134 @@
 	          </div>
 		    	</div>
 
-		    	<div class="col-lg-5">
+		    	<div class="col-md-5">
 		    		<div class="box-tel">
 			    		<p>Hoặc bạn chỉ cần để lại <strong>số điện thoại</strong>, Shop sẽ liên hệ lấy thông tin giao hàng sớm nhất.</p>
 			    		<p class="note">(Qui trình xử lý đơn hàng sẽ <span class="note-span">chậm</span> hơn một chút)</p>
-			    		<input type="text" class="form-control" placeholder="Nhập số  điện thoại - ví dụ: 0902389789">
+			    		<div class="form-group tel-group">
+	              <label for="" class="col-sm-5 control-label">Nhập số  điện thoại</label>
+	              <div class="col-sm-7">
+	                <input type="text" class="form-control" placeholder="Ví dụ: 0902389789">
+	                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	              </div>
+	            </div>
 			    	</div>
 		    		<div class="box-login">
 		    			<p class="row-login-1">Nếu bạn <span class="note-span">thích</span> trải nghiệm mua hàng lần sau <strong>đơn giản hơn</strong>, bạn nên đăng nhập/đăng ký tài khoản ngay bây giờ.</p>
-		    			<p class="row-login-2"><a class="btn btn-secondary btn-login" href="login.html">Đăng nhập</a><p>
+		    			<p class="row-login-2">
+		    				<button class="btn btn-secondary btn-login">Đăng nhập</button>
+		    			<p>
+		    			<!--login-form-->
+		    			<div class="box-log login-form">
+		    				<div class="divider mr-10"></div>
+		    				<label class="form-title">Đăng nhập</label>
+		    				<div class="login-form-inner">
+		    					<div class="form-group lg-group-1">
+			              <label for="" class="col-sm-4 control-label">Địa chỉ email</label>
+			              <div class="col-sm-8">
+			                <input type="email" class="form-control">
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+			              </div>
+			            </div>
+			            <div class="form-group lg-group-2">
+			              <label for="" class="col-sm-4 control-label">Mật khẩu</label>
+			              <div class="col-sm-8">
+			                <input type="password" class="form-control">
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+			              </div>
+			            </div>
+			            <div class="block">
+			            	<p class="remember-text"> <span><i class="fa fa-check-circle"></i> </span>Ghi nhớ tài khoản</p>
+			            </div>
+			            <div class="block">
+			            	<input type="submit" class="btn btn-secondary login-control" value="Đăng nhập">
+			            </div>
+			            <div class="block">
+			            	<a class="forget-text" href="#">Quên mật khẩu?</a>
+			            </div>
+			            <div class="divider mr-10"></div>
+		    				</div>
+		    			</div><!--./login-form-->
 		    			<p class="row-login-3">
-		    				<a class="btn btn-secondary btn-register" href="register.html">Đăng ký tài khoản</a>
+		    				<button class="btn btn-secondary btn-register">Đăng ký tài khoản</button>
 		    				<span class="note">(chỉ mất chưa tới 3 phút)</span>
 		    			</p>
+		    			<!--register-form-->
+		    			<div class="box-log register-form">
+		    				<div class="divider mr-10"></div>
+		    				<label class="form-title">Đăng ký tài khoản</label>
+		    				<div class="register-form-inner">
+		    					<div class="form-group rg-group-1">
+		    						<div class="rg-group-1-1">
+											<select class="selectpicker default-dropdown">
+			                  <option>Anh</option>
+			                  <option>Chị</option>
+			                </select>
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+										</div>
+										<div class="rg-group-1-2">
+											<input type="text" class="form-control" placeholder=" Họ tên người nhận hàng">
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+										</div>
+			            </div>
+			            <div class="form-group rg-group-2">
+			            	<input type="tel" class="form-control" placeholder="Số điện thoại">
+                		<label for="" class="error">Vui lòng nhập đủ thông tin</label>
+			            </div>
+		    					<div class="form-group rg-group-3">
+			              <input type="email" class="form-control" placeholder="Email">
+			              <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+			            </div>
+			            <div class="form-group rg-group-4">
+			              <input type="password" class="form-control" placeholder="Mật khẩu">
+			              <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+			            </div>
+			            <div class="divider"></div>
+			            <div class="form-group rg-group-5">
+		                <select class="selectpicker default-dropdown">
+		                	<option>Hồ Chí Minh</option>
+		                  <option>Hồ Chí Minh</option>
+		                  <option>Hà Nội</option>
+		                  <option>Đồng Nai</option>
+		                </select>
+		                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+		              </div>
+		              <div class="form-group rg-group-6">
+			              <div class="city-2">
+											<select class="selectpicker default-dropdown">
+			                  <option>Quận 1</option>
+			                  <option>Quận 2</option>
+			                  <option>Quận 3</option>
+			                </select>
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+										</div>
+										<div class="city-3">
+											<select class="selectpicker default-dropdown">
+			                  <option>Phường 1</option>
+			                  <option>Phường 2</option>
+			                  <option>Phường 3</option>
+			                </select>
+			                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+										</div>
+		              </div>
+		              <div class="form-group rg-group-7">
+		                <input type="text" class="form-control" placeholder="Tên đường/Phố">
+		                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+		              </div>
+		              <div class="form-group rg-group-8">
+		                <input type="text" class="form-control" placeholder="Số nhà/Ngõ/Ngách/Hẽm">
+		                <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+		              </div>
+		              <div class="divider"></div>
+		              <div class="form-group rg-group-9">
+			              <label for="" class="control-label">Bạn cần Shop lưu ý điều gì khi giao hàng không?</label>
+			              <textarea class="form-control" rows="4"></textarea>
+			            </div>
+			            <div class="block">
+			            	<input type="submit" class="btn btn-secondary register-control" value="Đăng ký tài khoản & giao hàng đến địa chỉ này">
+			            </div>
+		    				</div>
+		    			</div><!--./register-form-->
 		    		</div>
 		    	</div>
 		    </div>
@@ -110,9 +225,9 @@
 		</div>
 		<div class="box checkout-box-2">
 			<p>Nhập mã giảm giá của bạn (nếu có)</p>
-			<div class="form-inline">
+			<div class="coupon-group">
 				<input type="text" class="form-control coupon-input" placeholder="">
-				<input type="submit" class="btn-secondary form-control" value="Áp dụng">
+				<input type="submit" class="btn-secondary form-control coupon-btn" value="Áp dụng">
 			</div>
 		</div>
 		<!--box-cart-->

@@ -67,11 +67,25 @@
 	textarea {
 		resize: none;
 	}
+	.panel-body {
+		> .row {
+			>.col-md-7 {
+				@media (min-width: @screen-lg-min) {
+				  padding-right: 25px;
+				}
+			}
+		}
+	}
 }
 .checkout-group-8 {
 	.control-label {
 		padding-top: 0;
 		margin-bottom: 10px;
+	}
+}
+.tel-group {
+	.form-control {
+		.placeholder(@text-color-2, italic, 0.7);
 	}
 }
 .btn-checkout {
@@ -133,15 +147,26 @@
 	padding-top: 10px;
 	border-top: @border;
 	.btn {
-		width: 155px;
+		width: 180px;
 		@media (max-width: @screen-xs-max) {
 			width: 100%;
+			max-width: 325px;
 		}
 	}
 }
 .checkout-box-2 {
+	.coupon-group {
+		.block;
+		.coupon-input {
+			width: 70%;
+			float: left;
+		}
+		.coupon-btn {
+			width: 28%;
+			float: right;
+		}
+	}
 	.coupon-input {
-		width: 160px;
 		@media (max-width: @screen-sm-max) {
 			display: inline-block;
 		}
@@ -150,6 +175,11 @@
 		border-color: darken(@btn-color-2, 5%);
 		width: auto;
 		display: inline-block;
+	}
+}
+.tel-group {
+	> .col-sm-7 {
+		padding-left: 0;
 	}
 }
 .box-cart {
@@ -371,6 +401,114 @@
 		font-weight: bold;
 	}
 }
+.box-log {
+	width: 100%;
+	display: none;
+	&.login-form {
+		padding: 5px 0 30px;
+	}
+	.divider {
+		border-style: solid;
+		&.mr-10 {
+			margin: 10px 0;
+		}
+	}
+	.form-title {
+		width: 100%;
+		color: @secondary-color;
+		margin-bottom: 15px;
+	}
+	.remember-text {
+		float: right;
+		margin-bottom: 15px;
+		i {
+			color: @primary-color;
+		}
+	}
+	.forget-text {
+		float: right;
+		text-decoration: underline;
+		margin-bottom: 10px;
+		.note;		
+		font-size: 14px;
+		&:hover {
+			color: @link-hover-color;
+			text-decoration: none;
+		}
+	}
+	.login-control {
+		width: 250px;
+		float: right;
+		margin-bottom: 15px;
+		background-color: @secondary-color;
+		&:hover {
+			background-color: @secondary-color-lighter;
+			border-color: @secondary-color-lighter;
+		}
+	}
+	&.register-form {
+		padding: 15px 0 5px;
+		.form-group {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.register-control {
+		width: 100%;
+		background-color: @secondary-color;
+		&:hover {
+			background-color: @secondary-color-lighter;
+			border-color: @secondary-color-lighter;
+		}
+	}
+	.dropdown-toggle {
+		&.btn-default {
+			color: rgba(144, 144, 144, 0.8);
+			&:hover,
+			&:active,
+			&:focus {
+				color: #fff;
+			}
+		}
+  }
+  .rg-group-1 {
+  	.rg-group-1-1 {
+  		width: 20%;
+  		float: left;
+  		.btn,
+  		.default-dropdown {
+  			min-width: auto;
+  			&.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+					width: 100%;
+				}
+  			height: auto;
+  			.dropdown-toggle {
+  				width: 100%;
+  			}
+  		}
+  	}
+  	.rg-group-1-2 {
+  		width: 78%;
+  		float: right;
+  	}
+  }
+  .rg-group-5 {
+  	.default-dropdown {
+  		width: 100% !important;
+			.dropdown-toggle {
+			  width: 100%;
+			}
+		}
+  }
+  .rg-group-9 {
+  	margin-bottom: 20px;
+  	.control-label {
+	    padding-top: 0;
+	    margin-bottom: 10px;
+		}
+  }
+}
+
 @media (max-width: @screen-sm-max) {
   .checkout-process {
 		display: none;

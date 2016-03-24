@@ -20,7 +20,9 @@
 }
 .amount-dropdown {
 	min-width: auto;
-	width: 68px !important;
+	&.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: 68px;
+	}
   height: 40px;
   padding-left: 20px;
   background-color: transparent;
@@ -41,10 +43,17 @@
 		webkit-box-shadow: none;
     box-shadow: none;
 	}
+	&.dropdown-toggle {
+    .filter-option {
+    	text-align: center !important;
+    }
+  }
 }
 .default-dropdown {
 	.amount-dropdown();
 	min-width: 100px;
-	width: auto !important;
+	&.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: auto;
+	}
 	padding-left: 0;
 }
