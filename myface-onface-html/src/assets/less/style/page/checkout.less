@@ -104,11 +104,6 @@
 		margin-bottom: 10px;
 	}
 }
-.tel-group {
-	.form-control {
-		.placeholder(@text-color-2, italic, 0.7);
-	}
-}
 .btn-checkout {
 	width: 100%;
 	padding: 5px 10px 0;
@@ -198,9 +193,16 @@
 		display: inline-block;
 	}
 }
+
 .tel-group {
+	.form-control {
+		.placeholder(@text-color-2, italic, 0.7);
+	}
 	> .col-sm-7 {
+		@media (min-width: @screen-sm-max) {
+			
 		padding-left: 0;
+		}
 	}
 }
 .box-cart {
@@ -256,6 +258,17 @@
       font-size: 11px;
       font-family: Arial, sans-serif;
       padding-left: 0;
+      padding-right: 2px;
+      .gift-icon {
+      	width: 16px;
+      	height: 18px;
+      	position: relative;
+      	top: auto;
+      	left: auto;
+      	margin-right: 2px;
+      	display: inline-block;
+      	background: url('../images/icons/gift-2.png') no-repeat;
+      }
     }
     .cart-right {
     	padding-right: 0;
