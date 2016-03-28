@@ -1084,6 +1084,7 @@ footer a {
   border: 1px solid #e9eaed;
   font-family: Arial, sans-serif;
   font-size: 13px;
+  line-height: 1.4;
 }
 .product-onface h1,
 .product-onface h2,
@@ -1684,7 +1685,7 @@ footer a {
   padding-top: 0;
   margin-bottom: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .checkout-process {
     display: none;
   }
