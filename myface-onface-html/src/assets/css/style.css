@@ -647,38 +647,25 @@ img {
   text-align: center !important;
 }
 .default-dropdown {
-  min-width: auto;
-  height: 40px;
-  padding-left: 20px;
-  background-color: transparent;
-  color: #212121;
-  border-color: #dfdfdf;
-  min-width: 100px;
-  padding-left: 0;
-}
-.default-dropdown.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: 68px;
-}
-.default-dropdown .caret {
-  border-width: 0 !important;
+  width: 100%;
+  background: #fff;
   position: relative;
-  font: normal normal normal 14px/1 FontAwesome;
 }
-.default-dropdown .caret:before {
+.default-dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.default-dropdown select:-ms-expand {
+  display: none;
+}
+.default-dropdown:after {
+  font: normal normal normal 14px/1 FontAwesome;
   content: "\f107";
   position: absolute;
-  top: -6px;
-  right: 2px;
-}
-.btn-group.open .default-dropdown {
-  webkit-box-shadow: none;
-  box-shadow: none;
-}
-.default-dropdown.dropdown-toggle .filter-option {
-  text-align: center !important;
-}
-.default-dropdown.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: auto;
+  top: 10px;
+  right: 8px;
 }
 .pagination-page {
   text-align: center;
