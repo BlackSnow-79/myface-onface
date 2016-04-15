@@ -355,7 +355,8 @@ img {
 .color-radio > label {
   padding-left: 22px;
 }
-.color-radio input[type=radio] {
+.color-radio input[type=radio],
+.color-radio input[type=checkbox] {
   visibility: hidden;
 }
 .color-radio span:before {
@@ -690,6 +691,12 @@ img {
   color: #fff;
   background-color: #cbd6ec;
   border-color: #cbd6ec;
+}
+.modal-title {
+  color: #4355a5;
+}
+.modal-body {
+  color: #212121;
 }
 .modal-secondary {
   margin: 90px 0;
@@ -1600,10 +1607,14 @@ footer a {
 }
 .box-log .remember-text {
   float: right;
+  position: relative;
   margin-bottom: 15px;
 }
 .box-log .remember-text i {
   color: #ff5722;
+}
+.box-log .remember-text span:before {
+  top: 0;
 }
 .box-log .forget-text {
   float: right;

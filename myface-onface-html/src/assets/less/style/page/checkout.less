@@ -454,9 +454,15 @@
 	}
 	.remember-text {
 		float: right;
+		position: relative;
 		margin-bottom: 15px;
 		i {
 			color: @primary-color;
+		}
+		span {
+			&:before {
+				top: 0;
+			}
 		}
 	}
 	.forget-text {
