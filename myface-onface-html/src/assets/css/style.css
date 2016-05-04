@@ -99,6 +99,12 @@ img {
   padding: 10px 10px 15px;
   margin-bottom: 15px;
 }
+.full-width {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
 .page-margin-bottom {
   margin-bottom: 80px;
 }
@@ -1179,12 +1185,12 @@ footer a {
 }
 .checkout header .shop-logo {
   position: relative;
-  padding-left: 30px;
 }
-.checkout header .shop-logo:hover:before {
-  color: #4355a5;
+.checkout header .shop-logo a {
+  display: block;
+  padding: 20px 0 20px 15px;
 }
-.checkout header .shop-logo:before {
+.checkout header .shop-logo a:before {
   content: "\f104";
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 18px;
@@ -1193,11 +1199,10 @@ footer a {
   color: #ff5722;
   position: absolute;
   left: 15px;
-  top: 25px;
+  top: 29px;
 }
-.checkout header .shop-logo a {
-  display: block;
-  padding: 20px 0;
+.checkout header .shop-logo a:hover:before {
+  color: #4355a5;
 }
 .checkout header .logo-text {
   font-size: 27px;
@@ -1861,6 +1866,18 @@ footer a {
 }
 .cart-emty {
   text-align: center;
+}
+.m-product-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.m-product-list h2 {
+  font-size: 15px;
+}
+.m-product-img {
+  width: 100%;
 }
 select.bs-select-hidden,
 select.selectpicker {
