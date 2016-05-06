@@ -24,17 +24,85 @@ footer{
 	}
 	//footer myface-shop
 	&.main-footer {
+		color: #767676;
 		width: 100%;
+		line-height: 20px;
 		float: left;
 		margin-top: 30px;
 		.footer-row-1 {
 			padding: 30px 0;
 			border-top: @border;
 			border-bottom: @border;
+			.list-group {
+				list-style: none;
+				margin-bottom: 0;
+			}
+			.li-item {
+				padding: 3px 0; 
+				> a {
+					color: #767676;
+					&:hover {
+						color: @primary-color;
+					}
+					&.create-shop {
+						font-weight: 700;
+						color: @primary-color;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
 		}
 		.footer-row-2 {
 			margin: 20px auto 10px;
 			text-align: center;
+			line-height: 22px;
+			color: @text-color-1;
+			p {
+				margin-bottom: 0;
+			}
+		}
+		.f-title {
+			width: 100%;
+			margin-bottom: 10px;
+			display: block;
+			font-weight: 700;
+			font-size: 18px;
+			color: @text-color-1;
+		}
+		.f-block-1 {
+			font-size: 13px;
+			.f-title {
+				font-size: 13px;
+				margin-bottom: 0;
+			}
+		}
+		.f-block-2 {
+			.f-title {
+				font-size: 20px;
+				margin-bottom: 0;
+			}
+			.li-item {
+				> a {
+					&:hover {
+						.f-title {
+							color: @primary-color;
+						}
+					}
+				}
+			}
+		}
+		.f-phone {
+			line-height: 24px;
+		}
+		.f-bct {
+			> span {
+				display: inline-block;
+				&.bct {
+					margin-right: 20px;
+				}
+			}
 		}
 	}
 }

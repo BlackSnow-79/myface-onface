@@ -2,23 +2,29 @@
 {% block page-container %}
 <main class="container">
 	<!--wrap-banner-->
-	<div class="row wrap-banner">
-		<!--banner-left-->
-		<div class="col-md-9 banner-left">
-			<div class="banner-item banner-1">
-				<img src="assets/images/upload/banner/banner-2.jpg" alt="myface">
-			</div>
-		</div><!--/.banner-left-->
+	<div class="wrap-banner">
+		<div class="row">
+			<!--banner-left-->
+			<div class="col-md-9 banner-left">
+				<div class="banner-item banner-1">
+					<button class="arrow arrow-left" aria-label=""><span class="arrow-image"></span></button>
+						<div class="banner-1-inner">
+							<a href="#"><img src="assets/images/upload/banner/banner-2.jpg" alt="myface"></a>
+						</div>
+					<button class="arrow arrow-right" aria-label=""><span class="arrow-image"></span></button>
+				</div>
+			</div><!--/.banner-left-->
 
-		<!--banner-right-->
-		<div class="col-md-3 banner-right">
-			<div class="banner-item banner-2">
-				<img src="assets/images/upload/banner/banner-2.jpg" alt="myface">
-			</div><!--/.banner-2-->
-			<div class="banner-item banner-3">
-				<img src="assets/images/upload/banner/banner-2.jpg" alt="myface">
-			</div><!--/.banner-3-->
-		</div><!--/.banner-right-->
+			<!--banner-right-->
+			<div class="col-md-3 banner-right">
+				<div class="banner-item banner-2">
+					<a href="#"><img src="assets/images/upload/banner/banner-3.jpg" alt="myface"></a>
+				</div><!--/.banner-2-->
+				<div class="banner-item banner-3">
+					<a href="#"><img src="assets/images/upload/banner/banner-4.jpg" alt="myface"></a>
+				</div><!--/.banner-3-->
+			</div><!--/.banner-right-->
+		</div>
 	</div>
 	<!--tabs-bar-->
   <nav class="navbar tabs-bar">
@@ -52,100 +58,7 @@
   <!--wrap-product-->
   <div class="row wrap-product">
 	  <ol class="m-product-list">
-	  	{% for x in [1,2,3,4,5,7,8,9,10,11] %}  
-	  	<!--m-product-item-->
-	  	<li class="col-xs-12 col-sm-4 col-md-3 m-product-item">
-	  		<div class="m-product-inner">
-		  		<div class="m-product-info">
-		  			<a class="m-product-link" href="#">
-		  				<figure class="m-product-img">
-								<img class="" src="assets/images/upload/product/product-5.jpg" alt="myface">		
-							</figure>
-							<div class="m-product-hover">
-								<h2 class="m-product-name">Áo thun Jeanswest bêđê hồng</h2>
-								<p class="m-product-description">Áo thun jeanswest màu trắng hồng bêdê. Kiểu dáng đẹp, ôm bó sát người. Đặc biệt bên trong có lớp lưới giúp thoáng mát...</p>
-								<div class="price-block">
-		              <span class="price current">235.000<sup>đ</sup></span>
-		              <span class="price original">325.000<sup>đ</sup></span> 
-		            </div>
-							</div>	
-		  			</a>
-						<ul class="icon-links">
-							<li class="m-buy" href="#"><span class="icon i-buy">123</span></li>
-							<li class="m-view" href="#"><span class="icon i-view">456</span></li>
-							<li class="m-like" href="#"><span class="icon i-like">789</span></li>
-						</ul>
-		  		</div>
-		  		<h2 class="shop-name">
-		  			<a class="shop-name-inner" href="#">
-		  				<img src="assets/images/upload/shop-img/user.jpg" alt="myface">
-		  				<span>Elite Shop</span>
-		  			</a>
-		  		</h2>
-		  	</div>
-	  	</li><!--/.m-product-item-->
-	  	<!--m-product-item-->
-	  	<li class="col-xs-12 col-sm-4 col-md-3 m-product-item">
-	  		<div class="m-product-inner">
-		  		<div class="m-product-info">
-		  			<a class="m-product-link" href="#">
-		  				<figure class="m-product-img">
-								<img class="" src="assets/images/upload/product/product-6.jpg" alt="myface">		
-							</figure>
-							<div class="m-product-hover">
-								<h2 class="m-product-name">Áo thun Jeanswest bêđê hồng</h2>
-								<p class="m-product-description">Áo thun jeanswest màu trắng hồng bêdê. Kiểu dáng đẹp, ôm bó sát người. Đặc biệt bên trong có lớp lưới giúp thoáng mát...</p>
-								<div class="price-block">
-		              <span class="price current">235.000<sup>đ</sup></span>
-		              <span class="price original">325.000<sup>đ</sup></span> 
-		            </div>
-							</div>	
-		  			</a>
-						<ul class="icon-links">
-							<li class="m-buy" href="#"><span class="icon i-buy">123</span></li>
-							<li class="m-view" href="#"><span class="icon i-view">456</span></li>
-							<li class="m-like" href="#"><span class="icon i-like">789</span></li>
-						</ul>
-		  		</div>
-		  		<h2 class="shop-name">
-		  			<a class="shop-name-inner" href="#">
-		  				<img src="assets/images/upload/shop-img/user.jpg" alt="myface">
-		  				<span>Bags Bags Shop</span>
-		  			</a>
-		  		</h2>
-		  	</div>
-	  	</li><!--/.m-product-item-->
-	  	<!--m-product-item-->
-	  	<li class="col-xs-12 col-sm-4 col-md-3 m-product-item">
-	  		<div class="m-product-inner">
-		  		<div class="m-product-info">
-		  			<a class="m-product-link" href="#">
-		  				<figure class="m-product-img">
-								<img class="" src="assets/images/upload/product/product-7.jpg" alt="myface">		
-							</figure>
-							<div class="m-product-hover">
-								<h2 class="m-product-name">Áo thun Jeanswest bêđê hồng</h2>
-								<p class="m-product-description">Áo thun jeanswest màu trắng hồng bêdê. Kiểu dáng đẹp, ôm bó sát người. Đặc biệt bên trong có lớp lưới giúp thoáng mát...</p>
-								<div class="price-block">
-		              <span class="price current">235.000<sup>đ</sup></span>
-		              <span class="price original">325.000<sup>đ</sup></span> 
-		            </div>
-							</div>	
-		  			</a>
-						<ul class="icon-links">
-							<li class="m-buy" href="#"><span class="icon i-buy">123</span></li>
-							<li class="m-view" href="#"><span class="icon i-view">456</span></li>
-							<li class="m-like" href="#"><span class="icon i-like">789</span></li>
-						</ul>
-		  		</div>
-		  		<h2 class="shop-name">
-		  			<a class="shop-name-inner" href="#">
-		  				<img src="assets/images/upload/shop-img/user.jpg" alt="myface">
-		  				<span>Home Venten Korean</span>
-		  			</a>
-		  		</h2>
-		  	</div>
-	  	</li><!--/.m-product-item-->
+	  	{% for x in [1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11] %}  
 	  	<!--m-product-item-->
 	  	<li class="col-xs-12 col-sm-4 col-md-3 m-product-item">
 	  		<div class="m-product-inner">
@@ -171,8 +84,10 @@
 		  		</div>
 		  		<h2 class="shop-name">
 		  			<a class="shop-name-inner" href="#">
-		  				<img src="assets/images/upload/shop-img/user.jpg" alt="myface">
-		  				<span>mau hem</span>
+		  				<span class="shop-img">
+		  					<img src="assets/images/upload/shop-img/user.jpg" alt="myface">
+		  				</span>
+		  				<span class="shop-name-text">Home Venten Korean</span>
 		  			</a>
 		  		</h2>
 		  	</div>

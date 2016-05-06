@@ -1,0 +1,155 @@
+.m-product-list {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	h2 {
+		font-weight: 600;
+		font-size: 16px;
+	}
+}
+.m-product-item {
+	margin-bottom: 20px;
+	border-radius: @border-radius;
+}
+.m-product-inner {
+	width: 100%;
+	position: relative;
+	background-color: transparent;
+}
+.m-product-info {
+	width: 100%;
+	height: 200px;
+	border-radius: @border-radius;
+	border: 1px solid #eee;
+	padding: 10px 10px 35px;
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	&:hover {
+		.m-product-hover {
+			opacity: 1;
+	    -webkit-transition: opacity 500ms ease;
+	    -moz-transition: opacity 500ms ease;
+	    -ms-transition: opacity 500ms ease;
+	    -o-transition: opacity 500ms ease;
+	    transition: opacity 500ms ease;
+	  }
+	  .icon-links {
+	  	li {
+	  		color: #fff;
+	  	}
+	  }
+	}
+}
+.m-product-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		min-height: 100%;
+	}
+}
+.m-product-hover {
+	opacity: 0;
+  filter: alpha(opacity=0);
+	width: 100%;
+	height: 100%;
+	border-radius: @border-radius;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(255, 86, 33, 0.85);
+	color: #fff;
+	.price {
+		&.current {
+			font-weight: 600;
+			color: #fff;
+		}
+		&.original {
+			color: #fff;
+		}
+	}
+}
+.icon-links {
+	width: auto;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	li {
+		color: @text-color-2;
+		margin-right: 20px;
+		display: inline-block;
+		text-align: right;
+		line-height: 30px;
+		.icon {
+			&:before {
+				width: auto;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+.icon {
+	&:before {
+		content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    text-align: left;
+	}
+	&.i-buy {
+		&:before {
+  		content: "\f02b";
+  	}
+  }
+  &.i-view {
+  	&:before {
+  		content: "\f06e";
+  	}
+  }
+  &.i-like {
+  	&:before {
+  		content: "\f087";
+  	}
+  }
+}
+.shop-name {
+	width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	margin: 0;
+	padding: 10px 0;
+	text-transform: capitalize;
+	> a {
+		> span {
+			display: inline-block;
+			overflow: hidden;
+		}
+	}
+	.shop-img {
+		width: 20px;
+		height: 20px;
+		margin-right: 8px;
+		border-radius: 50%;
+		img {
+			border-radius: 50%;
+		}
+	}
+	.shop-name-text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
