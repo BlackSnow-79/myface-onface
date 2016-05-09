@@ -862,11 +862,15 @@ img {
   margin-bottom: 0;
 }
 .myfaceshop-logo {
-  width: 136px;
+  width: auto;
+  padding-right: 5px;
 }
 .myfaceshop-logo h1 {
+  width: 120px;
   margin: 0;
-  font-size: 18px;
+}
+.myfaceshop-logo h1 img {
+  width: 100%;
 }
 .header-search {
   width: 748px;
@@ -944,24 +948,29 @@ img {
   float: right;
 }
 .account-nav .nav li.account-block a {
-  padding: 0 15px;
+  color: #212121;
+}
+.account-nav .nav li.account-block a:hover,
+.account-nav .nav li.account-block a:focus:hover {
+  color: #ff5722;
+  background-color: transparent;
+}
+.account-nav .nav li.account-block a:focus {
+  color: #212121;
+  background-color: transparent;
+}
+.account-nav .nav li.account-block a.account-toggle {
+  padding: 0 15px 0 20px;
 }
 .account-nav .nav li.cart-block a {
   padding: 0 15px;
 }
-.account-nav .nav li > a,
-.account-nav .nav li .invoice-tracking {
-  color: #212121;
-}
-.account-nav .nav li > a:hover,
-.account-nav .nav li .invoice-tracking:hover,
-.account-nav .nav li > a:focus:hover,
-.account-nav .nav li .invoice-tracking:focus:hover {
+.account-nav .nav li.cart-block a:hover,
+.account-nav .nav li.cart-block a:focus:hover {
   color: #ff5722;
   background-color: transparent;
 }
-.account-nav .nav li > a:focus,
-.account-nav .nav li .invoice-tracking:focus {
+.account-nav .nav li.cart-block a:focus {
   color: #212121;
   background-color: transparent;
 }
@@ -1036,13 +1045,13 @@ img {
 }
 .header-row-2 {
   width: 100%;
-  height: 70px;
+  height: 60px;
   overflow: hidden;
   background-color: #f2f2f2;
 }
 .cate-list .cate-item > a {
-  padding-top: 8px;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .cate-list .cate-item > a > span {
   width: 100%;
@@ -1190,8 +1199,9 @@ footer.main-footer .footer-row-1 .li-item > a.create-shop:hover {
   text-decoration: underline;
 }
 footer.main-footer .footer-row-2 {
-  margin: 20px auto 10px;
-  text-align: center;
+  font-size: 13px;
+  margin: 14px auto;
+  text-align: left;
   line-height: 22px;
   color: #212121;
 }
@@ -1235,6 +1245,11 @@ footer.main-footer .f-bct > span.bct {
 }
 .footer-link-2 {
   border-color: #ff5722;
+}
+.readmore {
+  color: #727272;
+  text-decoration: underline;
+  font-weight: bold;
 }
 .product-info-block {
   border-top-style: double;
@@ -1482,9 +1497,6 @@ footer.main-footer .f-bct > span.bct {
   -o-transition: opacity 500ms ease;
   transition: opacity 500ms ease;
 }
-.m-product-info:hover .icon-links li {
-  color: #fff;
-}
 .m-product-img {
   width: 100%;
   height: 100%;
@@ -1505,15 +1517,15 @@ footer.main-footer .f-bct > span.bct {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(255, 86, 33, 0.85);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #212121;
 }
 .m-product-hover .price.current {
   font-weight: 600;
-  color: #fff;
+  color: #212121;
 }
 .m-product-hover .price.original {
-  color: #fff;
+  color: #212121;
 }
 .icon-links {
   width: auto;
@@ -1529,7 +1541,7 @@ footer.main-footer .f-bct > span.bct {
 }
 .icon-links li {
   color: #727272;
-  margin-right: 20px;
+  margin-right: 10px;
   display: inline-block;
   text-align: right;
   line-height: 30px;
@@ -1537,6 +1549,7 @@ footer.main-footer .f-bct > span.bct {
 .icon-links li .icon:before {
   width: auto;
   margin-right: 5px;
+  font-size: 12px;
 }
 .icon:before {
   content: "";
@@ -1579,7 +1592,8 @@ footer.main-footer .f-bct > span.bct {
   border-radius: 50%;
 }
 .shop-name .shop-name-text {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: normal;
   line-height: 20px;
 }
 .banner {
@@ -2471,6 +2485,7 @@ footer.main-footer .f-bct > span.bct {
   float: left;
   line-height: 20px;
   color: #212121;
+  font-weight: 600;
 }
 .tab-item > a:hover {
   color: #ff5722;
@@ -2503,10 +2518,17 @@ footer.main-footer .f-bct > span.bct {
   float: left;
 }
 .btn-loadmore {
-  width: 340px;
+  width: 500px;
   height: 40px;
   padding-top: 9px;
   padding-bottom: 9px;
+  border-color: #dfdfdf;
+  color: #727272;
+  background-color: transparent;
+}
+.btn-loadmore:hover {
+  color: #fff;
+  background-color: #ff5722;
 }
 select.bs-select-hidden,
 select.selectpicker {

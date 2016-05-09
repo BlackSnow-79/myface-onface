@@ -35,11 +35,6 @@
 	    -o-transition: opacity 500ms ease;
 	    transition: opacity 500ms ease;
 	  }
-	  .icon-links {
-	  	li {
-	  		color: #fff;
-	  	}
-	  }
 	}
 }
 .m-product-img {
@@ -62,15 +57,15 @@
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background-color: rgba(255, 86, 33, 0.85);
-	color: #fff;
+	background-color: rgba(255, 255, 255, 0.85);
+	color: @text-color-1;
 	.price {
 		&.current {
 			font-weight: 600;
-			color: #fff;
+			color: @text-color-1;
 		}
 		&.original {
-			color: #fff;
+			color: @text-color-1;
 		}
 	}
 }
@@ -87,7 +82,7 @@
 	background-color: transparent;
 	li {
 		color: @text-color-2;
-		margin-right: 20px;
+		margin-right: 10px;
 		display: inline-block;
 		text-align: right;
 		line-height: 30px;
@@ -95,6 +90,7 @@
 			&:before {
 				width: auto;
 				margin-right: 5px;
+				font-size: 12px;
 			}
 		}
 	}
@@ -149,7 +145,8 @@
 		}
 	}
 	.shop-name-text {
-		font-size: 14px;
+		font-size: 12px;
+		font-weight: normal;
 		line-height: 20px;
 	}
 }
