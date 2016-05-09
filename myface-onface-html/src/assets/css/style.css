@@ -856,6 +856,10 @@ img {
 .progressbar li.completed:before {
   display: none;
 }
+.header-row-1 {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 20px;
+}
 .header-row-1 .navbar {
   height: 70px;
   padding: 15px 0;
@@ -2413,6 +2417,10 @@ footer.main-footer .f-bct > span.bct {
   width: 100%;
   height: 100%;
 }
+.myface-shop .header-row-1 {
+  border-color: transparent;
+  margin-bottom: 0;
+}
 .wrap-banner {
   height: 415px;
   margin-bottom: 15px;
@@ -2557,6 +2565,33 @@ footer.main-footer .f-bct > span.bct {
 .btn-loadmore:hover {
   color: #fff;
   background-color: #ff5722;
+}
+.category-1-name {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+}
+.catebar .cate-list {
+  width: auto;
+  height: 90px;
+  overflow: hidden;
+}
+.catebar .cate-item {
+  margin-right: 20px;
+}
+.catebar .cate-item > a {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+}
+.filterbar .tabs-menu {
+  text-align: left;
+  margin-left: -12px;
 }
 select.bs-select-hidden,
 select.selectpicker {
