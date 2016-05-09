@@ -1,0 +1,23 @@
+<!--wrap-product-->
+<div class="row wrap-product">
+  <ol class="m-product-list">
+  	{% for x in [1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11] %}  
+  	<!--m-product-item-->
+  	{% include "_m-product-block.html" %}
+  	<!--/.m-product-item-->
+  	{% endfor %}
+  </ol>
+</div><!--/.wrap-product-->
+<!--loading-->
+<div class="loading">
+</div>
+<!--load-more-->
+<div class="full-width load-more">
+  <button class="btn btn-loadmore">Xem thêm các sản phẩm khác </button>
+</div>
+<!--back-to-top-btn-->
+<div class="back-to-top-btn" style="display: none;">
+  <a href="#">
+  	back to top
+  </a>
+</div><!--/.back-to-top-btn-->
