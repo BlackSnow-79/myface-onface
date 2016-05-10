@@ -1,9 +1,11 @@
-{% extends "layout/_layout-myface-shop.html" %}
+{% extends "layout/_layout-myface-user.html" %}
 {% block page-container %}
 <!--header-row-2-->
 <!--/.header-row-2-->
 <!--main-content-->
 <main class="container">
+	<!--filterbar-->
+	{% include "block/_filter-bar.html" %}
   <!--product-block-->
   <!--wrap-product-->
   {% include "block/_m-product-list-block.html" %}
