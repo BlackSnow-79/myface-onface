@@ -1,11 +1,10 @@
-<!--wrap-product-->
 <div class="row wrap-product">
   <ol class="m-product-list">
-  	{% for x in [1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11] %}  
-  	<!--m-product-item-->
-  	{% include "_m-product-block.html" %}
-  	<!--/.m-product-item-->
-  	{% endfor %}
+    {% for x in [1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11,1,2,3,4,5,7,8,9,10,11] %}  
+    <!--m-product-item-->
+    {% include "_m-product-block.html" %}
+    <!--/.m-product-item-->
+    {% endfor %}
   </ol>
 </div><!--/.wrap-product-->
 <!--loading-->
@@ -15,9 +14,17 @@
 <div class="full-width load-more">
   <button class="btn btn-loadmore">Xem thêm các sản phẩm khác </button>
 </div>
-<!--back-to-top-btn-->
-<div class="back-to-top-btn" style="display: none;">
-  <a href="#">
-  	back to top
-  </a>
-</div><!--/.back-to-top-btn-->
+<!--fixed-block-->
+<div class="fixed-block" style="display: none;">
+  <!--cart-block-->
+  <div class="cart-block">
+    <a class="cart-link" href="cart.html" data-placement="bottom" title="" data-original-title="Giỏ hàng của bạn">
+      <span class="cart-number">0</span>
+    </a>
+  </div>
+  <div class="back-to-top">
+    <a class="back-to-top-btn" href="#">
+      back to top
+    </a>
+  </div>
+</div><!--/.fixed-block-->
