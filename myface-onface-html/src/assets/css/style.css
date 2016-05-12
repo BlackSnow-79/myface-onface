@@ -867,6 +867,7 @@ img {
 }
 .myfaceshop-logo {
   width: 135px;
+  position: relative;
   float: left;
   padding-left: 15px;
   padding-right: 0;
@@ -1589,6 +1590,9 @@ footer.main-footer .f-bct > span.bct {
 }
 .icon.i-like:before {
   content: "\f087";
+}
+.icon.i-back:before {
+  content: "\f104";
 }
 .shop-name {
   width: 100%;
@@ -2708,6 +2712,44 @@ footer.main-footer .f-bct > span.bct {
 }
 .tab-span {
   font-weight: normal;
+}
+.header-user-shop .back-to-myface {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: block;
+  width: 15px;
+  height: 44px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #212121;
+}
+.header-user-shop .back-to-myface:hover {
+  color: #ff5722;
+}
+.header-user-shop .back-to-myface .icon {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  display: block;
+}
+.header-user-shop .back-to-myface .icon:before {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  font-size: 30px;
+}
+.header-user-shop .user-shop-logo {
+  width: 100%;
+  padding-left: 30px;
+  display: block;
+  color: #212121;
+}
+.header-user-shop .user-shop-logo h1 {
+  font-weight: 600;
+}
+.header-user-shop .user-shop-logo:hover {
+  color: #ff5722;
 }
 .usershop-bar .tabs-bar {
   border-bottom-color: transparent;

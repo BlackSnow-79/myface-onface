@@ -1,3 +1,43 @@
+.header-user-shop {
+	.back-to-myface {
+		position: absolute; 
+		top: 0; 
+		left: 15px; 
+		display: block; 
+		width:15px; 
+		height: 44px; 
+		display: table-cell; 
+		vertical-align: middle;
+		color: @text-color-1;
+		&:hover {
+			color: @primary-color;
+		}
+		.icon {
+			position: relative;
+			height: 44px;
+			width: 100%;
+			display: block;
+			&:before {
+				position: absolute;
+				top: 6px;
+				left: 0;
+				font-size: 30px;
+			}
+		}
+	}
+	.user-shop-logo {
+		width: 100%; 
+		padding-left: 30px; 
+		display: block;
+		color: @text-color-1;
+		h1 {
+			font-weight: 600;
+		}
+		&:hover {
+			color: @primary-color;
+		}
+	}
+}
 .usershop-bar {
 	.tabs-bar {
 		border-bottom-color: transparent;
