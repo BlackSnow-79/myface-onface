@@ -10,6 +10,7 @@
 	height: 415px;
 	margin-bottom: 15px;
 	float: left;
+	overflow: hidden;
 	.banner-item {
 		border: 1px solid #dfdfdf;
 		border-radius: @border-radius;
@@ -41,40 +42,40 @@
 		min-height: 100%;
 		border-radius: @border-radius;
 	}
-	.arrow {
-    width: 36px;
-    height: 80px;
-		position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -40px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-color: transparent;
-    border-radius: 0 3px 3px 0;
-    opacity: 0;
-    &:hover {
-    	background-color: rgba(255, 87, 34, 0.7);
-    	color: #fff;
-    }
-    .icon {
-    	&:before {
-	  		content: "\f104";		
-    		font-size: 33px;
+}
+.arrow {
+  width: 30px;
+  height: 60px;
+	position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  margin-top: -30px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: transparent;
+  border-radius: 0 3px 3px 0;
+  opacity: 0;
+  &:hover {
+  	background-color: rgba(255, 255, 255, 1);
+  }
+  .icon {
+  	&:before {
+  		content: "\f104";		
+  		font-size: 28px;
+  	}
+  }
+  &.arrow-right {
+  	left: auto;
+  	right: 0;
+  	border-radius: 3px 0 0 3px;
+  	.icon {
+  		&:before {
+	  		content: "\f105";
+	  		margin-left: 5px;
 	  	}
-    }
-    &.arrow-right {
-    	left: auto;
-    	right: 0;
-    	border-radius: 3px 0 0 3px;
-    	.icon {
-    		&:before {
-		  		content: "\f105";
-		  		margin-left: 8px;
-		  	}
-    	}
-    }
-	}
+  	}
+  }
 }
 .banner-2 {
 	height: 250px;
@@ -157,5 +158,92 @@
 	&:hover {
 		color: #fff;
 		background-color: @primary-color;
+	}
+}
+
+/*myface-shop-list*/
+.m-shop-list {
+	.list-row {
+		float: left;
+		padding-top: 20px;
+		border-top: @border;
+		&:first-child {
+			padding-top: 0;
+			border-top-color: transparent;
+		}
+	}
+	.arrow {
+		opacity: 1;
+		left: 15px;
+		&.arrow-right {
+			left: auto;
+			right: 15px;
+		}
+	}
+}
+.shop-card {
+	padding-left: 140px;
+	color: @text-color-2;
+	a {
+		color: @text-color-2;
+		&:hover {
+			color: @primary-color;
+		}
+	}
+	.icon-links {
+		width: 100%; 
+		position: relative; 
+		bottom: none; 
+		right: none; 
+		overflow: hidden;
+		.icon-text {
+			display: none;
+		}
+	}	
+	.shop-name {
+		padding: 0;
+		a {
+			color: @text-color-1;
+			&:hover {
+				color: @primary-color;
+			}
+		}
+	}
+	.shop-img {
+		width:auto; 
+		height:auto; 
+		position: absolute; 
+		top: 0; 
+		left: 0;
+	}
+}
+.meta {
+	margin: 0 0 5px;
+}
+.meta-tags {
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.shop-list-row {
+	height: 155px;
+	padding: 0 15px;
+	overflow: hidden;
+	.m-product-list {
+		white-space: nowrap; 
+		position:static; 
+		overflow: hidden; 
+	}
+	.m-product-item {
+		float: none; 
+		display: inline-block;
+		padding: 0;
+	}
+	.m-product-info {
+		height: 155px;
+		padding: 0;
 	}
 }

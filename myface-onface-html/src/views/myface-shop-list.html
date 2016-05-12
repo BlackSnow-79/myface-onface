@@ -17,11 +17,11 @@
     <ol class="m-product-list m-shop-list">
       {% for x in [1,2,3,4,5,7,8] %}  
       <li class="list-row">
-        <div class="col-xs-12 col-md-3 shop-card">
+        <div class="col-xs-12 col-md-4 shop-card">
           <h3 class="shop-name">
             <a class="shop-name-inner" href="myface-user-shop.html">
-              <span class="shop-img" style="display: none;">
-                <img src="assets/images/upload/shop-img/user.jpg" alt="myface">
+              <span class="shop-img">
+                <img src="assets/images/upload/shop-img/user-2.jpg" alt="myface">
               </span>
               <span class="shop-name-text">Saigon Secrect Fashion</span>
             </a>
@@ -29,15 +29,28 @@
           <p class="meta meta-location">
             <a class="location" href="#">TP.Ho Chi Minh</a>
           </p>
-          <p class="meta meata-tag">
-            <a class="tag" href="myface-cate-1.thml">Thời trang nam</a>
+          <p class="meta meta-tags">
+            <a class="tag" href="myface-category-2.html">Thời trang nam</a>,&nbsp;
+            <a class="tag" href="myface-category-2.html">Áo dài</a>,&nbsp; 
+            <a class="tag" href="myface-category-2.html">Phụ kiện nam</a>,&nbsp; 
+            <a class="tag" href="myface-category-2.html">Áo dài</a>,&nbsp; 
+            <a class="tag" href="myface-category-2.html">Phụ kiện nam</a>,&nbsp; 
+          </p>
+          <ul class="icon-links">
+            <li class="m-buy"><span class="icon i-buy">123</span><span class="icon-text">Sản phẩm</span></li>
+            <li class="m-view"><span class="icon i-view">456</span><span class="icon-text">Lượt xem</span></li>
+            <li class="m-like"><span class="icon i-like">789</span><span class="icon-text">Thích</span></li>
+          </ul>
+          <p class="meta meta-about">
+            Editor’s Picks brings you the best offte boohoo, freshly picked in one place for your shopping pleasure.
           </p>
         </div>
-        <div class="col-xs-12 col-md-9 shop-list-row">
-          <ol class="m-product-list"  style="white-space: nowrap; position:static; overflow: hidden; padding-right: 15px">
+        <div class="col-xs-12 col-md-8 shop-list-row">
+          <button class="arrow arrow-left" aria-label=""><span class="icon"></span></button>
+          <ol class="m-product-list">
             {% for x in [1,2,3,4] %}  
             <!--m-product-item-->
-            <li class="col-xs-12 col-sm-6 col-md-4 m-product-item" style="float: none; display: inline-block;">
+            <li class="col-xs-6 col-sm-4 m-product-item">
               <div class="m-product-inner">
                 <div class="m-product-info">
                   <a class="m-product-link" href="myface-product-detail.html">
@@ -59,6 +72,7 @@
             <!--/.m-product-item-->
             {% endfor %}
           </ol>
+          <button class="arrow arrow-right" aria-label=""><span class="icon"></span></button>
         </div>
       </li>
       {% endfor %}
