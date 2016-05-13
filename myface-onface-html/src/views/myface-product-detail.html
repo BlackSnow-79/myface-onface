@@ -1,174 +1,238 @@
 {% extends "layout/_layout-myface-shop.html" %}
 {% block page-container %}
+<!--breadcrumbs-->
+<div class="header-row-2 breadcrumbs-nav">
+  <div class="container">
+    <!--usershop-bar-->
+    <div class="filterbar usershop-bar">
+      <!--tabs-bar-->
+      <nav class="navbar tabs-bar">
+        <!--filter-->
+        <ul class="tabs-menu tabs-menu">
+          <li class="tab-item tab-label">
+            <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+          </li>
+          <li class="tab-item">
+            <a href="myface-category-1.html">Thời trang</a>
+            <ul class="dropdown-menu tab-sub">
+              <li><a href="myface-category-2.html">Thời trang khác 1</a></li>
+              <li><a href="myface-category-2.html">Thời trang khác 2</a></li>
+              <li><a href="myface-category-2.html">Thời trang khác 3</a></li>
+            </ul>
+          </li>
+          <li class="tab-item tab-single">
+            <a href="myface-category-2.html">Thời trang nữ</a>
+          </li>
+        </ul>
+      </nav><!--/.tabs-bar-->
+    </div><!--/.usershop-bar-->
+  </div>
+</div>
+<!--/.breadcrumbs-->
 <main class="container">
-	<!--product-container-->
-  <div class="col-md-10 col-md-offset-1">
-  	<div class="product-container">
-      <!--product-info-block-->
-      <div class="product-info-block">
-        <h1 class="product-title">
-          <span>Áo Sơ Mi Nam Dáng Ôm màu xanh dương</span>
-          <span class="sale-tag">sale</span>
-        </h1>
-        <div class="price-block">
-          <span class="price current">235.000<sup>đ</sup></span>
-          <span class="price original">325.000<sup>đ</sup></span> 
-        </div>
-        <!--products-gallery-->
-    		<div class="col-xs-8 product-gallery">
-          <div class="stage" style="width: 100%;">
-            <img src="assets/images/upload/product/product-9.jpg" alt="myface">
-          </div>
-          <div class="thumnail" style="width: 100%; height: 55px">
-            <span class="slider-control slider-prev"><i class="fa fa-angle-left"></i></span>
-            <div class="thumnail-inner">
-              <ul class="items">
-                <li class="item active">
-                  <img src="assets/images/upload/product/product-9.jpg" alt="myface">
-                </li>
-                {% for x in [1,2,3,4,5] %}
-                <li class="item">
-                  <img src="assets/images/upload/product/product-9.jpg" alt="myface">
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-            <span class="slider-control slider-next"><i class="fa fa-angle-right"></i></span>
-          </div>   
-        </div><!--./products-gallery-->
-        <!--product-info-->
-        <div class="col-xs-4 product-info">
-          <div class="product-header">
-            <div class="product-property">
-              <div class="item-property color-property">
-                <div class="item-property-label">
-                  <span>Màu sắc:</span>
-                </div>
-                <ul class="item-property-values">
-                  <li class="property-select active">
-                    <a class="" href="#"><span class="text">Xanh dương</span></a>
-                  </li>
-                  <li class="property-select">
-                    <a class="" href="#"><span class="text">Xanh lá</span></a>
-                  </li>
-                  <li class="property-select">
-                    <a class="" href="#"><span class="text">Xanh cổ vịt</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="item-property size-property">
-                <div class="item-property-label">
-                  <span>Kích thước:</span>
-                </div>
-                <ul class="item-property-values">
-                  <li class="property-select active">
-                    <a class="" href="#"><span class="text">XS</span></a>
-                  </li>
-                  <li class="property-select">
-                    <a class="" href="#"><span class="text">M</span></a>
-                  </li>
-                  <li class="property-select">
-                    <a class="" href="#"><span class="text">XL</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="item-property amount-property">
-                <div class="item-property-label">
-                  <span>Số lượng:</span>
-                </div>
-                <div class="item-property-values">
-                  <select class="selectpicker select-amount" data-size="5">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="block">
-              <a class="btn btn-primary btn-action" href="#"><i class="fa fa-shopping-cart"></i><span>Cho vào giỏ hàng</span></a>
-            </div>
-          </div>
-        </div><!--./product-info-->
-      </div><!--/.product-info-block-->
-      <!--product-description-->
-      <div class="col-md-8">
-        <div class="product-detail">
-          <div class="tab-content">
-            <div class="product-intro" id="product-des-1">
-              <p>Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu thuộc thương hiệu G2000 đem lại nét thanh lịch, sang trọng cho phái mạnh khi đi làm, đi họp hay tham gia các buổi gặp mặt quan trọng.</p>
-              <ul style="list-style: square; line-height: 1">
-                <li><p>Vải màu đậm không giặt bằng xà bông có độ tẩy cao</p></li>
-                <li><p>Nên lộn trái sản phẩm khi phơ</p></li>
-                <li><p>Không phơi sản phẩm màu ở nơi nắng gắt</p></li>
-                <li><p>Không ngâm hay giặt sản phẩm màu trắng chung với sản phẩm màu khác</p></li>
-              </ul>
-              <p style="text-align: center;">
-                <img src="assets/images/upload/product/product-10.jpg" alt="myface">
-              </p>
-              <p style="text-align: center">Được may từ chất liệu tơ tằm cao cấp</p>
-              <p style="text-align: center;">
-                <img src="assets/images/upload/product/product-10.jpg" alt="myface">
-              </p>
-            </div>
-            <div class="product-intro" id="product-des-2">
-              <h2 class="title">Thông số sản phẩm</h2>
-              <table class="table table-bordered table-label">
-                <tbody>
-                  <tr class="row-info">
-                    <td><strong>Độ cồn</strong></td>
-                    <td>5%</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Xuất xứ</strong></td>
-                    <td>Việt Nam</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Hướng dẫn sử dụng</strong></td>
-                    <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Hướng dẫn bảo quản</strong></td>
-                    <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Quy cách đóng gói</strong></td>
-                    <td>24 lon/thùng</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Thành phần nguyên liệu</strong></td>
-                    <td>Nước, mạch nha, gạo, hoa bia</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Hạn sử dụng</strong></td>
-                    <td>12 tháng</td>
-                  </tr>
-                  <tr class="row-info">
-                    <td><strong>Dung tích</strong></td>
-                    <td>330 (ml)</td>
-                  </tr>
-                </tbody>
-              </table><!-- /.table -->
-            </div>    
-          </div>
-          <div class="block text-center">
-            <a class="btn btn-primary btn-action" href="#"><i class="fa fa-shopping-cart"></i><span>Cho vào giỏ hàng</span></a>
-          </div>
-        </div><!--./product-description-->
+  <div class="mf-product-wrap">
+    <!--close-back-->
+    <div class="close-back">
+      <a class="close-btn" href="#"></a><!--/.close-back-->
+    </div>
+    <!--detail-nav-->
+    <ul class="detail-nav">
+      <li class="arrow arrow-left">
+        <a href="#">
+          <span class="icon"></span>
+        </a>
+      </li>
+      <li class="arrow arrow-right">
+        <a href="#">
+          <span class="icon"></span>
+        </a>
+      </li>
+    </ul><!--/.detail-nav-->
+  	<!--product-container-->
+    <div class="col-md-10 col-md-offset-1 mf-product-content">
+    	<div class="product-container">
+        <!--product-info-block-->
+        <div class="product-info-block mf-product-info-block">
+          <h2 class="shop-name">
+            <a class="shop-name-inner" href="myface-user-shop.html">
+              <span class="shop-img">
+                <img src="assets/images/upload/shop-img/user.jpg" alt="myface">
+              </span>
+              <span class="shop-name-text">Home Venten Korean</span>
+            </a>
+          </h2>
 
-        <!--facebook-comment-->
-        <div class="fb-conmment" style="width: 100%">
-          <img src="assets/images/upload/fb/fb-2.jpg" alt="myface">
-        </div><!--/.facebook-comment-->
-      </div>
-  	</div><!--/.product-container-->
+          <!--products-gallery-->
+      		<div class="col-xs-7 product-gallery">
+            <div class="product-gallery-header">
+              <!--product-title-->
+              <h1 class="product-title">
+                <span>Set thời trang Gucci </span>
+              </h1><!--product-title-->
+              <span class="product-date">Cập nhật 5 tháng 5 2016 lúc 18:34</span>
+            </div>
+
+            <!--stage-wrap-->
+            <div class="stage-wrap">
+              <div class="stage">
+                <img src="assets/images/upload/product/product-9.jpg" alt="myface">
+              </div>
+              <div class="thumnail">
+                <span class="slider-control slider-prev"><i class="fa fa-angle-left"></i></span>
+                <div class="thumnail-inner">
+                  <ul class="items">
+                    <li class="item active">
+                      <img src="assets/images/upload/product/product-9.jpg" alt="myface">
+                    </li>
+                    {% for x in [1,2,3,4,5] %}
+                    <li class="item">
+                      <img src="assets/images/upload/product/product-9.jpg" alt="myface">
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <span class="slider-control slider-next"><i class="fa fa-angle-right"></i></span>
+              </div>
+            </div>  <!--./stage-wrap--> 
+          </div><!--./products-gallery-->
+          <!--product-info-->
+          <div class="col-xs-5 product-info">
+            <div class="info-block">
+              <label class="block-title">Giao hàng đến:</label>
+              <p class="block-text">Toàn quốc, TP.HCM, Hà Nội, Tuyên Quang, lào Cai...</p>
+            </div>
+            <div class="product-header">
+              <div class="product-property">
+                <div class="item-property color-property">
+                  <div class="item-property-label">
+                    <span>Màu sắc:</span>
+                  </div>
+                  <ul class="item-property-values">
+                    <li class="property-select active">
+                      <a class="" href="#"><span class="text">Xanh dương</span></a>
+                    </li>
+                    <li class="property-select">
+                      <a class="" href="#"><span class="text">Xanh lá</span></a>
+                    </li>
+                    <li class="property-select">
+                      <a class="" href="#"><span class="text">Xanh cổ vịt</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item-property size-property">
+                  <div class="item-property-label">
+                    <span>Kích thước:</span>
+                  </div>
+                  <ul class="item-property-values">
+                    <li class="property-select active">
+                      <a class="" href="#"><span class="text">XS</span></a>
+                    </li>
+                    <li class="property-select">
+                      <a class="" href="#"><span class="text">M</span></a>
+                    </li>
+                    <li class="property-select">
+                      <a class="" href="#"><span class="text">XL</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item-property amount-property">
+                  <div class="item-property-label">
+                    <span>Số lượng:</span>
+                  </div>
+                  <div class="item-property-values">
+                    <select class="selectpicker select-amount" data-size="5">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <a class="btn btn-primary btn-action" href="#"><i class="fa fa-shopping-cart"></i><span>Cho vào giỏ hàng</span></a>
+              </div>
+            </div>
+          </div><!--./product-info-->
+        </div><!--/.product-info-block-->
+        <!--product-description-->
+        <div class="col-md-8">
+          <div class="product-detail">
+            <div class="tab-content">
+              <div class="product-intro" id="product-des-1">
+                <p>Sử dụng chất liệu cao cấp cùng kiểu dáng hiện đại, áo sơ mi slim fit vạt bầu thuộc thương hiệu G2000 đem lại nét thanh lịch, sang trọng cho phái mạnh khi đi làm, đi họp hay tham gia các buổi gặp mặt quan trọng.</p>
+                <ul style="list-style: square; line-height: 1">
+                  <li><p>Vải màu đậm không giặt bằng xà bông có độ tẩy cao</p></li>
+                  <li><p>Nên lộn trái sản phẩm khi phơ</p></li>
+                  <li><p>Không phơi sản phẩm màu ở nơi nắng gắt</p></li>
+                  <li><p>Không ngâm hay giặt sản phẩm màu trắng chung với sản phẩm màu khác</p></li>
+                </ul>
+                <p style="text-align: center;">
+                  <img src="assets/images/upload/product/product-10.jpg" alt="myface">
+                </p>
+                <p style="text-align: center">Được may từ chất liệu tơ tằm cao cấp</p>
+                <p style="text-align: center;">
+                  <img src="assets/images/upload/product/product-10.jpg" alt="myface">
+                </p>
+              </div>
+              <div class="product-intro" id="product-des-2">
+                <h2 class="title">Thông số sản phẩm</h2>
+                <table class="table table-bordered table-label">
+                  <tbody>
+                    <tr class="row-info">
+                      <td><strong>Độ cồn</strong></td>
+                      <td>5%</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Xuất xứ</strong></td>
+                      <td>Việt Nam</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Hướng dẫn sử dụng</strong></td>
+                      <td>Uống trực tiếp, ngon hơn khi uống lạnh</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Hướng dẫn bảo quản</strong></td>
+                      <td>Nơi khô ráo, thoáng mát, tránh ánh nắng mặt trời và tránh bị đông đá</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Quy cách đóng gói</strong></td>
+                      <td>24 lon/thùng</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Thành phần nguyên liệu</strong></td>
+                      <td>Nước, mạch nha, gạo, hoa bia</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Hạn sử dụng</strong></td>
+                      <td>12 tháng</td>
+                    </tr>
+                    <tr class="row-info">
+                      <td><strong>Dung tích</strong></td>
+                      <td>330 (ml)</td>
+                    </tr>
+                  </tbody>
+                </table><!-- /.table -->
+              </div>    
+            </div>
+            <div class="block text-center">
+              <a class="btn btn-primary btn-action" href="#"><span>action buttons</span></a>
+            </div>
+          </div><!--./product-description-->
+
+          <!--facebook-comment-->
+          <div class="fb-conmment" style="width: 100%">
+            <img src="assets/images/upload/fb/fb-2.jpg" alt="myface">
+          </div><!--/.facebook-comment-->
+        </div>
+    	</div><!--/.product-container-->
+    </div>
   </div>
 </main>
 {% endblock %}

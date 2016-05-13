@@ -866,12 +866,12 @@ img {
   margin-bottom: 0;
 }
 .myfaceshop-logo {
-  width: 135px;
+  width: 130px;
   position: relative;
   float: left;
   padding-left: 15px;
   padding-right: 0;
-  margin-top: -4px;
+  margin-top: 0px;
 }
 .myfaceshop-logo h1 {
   width: 100%;
@@ -989,6 +989,10 @@ img {
   color: #212121;
   background-color: transparent;
 }
+.account-dropdown {
+  top: 16px;
+  right: 0;
+}
 .account-img {
   width: 38px;
   height: 38px;
@@ -1063,7 +1067,13 @@ img {
   height: 60px;
   overflow: hidden;
   background-color: #f0f1f3;
+  border-bottom: 1px solid #dfdfdf;
   margin-bottom: 20px;
+}
+.header-row-2.breadcrumbs-nav,
+.header-row-2.shopper-menu {
+  height: auto;
+  overflow: visible;
 }
 .cate-list .cate-item > a {
   padding-top: 4px;
@@ -1206,6 +1216,13 @@ footer.main-footer .footer-row-1 .li-item > a {
 }
 footer.main-footer .footer-row-1 .li-item > a:hover {
   color: #ff5722;
+}
+footer.main-footer .footer-row-1 .li-item > a.mf-about:hover {
+  color: #727272;
+}
+footer.main-footer .footer-row-1 .li-item > a.mf-about:hover .readmore {
+  color: #ff5722;
+  text-decoration: none;
 }
 footer.main-footer .footer-row-1 .li-item > a.create-shop {
   font-weight: 700;
@@ -1544,7 +1561,6 @@ footer.main-footer .f-bct > span.bct {
 }
 .m-product-hover .price.current {
   font-weight: 600;
-  color: #212121;
 }
 .m-product-hover .price.original {
   color: #212121;
@@ -1612,9 +1628,12 @@ footer.main-footer .f-bct > span.bct {
   height: 20px;
   margin-right: 8px;
   border-radius: 50%;
+  background-color: #dfdfdf;
 }
 .shop-name .shop-img img {
-  border-radius: 50%;
+  width: 100%;
+  min-height: 100%;
+  display: block;
 }
 .shop-name .shop-name-text {
   font-size: 14px;
@@ -2423,7 +2442,6 @@ footer.main-footer .f-bct > span.bct {
   height: 100%;
 }
 .myface-shop .header-row-1 {
-  border-color: transparent;
   margin-bottom: 0;
 }
 .wrap-banner {
@@ -2503,8 +2521,7 @@ footer.main-footer .f-bct > span.bct {
   height: 50px;
   float: left;
   margin-bottom: 40px;
-  border-bottom: 1px solid #e5e5e5;
-  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #dfdfdf;
 }
 .tabs-bar ul {
   list-style: none;
@@ -2541,19 +2558,23 @@ footer.main-footer .f-bct > span.bct {
   font-size: 14px;
   text-align: right;
 }
+.tab-item:hover > a {
+  color: #ff5722;
+}
 .tab-item:hover .tab-sub {
   display: block;
   background-color: #fff;
 }
 .tab-sub {
   display: none;
-  width: 200px;
+  width: auto;
   position: absolute;
+  min-width: 1px;
   top: 90%;
   left: 0;
   z-index: 99;
   margin: 0;
-  padding: 0;
+  padding: 1px 0;
   text-align: left;
 }
 .wrap-product {
@@ -2571,6 +2592,7 @@ footer.main-footer .f-bct > span.bct {
 .btn-loadmore:hover {
   color: #fff;
   background-color: #ff5722;
+  border-color: #ff5722;
 }
 /*myface-shop-list*/
 .m-shop-list .list-row {
@@ -2593,6 +2615,7 @@ footer.main-footer .f-bct > span.bct {
 .shop-card {
   padding-left: 140px;
   color: #727272;
+  margin-bottom: 10px;
 }
 .shop-card a {
   color: #727272;
@@ -2680,6 +2703,9 @@ footer.main-footer .f-bct > span.bct {
   border: 1px solid #dfdfdf;
   border-radius: 6px;
 }
+.catebar .cate-item > a:hover {
+  border-color: #ff5722;
+}
 .filterbar .tabs-menu {
   text-align: left;
   margin-left: -12px;
@@ -2713,12 +2739,15 @@ footer.main-footer .f-bct > span.bct {
 .tab-span {
   font-weight: normal;
 }
+.header-user-shop .myfaceshop-logo {
+  width: 135px;
+}
 .header-user-shop .back-to-myface {
   position: absolute;
   top: 0;
   left: 15px;
   display: block;
-  width: 15px;
+  width: 30px;
   height: 44px;
   display: table-cell;
   vertical-align: middle;
@@ -2754,7 +2783,135 @@ footer.main-footer .f-bct > span.bct {
 .usershop-bar .tabs-bar {
   border-bottom-color: transparent;
   margin-bottom: 0;
-  margin-top: -10px;
+}
+.mf-product-wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.mf-product-content {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.mf-product-info-block {
+  padding-top: 0;
+  border-top: 0;
+}
+.mf-product-info-block .shop-img {
+  width: 25px;
+  height: 25px;
+}
+.mf-product-info-block .shop-name-text {
+  font-size: 18px;
+  line-height: 25px;
+}
+.mf-product-info-block .product-gallery .thumnail {
+  width: 100%;
+  height: 66px;
+}
+.mf-product-info-block .product-gallery .thumnail .items .item {
+  width: 75px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 1px;
+  margin-right: 6px;
+}
+.mf-product-info-block .product-gallery .thumnail .items .item img {
+  border-radius: 4px;
+}
+.mf-product-info-block .product-gallery .thumnail .items .item.active {
+  border-color: #ff5722;
+}
+.mf-product-info-block .info-block {
+  padding: 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+.stage-wrap {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  float: left;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.stage-wrap .stage {
+  width: 100%;
+  height: auto;
+}
+.block-text {
+  margin-bottom: 0;
+}
+.product-gallery-header {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+.product-gallery-header .product-title {
+  font-weight: 700;
+  font-size: 25px;
+  display: inline;
+  margin-right: 10px;
+}
+.product-date {
+  display: inline-block;
+  color: #727272;
+}
+.detail-nav {
+  list-style: none;
+  margin-bottom: 0;
+}
+.detail-nav > li {
+  width: 8.3%;
+  height: auto;
+  display: list-item;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 9;
+  opacity: 1;
+  background: transparent;
+}
+.detail-nav > li.detail-nav-next {
+  left: auto;
+  right: 0;
+}
+.detail-nav > li:hover {
+  background: transparent;
+}
+.detail-nav > li > a {
+  width: 100%;
+  display: inline-block;
+  padding: 278px 0;
+  color: #727272;
+}
+.detail-nav > li > a:hover {
+  color: #ff5722;
+}
+.detail-nav > li > a .icon:before {
+  width: auto;
+  height: auto;
+  font-size: 46px;
+}
+.detail-nav > li.arrow-right {
+  text-align: right;
+}
+.close-back {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.close-btn {
+  width: 46px;
+  height: 46px;
+  display: block;
+  background: url(../images/icons/close.png) no-repeat;
+}
+.close-btn:hover {
+  background: url(../images/icons/close-hover.png) no-repeat;
 }
 select.bs-select-hidden,
 select.selectpicker {

@@ -69,7 +69,6 @@
 	.price {
 		&.current {
 			font-weight: 600;
-			color: @text-color-1;
 		}
 		&.original {
 			color: @text-color-1;
@@ -152,8 +151,11 @@
 		height: 20px;
 		margin-right: 8px;
 		border-radius: 50%;
+		background-color: @line-color-1;
 		img {
-			border-radius: 50%;
+			width: 100%;
+			min-height: 100%;
+			display: block;
 		}
 	}
 	.shop-name-text {
