@@ -46,7 +46,65 @@
 	.info-block {
 		padding: 10px 0;
 		border-bottom: @border;
+		&.price-block {
+			.current {
+				font-size: 24px;
+				font-weight: 600;
+			}
+			.original {
+				display: inline-block;
+				margin-top: 5px;
+			}
+		}
 	}
+}
+.add-cart-block {
+	position: relative;
+}
+.lightbox-wrap {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	z-index: 9;
+}
+.add-number-to-buy {
+	width: 338px;
+	height: 50px;
+	padding: 6px;
+	padding-left: 20px;
+	background: #fff;
+	border-radius: 30px;
+	border: 2px solid @primary-color;
+	.send-group {
+		input {
+			&:first-child {
+				border-bottom-right-radius: 3px;
+	    	border-top-right-radius: 3px;
+			}
+		}
+		.input-group-btn {
+			padding-left: 15px;
+		}
+		.btn-buy-submit {
+			border-radius: 30px;
+		}
+	}
+	.close-back {
+		top: -19px;
+		right: -19px;
+	}
+	.close-btn {
+		width: 25px;
+		height: 25px;
+		background-size: 100% 100%;
+		&:hover {
+			background-size: 100% 100%;
+		}
+	}
+}
+.like-group-wrap {
+	width: 100%;
+	position: relative;
 }
 .stage-wrap {
 	width: 100%;

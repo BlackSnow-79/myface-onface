@@ -288,8 +288,46 @@ img {
   height: 50px;
   border-radius: 30px;
 }
+.btn-buy-now {
+  padding: 0 12px;
+}
+.btn-buy-now .lr-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn-buy-now .icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 1px;
+  background: url(../images/icons/buy.png) no-repeat center center;
+}
 .btn-add-cart {
+  position: relative;
   width: 110px;
+  padding: 4px 12px;
+  white-space: inherit;
+}
+.btn-add-cart .icon {
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  top: 9px;
+  left: 15px;
+  background: url(../images/icons/add-cart.png) no-repeat center center;
+  background-size: 100%;
+}
+.btn-add-cart .lr-text {
+  width: 50px;
+  margin-left: 36px;
+  text-align: left;
+  display: inline-block;
+}
+.btn-add-cart:hover {
+  background-color: transparent;
+  color: #727272;
+  border-color: #ff5722;
 }
 .btn-like-action {
   min-width: 0;
@@ -302,6 +340,18 @@ img {
   height: 100%;
   display: block;
   background: url(../images/icons/like.png) no-repeat center center;
+}
+.btn-lg-by-face {
+  border-color: #3a5897;
+  color: #3a5897;
+  text-align: left;
+}
+.btn-lg-by-face i {
+  width: 20px;
+}
+.btn-lg-by-face:hover {
+  background: #3a5897;
+  border-color: #3a5897;
 }
 /*
  * Component: Form
@@ -904,6 +954,7 @@ img {
 }
 .search-nav {
   width: 66%;
+  max-width: 750px;
   float: left;
   padding: 0 0 0 15px;
 }
@@ -977,7 +1028,8 @@ img {
   color: #212121;
 }
 .account-nav {
-  width: 260px;
+  width: 275px;
+  padding-right: 15px;
   float: right;
 }
 .account-nav .nav {
@@ -1011,8 +1063,36 @@ img {
   background-color: transparent;
 }
 .account-dropdown {
-  top: 16px;
+  top: 23px;
+  left: auto;
   right: 0;
+  width: auto;
+}
+.login-dropdown {
+  top: 23px;
+  left: auto;
+  right: 0;
+  width: 280px;
+  height: 370px;
+  padding: 15px;
+  border-top-right-radius: 3px !important;
+  border-top-left-radius: 3px !important;
+  border: 1px solid #dfdfdf;
+}
+.login-dropdown li .checkbox {
+  width: auto;
+  display: inline-block;
+  margin: 0;
+}
+.login-dropdown li .checkbox span:before {
+  top: 0;
+}
+.login-dropdown li .lg-a-text {
+  padding: 0;
+  line-height: 1.25;
+}
+.login-dropdown li .lg-button {
+  width: 100%;
 }
 .account-img {
   width: 38px;
@@ -1086,10 +1166,16 @@ img {
 .header-row-2 {
   width: 100%;
   height: 60px;
-  overflow: hidden;
   background-color: #f0f1f3;
   border-bottom: 1px solid #dfdfdf;
   margin-bottom: 20px;
+}
+.header-row-2.mf-cate-nav .category-nav {
+  border: 0;
+}
+.header-row-2.mf-cate-nav .cate-item > a {
+  height: 61px;
+  margin-top: -1px;
 }
 .header-row-2.breadcrumbs-nav,
 .header-row-2.shopper-menu {
@@ -1099,6 +1185,9 @@ img {
 .cate-list .cate-item > a {
   padding-top: 4px;
   padding-bottom: 4px;
+  display: block;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 .cate-list .cate-item > a > span {
   width: 100%;
@@ -1106,6 +1195,7 @@ img {
   text-align: center;
 }
 .cate-list .cate-item > a:hover {
+  border-color: #ff5722;
   background-color: #ff5722;
 }
 .cate-list .cate-item > a:hover .cate-name {
@@ -2850,6 +2940,58 @@ footer.main-footer .f-bct > span.bct {
 .mf-product-info-block .info-block {
   padding: 10px 0;
   border-bottom: 1px solid #dfdfdf;
+}
+.mf-product-info-block .info-block.price-block .current {
+  font-size: 24px;
+  font-weight: 600;
+}
+.mf-product-info-block .info-block.price-block .original {
+  display: inline-block;
+  margin-top: 5px;
+}
+.add-cart-block {
+  position: relative;
+}
+.lightbox-wrap {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 9;
+}
+.add-number-to-buy {
+  width: 338px;
+  height: 50px;
+  padding: 6px;
+  padding-left: 20px;
+  background: #fff;
+  border-radius: 30px;
+  border: 2px solid #ff5722;
+}
+.add-number-to-buy .send-group input:first-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.add-number-to-buy .send-group .input-group-btn {
+  padding-left: 15px;
+}
+.add-number-to-buy .send-group .btn-buy-submit {
+  border-radius: 30px;
+}
+.add-number-to-buy .close-back {
+  top: -19px;
+  right: -19px;
+}
+.add-number-to-buy .close-btn {
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+}
+.add-number-to-buy .close-btn:hover {
+  background-size: 100% 100%;
+}
+.like-group-wrap {
+  width: 100%;
+  position: relative;
 }
 .stage-wrap {
   width: 100%;

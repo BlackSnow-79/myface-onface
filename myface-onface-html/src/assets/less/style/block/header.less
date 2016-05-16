@@ -25,6 +25,7 @@
 }
 .search-nav {
 	width: 66%;
+	max-width: 750px;
 	float: left;
 	padding: 0 0 0 15px;
 }
@@ -102,7 +103,8 @@
 	}
 }
 .account-nav {
-	width: 260px;
+	width: 275px;
+	padding-right: 15px;
 	float: right;
 	.nav {
 		float: right;
@@ -144,8 +146,41 @@
 	}
 }
 .account-dropdown {
-	top: 16px;
+	top: 23px;
+	left: auto;
   right: 0;
+  width: auto;
+}
+.login-dropdown {
+	top: 23px;
+	left: auto;
+	right: 0;
+	width: 280px;
+	height: 370px;
+	padding: 15px;
+	border-top-right-radius: 3px !important;
+  border-top-left-radius: 3px !important;
+	border: @border;
+	li {
+		.checkbox {
+			width: auto;
+			display: inline-block;
+			margin: 0;
+			span {
+				&:before {
+					top: 0;
+				}
+			}
+		}
+		.lg-a-text {
+			padding: 0;
+			line-height: 1.25;
+		}
+		.lg-button {
+			width: 100%;
+
+		}
+	}
 }
 .account-img {
 	width: 38px;
@@ -221,10 +256,20 @@
 .header-row-2 {
 	width: 100%;
 	height: 60px;
-	overflow: hidden;
 	background-color: @bg-color-3;
 	border-bottom: @border;
 	margin-bottom: 20px;
+	&.mf-cate-nav {
+		.category-nav {
+			border: 0;
+		}
+		.cate-item {
+			> a {
+				height: 61px;
+				margin-top: -1px;
+			}
+		}
+	}
 	&.breadcrumbs-nav,
 	&.shopper-menu {
 		height: auto;
@@ -236,12 +281,16 @@
 		> a {
 			padding-top: 4px;
 			padding-bottom: 4px;
+			display: block;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
 			> span {
 				width: 100%;
 				display: block;
 				text-align: center;
 			}
 			&:hover {
+				border-color: @primary-color;
 				background-color: @primary-color;
 				.cate-name {
 					font-weight: 600;
