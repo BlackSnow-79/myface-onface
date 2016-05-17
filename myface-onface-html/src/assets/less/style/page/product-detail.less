@@ -53,19 +53,53 @@
 			}
 			.original {
 				display: inline-block;
-				margin-top: 5px;
+				margin-top: 3px;
 			}
+		}	
+		&.pin-block {
+			padding-bottom: 20px;
 		}
 	}
 }
+.icon-tools {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		.icon {
+			margin-right: 5px;
+			font-weight: bold;
+			&:before {
+				margin-right: 1px;
+			}
+		}
+		&.m-like {
+			margin-right: 15px;
+		}
+	}
+}
+.share-block {
+}
 .add-cart-block {
+	width: 100%;
+	margin: 20px 0;
 	position: relative;
 }
 .lightbox-wrap {
 	position: absolute;
-	top: -50px;
+	top: -58px;
 	left: 0;
 	z-index: 9;
+	display: none;
+	.close-btn {
+		width: 25px;
+		height: 25px;
+		background-size: 100% 100%;
+		&:hover {
+			background-size: 100% 100%;
+		}
+	}
 }
 .add-number-to-buy {
 	width: 338px;
@@ -89,22 +123,51 @@
 			border-radius: 30px;
 		}
 	}
-	.close-back {
-		top: -19px;
-		right: -19px;
-	}
-	.close-btn {
-		width: 25px;
-		height: 25px;
-		background-size: 100% 100%;
-		&:hover {
-			background-size: 100% 100%;
-		}
-	}
 }
 .like-group-wrap {
 	width: 100%;
 	position: relative;
+	float: left;
+}
+.lightbox-1 {
+	.close-back {
+		top: -19px;
+    right: -20px;
+	}
+}
+.lightbox-2 {
+	width: 100%; 
+	padding: 0 15px; 
+	top: auto;
+	bottom: 60px;
+	.close-back {
+		top: -23px;
+    right: 0px;
+	}
+}
+.like-box {
+	width: 490px; 
+	float: left; 
+	margin-top: 10px;
+	li {
+		margin-right: 15px;
+	}
+	.buy-now {
+		margin-right: 0;
+		.btn-number-action {
+			width: 126px;
+			border-radius: 30px;
+		}
+	}
+	.i-cart {
+		&:before {
+			width: 18px;
+		}
+	}
+}
+.number-box {
+	float: right;
+	display: none;
 }
 .stage-wrap {
 	width: 100%;

@@ -173,6 +173,8 @@
   width: 110px;
   padding: 4px 12px;
   white-space: inherit;
+  background-color: transparent;
+  border: @border;
   .icon {
     position: absolute;
     width: 26px;
@@ -216,6 +218,21 @@
   &:hover {
     background: #3a5897;
     border-color: #3a5897;
+  }
+}
+
+.back-to-top-btn {
+  min-width: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background-color: @primary-color;
+  color: #fff;
+  line-height: 0;
+  &:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f077";
   }
 }
 
