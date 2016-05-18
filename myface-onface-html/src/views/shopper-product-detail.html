@@ -1,34 +1,8 @@
-{% extends "layout/_layout-myface-shop.html" %}
+{% extends "layout/_layout-myface-user.html" %}
 {% block page-container %}
-<!--breadcrumbs-->
-<div class="header-row-2 breadcrumbs-nav">
-  <div class="container">
-    <!--usershop-bar-->
-    <div class="filterbar usershop-bar">
-      <!--tabs-bar-->
-      <nav class="navbar tabs-bar">
-        <!--filter-->
-        <ul class="tabs-menu tabs-menu">
-          <li class="tab-item tab-label">
-            <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-          </li>
-          <li class="tab-item">
-            <a href="myface-category-1.html">Thời trang</a>
-            <ul class="dropdown-menu tab-sub">
-              <li><a href="myface-category-2.html">Thời trang khác 1</a></li>
-              <li><a href="myface-category-2.html">Thời trang khác 2</a></li>
-              <li><a href="myface-category-2.html">Thời trang khác 3</a></li>
-            </ul>
-          </li>
-          <li class="tab-item tab-single">
-            <a href="myface-category-2.html">Thời trang nữ</a>
-          </li>
-        </ul>
-      </nav><!--/.tabs-bar-->
-    </div><!--/.usershop-bar-->
-  </div>
-</div>
-<!--/.breadcrumbs-->
+<!--menu-->
+{% include "block/_shopper-menu.html" %}
+<!--menu-->
 <main class="container">
   <div class="mf-product-wrap">
     <!--close-back-->
@@ -53,14 +27,6 @@
     	<div class="product-container">
         <!--product-info-block-->
         <div class="product-info-block mf-product-info-block">
-          <h2 class="shop-name">
-            <a class="shop-name-inner" href="myface-user-shop.html">
-              <span class="shop-img">
-                <img src="assets/images/upload/shop-img/user.jpg" alt="myface">
-              </span>
-              <span class="shop-name-text">Home Venten Korean</span>
-            </a>
-          </h2>
 
           <!--products-gallery-->
       		<div class="col-sm-7 product-gallery">

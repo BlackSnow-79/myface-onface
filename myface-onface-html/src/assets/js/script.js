@@ -42,6 +42,8 @@ $(document).ready(function() {
   	if ($(this).hasClass('box-open')) {
 			$(this).removeClass('box-open');
       $('.lightbox-2').hide('slow');
+      $('.btn-number-action').removeClass('box-open');
+      $('.number-box').hide('slow');
     }
     else {
 	  	$(this).addClass('box-open');
@@ -65,5 +67,20 @@ $(document).ready(function() {
 	  	$(this).addClass('box-open');
 	  	$('.number-box').show('slow');
     }
+  });
+
+  //backt-to-top
+  $(window).scroll(function() {  
+    if ($(window).scrollTop() > 300) {
+      $('.fixed-block').fadeIn(); 
+    }
+    else {
+      $('.fixed-block').fadeOut();    
+    }
+  }); 
+  //Back to top button
+  $('.back-to-top-btn').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 300);
   });
 });

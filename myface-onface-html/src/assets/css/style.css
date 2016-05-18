@@ -113,6 +113,7 @@ img {
   position: fixed;
   right: 30px;
   bottom: 20px;
+  display: none;
 }
 .fixed-block .cart-block,
 .fixed-block .back-to-top {
@@ -376,11 +377,11 @@ img {
   display: block;
   background-color: #ff5722;
   color: #fff;
+  line-height: 0;
 }
 .back-to-top-btn:before {
   font: normal normal normal 14px/1 FontAwesome;
   content: "\f077";
-  margin-top: -2px;
 }
 /*
  * Component: Form
@@ -1062,6 +1063,9 @@ img {
 }
 .account-nav .nav {
   float: right;
+}
+.account-nav .nav li.account-block {
+  width: 190px;
 }
 .account-nav .nav li.account-block a {
   color: #212121;
@@ -1759,6 +1763,9 @@ footer.main-footer .f-bct > span.bct {
 .icon.i-cart:before {
   background: url(../images/icons/add-cart.png) no-repeat;
   background-size: auto 100%;
+}
+.icon.i-product:before {
+  content: "\f097";
 }
 .shop-name {
   width: 100%;
@@ -2947,6 +2954,9 @@ footer.main-footer .f-bct > span.bct {
   padding-top: 0;
   border-top: 0;
 }
+.mf-product-info-block .shop-name {
+  padding: 10px 0 0;
+}
 .mf-product-info-block .shop-img {
   width: 25px;
   height: 25px;
@@ -2954,6 +2964,9 @@ footer.main-footer .f-bct > span.bct {
 .mf-product-info-block .shop-name-text {
   font-size: 18px;
   line-height: 25px;
+}
+.mf-product-info-block .product-gallery {
+  margin-top: 10px;
 }
 .mf-product-info-block .product-gallery .thumnail {
   width: 100%;
@@ -2976,6 +2989,22 @@ footer.main-footer .f-bct > span.bct {
   width: 100%;
   float: left;
 }
+.mf-product-info-block .product-detail .product-intro {
+  position: relative;
+}
+.mf-product-info-block .product-detail .intro-action {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #212121;
+}
+.mf-product-info-block .product-detail .intro-action:hover {
+  color: #ff5722;
+}
+.mf-product-info-block .product-detail .intro-action:before {
+  content: "\f147";
+  font-size: 19px;
+}
 .mf-product-info-block .info-block {
   padding: 10px 0;
   border-bottom: 1px solid #dfdfdf;
@@ -2990,6 +3019,21 @@ footer.main-footer .f-bct > span.bct {
 }
 .mf-product-info-block .info-block.pin-block {
   padding-bottom: 20px;
+}
+.shipping-block {
+  position: relative;
+}
+.shipping-block .shipping-action {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  color: #212121;
+}
+.shipping-block .shipping-action:hover {
+  color: #ff5722;
+}
+.shipping-block .shipping-action:before {
+  content: "\f055";
 }
 .icon-tools {
   list-style: none;
@@ -3134,7 +3178,7 @@ footer.main-footer .f-bct > span.bct {
 .product-gallery-header {
   width: 100%;
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .product-gallery-header .product-title {
   font-weight: 700;
