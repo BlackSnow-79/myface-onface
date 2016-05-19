@@ -10,6 +10,11 @@
 		overflow: hidden;
 		border-bottom: @border;
 		margin-bottom: 15px;
+	 	.container {
+    	> div:last-child {
+    		float: right;
+    	}
+    }
 		@media (max-width: @screen-xs-max) {
 	    height: auto;
 	  }

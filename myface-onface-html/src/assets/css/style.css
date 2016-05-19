@@ -1905,6 +1905,9 @@ footer.main-footer .f-bct > span.bct {
   border-bottom: 1px solid #dfdfdf;
   margin-bottom: 15px;
 }
+.checkout header .container > div:last-child {
+  float: right;
+}
 @media (max-width: 767px) {
   .checkout header {
     height: auto;
@@ -2735,6 +2738,7 @@ footer.main-footer .f-bct > span.bct {
   text-align: left;
 }
 .wrap-product {
+  width: 100%;
   float: left;
 }
 .btn-loadmore {
