@@ -2881,7 +2881,6 @@ footer.main-footer .f-bct > span.bct {
 .catebar .cate-item > a {
   width: 90px;
   height: 90px;
-  line-height: 90px;
   overflow: hidden;
   float: left;
   padding: 0;
@@ -2898,6 +2897,9 @@ footer.main-footer .f-bct > span.bct {
   height: 40px;
   overflow: hidden;
   vertical-align: top !important;
+}
+.catebar.cate-h-2 .cate-item > a {
+  line-height: 90px;
 }
 .catebar.cate-h-2 .cate-item > a .cate-name {
   max-height: 75px;
@@ -3301,6 +3303,32 @@ footer.main-footer .f-bct > span.bct {
 }
 .close-btn:hover {
   background: url(../images/icons/close-hover.png) no-repeat;
+}
+.tags-remind {
+  display: block;
+  margin-top: 20px;
+}
+.remind-title {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.keyword-result {
+  width: 100%;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.key-title {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+.number-span {
+  color: #ff5722;
+}
+.result-number {
+  color: #b6b6b6;
 }
 select.bs-select-hidden,
 select.selectpicker {

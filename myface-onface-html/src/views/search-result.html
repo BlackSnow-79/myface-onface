@@ -1,0 +1,15 @@
+{% extends "layout/_layout-myface-shop.html" %}
+{% block page-containerclass%}m-search-result{% endblock %}
+{% block page-container %}
+<!--header-row-2-->
+{% include "block/_m-search-nav.html" %}
+<!--/.header-row-2-->
+<!--main-content-->
+<main class="container">
+	<!--filterbar-->
+	{% include "block/_filter-bar.html" %}
+  <!--product-block-->
+  <!--wrap-product-->
+  {% include "block/_m-product-list-block.html" %}
+</main>
+{% endblock %}
