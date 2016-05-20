@@ -20,11 +20,45 @@
 		> a {
 			width: 90px;
 			height: 90px;
-			padding: 10px;
+			line-height: 90px;
+			overflow: hidden;
+			float: left;
+			padding: 0;
 			border: @border;
 			border-radius: 6px;
 			&:hover {
 				border-color: @primary-color;
+			}	
+		}
+	}
+	&.cate-h-1{
+		.cate-item {
+			> a {
+				padding: 10px 0;
+				.cate-name {
+					height: 40px;
+					overflow: hidden;
+					vertical-align: top !important;
+				}
+			}
+		}
+	}
+	&.cate-h-2{
+		.cate-item {
+			> a {
+				.cate-name {
+					max-height: 75px;
+					overflow: hidden;
+					display: inline-block;
+			    vertical-align: middle;
+			    line-height: normal;
+				}
+				.cate-logo {
+					width: 100%;
+					height: 100%;
+					vertical-align: top;
+					border-radius: 6px;
+				}
 			}
 		}
 	}

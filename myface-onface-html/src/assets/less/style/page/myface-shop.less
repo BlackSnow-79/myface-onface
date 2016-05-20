@@ -145,10 +145,21 @@
 	margin: 0;
 	padding: 1px 0;
 	text-align: left;
+	max-height: 245px;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+    width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	} 
+	&::-webkit-scrollbar-thumb {
+	  background-color: #949393;
+	  border-radius: 4px;
+	  outline: 1px solid slategrey;
+	}
 }
 .wrap-product {
-	width: 100%;
-	float: left;
 }
 .btn-loadmore {
 	width: 500px;
