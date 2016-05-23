@@ -83,4 +83,14 @@ $(document).ready(function() {
     event.preventDefault();
     $('html, body').animate({scrollTop: 0}, 300);
   });
+
+ 	/*setSize*/
+  function setSizes1() {
+		var containerW = $('.m-product-img').width();
+		$('.m-product-img').height(containerW * 0.75);
+  }
+  setSizes1();
+	$(window).resize(function() { 
+    setSizes1(); 
+  });
 });

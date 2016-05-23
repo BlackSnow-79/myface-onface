@@ -1,4 +1,12 @@
-.blue-dropdown {
+// Active state
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @dropdown-link-active-color;
+    background-color: @dropdown-link-active-bg;
+  }
+}.blue-dropdown {
 	padding: 6px 0;
 	color: @blue;
 	font-size: 14px;
