@@ -2,63 +2,71 @@
 {% block page-container %}
 <!--main-content-->
 <main class="container">
-	<div class="col-md-10 col-offset-1 wrap-user">
+	<div class="col-md-11 col-md-offset-1 wrap-user">
 		<!--user-account-header-->
-		<div class="user-account-header">
-			<div class="user-account-img">
-				<figure class="user-img">
-					<img class="" src="assets/images/upload/product/product-8.jpg" alt="myface">		
-				</figure>
-			</div>
-			<div class="user-account-info">
-				<h2 class="user-name"><a href="#">Natalie Berowska</a></h2>
-				<ul class="icon-tools user-contact-info">
-					<li class="phone-info"><a href="tel:0902559591"><span class="icon"></span>0902559591</a></li>
-					<li class="mail-info"><a href="mailto:chienbinh.0904@gmail.com"><span class="icon"></span>chienbinh.0904@gmail.com</a></li>
-				</ul>
-				<ul class="icon-tools tool-info">
-					<li class="m-like">
-						<a href="#"><span class="icon i-like">789</span><span class="icon-text">thích</span></a>
-					</li>
-          <li class="m-pin">
-          	<a href="#"><span class="icon i-pin">456</span><span class="icon-text">ghim</span></a>
-        	</li>     
-        	<li class="m-view">
-        		<a href="#"><span class="icon i-view">456</span><span class="icon-text">xem sản phẩm</span></a>
-        	</li>
-          <li class="m-buy">
-          	<a href="#"><span class="icon i-buy">123</span><span class="icon-text">đã mua</span></a>
-          </li>
-				</ul>
-			</div>
-		</div><!--/.user-account-header-->
+		{% include "block/_account-header.html" %}
+		<!--/.user-account-header-->
 		<!--user-account-nav-->
-		<nav class="user-account-nav">
-			<ul class="nav navbar-nav">
-        <li class="active">
-        	<a href="user-user-account-general.html">Thông tin chung</a>
-        </li>
-        <li>
-        	<a href="#">Kiểm tra đơn hàng</a>
-        </li>
-        <li>
-        	<a href="#">Thông tin giao hàng</a>
-        </li>
-        <li>
-        	<a href="#">Thông tin thanh toán</a>
-        </li>
-        <li>
-        	<a href="#">Điểm thưởng - Điểm tích lũy</a>
-        </li>
-      </ul>
-		</nav><!--./user-account-nav-->
+		{% include "block/_account-nav.html" %}
+		<!--./user-account-nav-->
 		<!--user-account-content-->
-		<div class="user-account-content">
-			<div class="user-account-left-side">
-
+		<div class="user-account-content general-content">
+			<div class="col-md-6 user-account-left-side">
+				<div class="row general-product-row">
+					<ol class="m-product-list">
+	          {% for x in [1,2,3,4,5,6] %}  
+	          <!--m-product-item-->
+	          <li class="col-xs-6 m-product-item">
+	            <div class="m-product-inner">
+	              <div class="m-product-info">
+	                <a class="m-product-link" href="myface-product-detail.html">
+	                  <figure class="m-product-img">
+	                    <img class="" src="assets/images/upload/product/product-8.jpg" alt="myface">    
+	                  </figure>
+	                  <div class="m-product-hover">
+	                    <h2 class="m-product-name">Áo thun Jeanswest bêđê hồng</h2>
+	                    <p class="m-product-description">Áo thun jeanswest màu trắng hồng bêdê. Kiểu dáng đẹp, ôm bó sát người...</p>
+	                    <div class="price-block">
+	                      <span class="price current">235.000<sup>đ</sup></span>
+	                      <span class="price original">325.000<sup>đ</sup></span> 
+	                    </div>
+	                  </div>  
+	                </a>
+	              </div>
+	            </div>
+	          </li>
+	          <!--/.m-product-item-->
+	          {% endfor %}
+	        </ol>
+	      </div>
 			</div>
-			<div class="user-account-left-right">
-
+			<div class="col-md-offset-1 col-md-5 user-account-left-right">
+				<div class="row order-side">
+					<div class="item-property order-list">
+						<label class="item-property-label">Đơn hàng mua gần đây</label>
+						<ul class="item-property-values">
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">101020102016</span></a>
+	            </li>
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">121020102016</span></a>
+	            </li>
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">101020102016</span></a>
+	            </li>
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">121020102016</span></a>
+	            </li>
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">101020102016</span></a>
+	            </li>
+	            <li class="property-select">
+	              <a class="" href="user-account-order-details.html"><span class="text">121020102016</span></a>
+	            </li>
+	          </ul>
+	        </div>
+	        <a class="order-list-more" href="user-account-order-info.html">Xem tất cả đơn hàng</a>
+				</div>
 			</div>
 		</div><!--./user-account-content-->
 	</div>

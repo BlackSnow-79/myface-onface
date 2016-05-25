@@ -3356,7 +3356,6 @@ footer.main-footer .f-bct > span.bct {
   color: #b6b6b6;
 }
 .wrap-user {
-  width: 100%;
   min-height: 500px;
 }
 .user-account-header {
@@ -3375,14 +3374,15 @@ footer.main-footer .f-bct > span.bct {
   margin-right: 10px;
 }
 .user-account-img {
-  width: 165px;
-  float: left;
+  min-width: 165px;
 }
 .user-img {
   width: 121px;
   height: 121px;
   border-radius: 50%;
   overflow: hidden;
+  margin: 0 !important;
+  float: right;
 }
 .user-img img {
   width: 100%;
@@ -3394,6 +3394,90 @@ footer.main-footer .f-bct > span.bct {
 }
 .user-contact-info {
   margin-bottom: 10px;
+}
+.user-contact-info .mail-info {
+  position: relative;
+}
+.user-contact-info .mail-info:before {
+  content: "-";
+  position: absolute;
+  top: 0px;
+  left: -8px;
+}
+.user-account-change-nav .nav {
+  float: right;
+}
+.user-account-change-nav .nav li.change-info-btn a {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  color: #212121;
+  padding: 6px 15px;
+}
+.user-account-change-nav .nav li.more-nav a {
+  color: #727272;
+  padding: 6px 15px;
+  border: 1px solid transparent;
+}
+.user-account-nav {
+  width: 100%;
+  float: left;
+}
+.user-account-nav .nav li {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+.user-account-nav .nav li a {
+  color: #727272;
+  padding: 6px 20px;
+}
+.user-account-nav .nav li.active {
+  background-color: #dfdfdf;
+}
+.user-account-nav .nav li.active a {
+  color: #212121;
+  font-weight: 600;
+}
+.user-account-content {
+  width: 100%;
+  float: left;
+  padding-top: 30px;
+}
+.general-product-row .m-product-item {
+  padding: 0;
+  margin-bottom: 1px;
+  padding-right: 1px;
+}
+.general-product-row .m-product-info {
+  padding: 10px;
+}
+.order-list {
+  display: block;
+  margin: 100px 0 60px;
+}
+.order-list .item-property-label,
+.order-list .item-property-values {
+  display: block;
+}
+.order-list .item-property-label {
+  width: 100%;
+}
+.order-list .item-property-values .property-select {
+  margin: 0px 4px 8px 0;
+}
+.order-list .item-property-values .property-select a {
+  padding: 4px 8px;
+}
+.order-side {
+  margin-right: -30px;
+}
+.order-list-more {
+  text-decoration: underline;
+  color: #212121;
+}
+.order-list-more:hover {
+  text-decoration: none;
+  color: #ff5722;
 }
 select.bs-select-hidden,
 select.selectpicker {

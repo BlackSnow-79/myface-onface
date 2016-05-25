@@ -2,8 +2,16 @@
 {% block page-container %}
 <!--main-content-->
 <main class="container">
-	<div class="wrap-user" style="width: 100%; min-height: 500px">
-		User account order details
+	<div class="col-md-11 col-md-offset-1 wrap-user">
+		<!--user-account-header-->
+		{% include "block/_account-header.html" %}
+		<!--/.user-account-header-->
+		<!--user-account-nav-->
+		{% include "block/_account-nav.html" %}
+		<!--./user-account-nav-->
+		<!--user-account-content-->
+		<div class="user-account-content general-content">
+		</div><!--./user-account-content-->
 	</div>
 </main>
 {% endblock %}

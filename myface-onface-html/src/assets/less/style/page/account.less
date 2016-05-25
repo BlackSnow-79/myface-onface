@@ -1,5 +1,4 @@
 .wrap-user {
-	width: 100%; 
 	min-height: 500px;
 }
 .user-account-header {
@@ -20,14 +19,15 @@
 	}
 }
 .user-account-img {
-	width: 165px;
-	float: left;
+	min-width: 165px;
 }
 .user-img {
 	width: 121px;
 	height: 121px;
 	border-radius: 50%;
 	overflow: hidden;
+	margin: 0 !important;
+	float: right;
 	img {
 		width: 100%;
 		min-height: 100%;
@@ -39,4 +39,102 @@
 }
 .user-contact-info {
 	margin-bottom: 10px;
+	.mail-info {
+		position: relative;
+		&:before {
+			content: "-";
+			position: absolute;
+			top: 0px;
+    	left: -8px;
+		}
+	}
+}
+.user-account-change-nav {
+	.nav {
+		float: right;
+		li {
+			&.change-info-btn {	
+				a {
+					border: @border;
+					border-radius: 3px;
+					color: @text-color-1;
+					padding: 6px 15px;
+				}
+			}
+			&.more-nav {	
+				a {
+					color: @text-color-2;
+					padding: 6px 15px;
+					border: 1px solid transparent;
+				}
+			}
+		}
+	}
+}
+.user-account-nav {
+	width: 100%;
+	float: left;
+	.nav {
+		li {
+			border: @border;
+			border-radius: 3px;
+			margin-right: 2px;
+			a {
+				color: @text-color-2;
+				padding: 6px 20px;
+			}
+			&.active {
+				background-color: @line-color-1;
+				a {
+					color: @text-color-1;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+.user-account-content {
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+}
+.general-product-row {
+	.m-product-item {
+		padding: 0;
+		margin-bottom: 1px;
+		padding-right: 1px;
+	}
+	.m-product-info { 
+		padding: 10px;
+	}
+}
+.order-list {
+	display: block;
+	margin: 100px 0 60px;
+	.item-property-label,
+	.item-property-values {
+		display: block;
+	}
+	.item-property-label {
+		width: 100%;
+	}
+	.item-property-values {
+		.property-select {
+	    margin: 0px 4px 8px 0;
+	    a {
+	    	padding: 4px 8px;
+	    }
+		}
+	}
+}
+.order-side {
+	margin-right: -30px;
+}
+.order-list-more {
+	text-decoration: underline;
+	color: @text-color-1;
+	&:hover {
+		text-decoration: none;
+		color: @primary-color;
+	}
 }
