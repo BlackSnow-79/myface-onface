@@ -1,11 +1,12 @@
 .wrap-user {
+	width: 100%;
 	min-height: 500px;
 }
 .user-account-header {
 	width: 100%;
 	float: left;
 	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	a {
 		color: @text-color-1;
 		&:hover {
@@ -108,6 +109,23 @@
 		padding: 10px;
 	}
 }
+.user-head {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.user-title {
+	font-size: 16px;
+	font-weight: 700;
+	float: left;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.order-status {
+	margin-right: -15px;
+	float: right;
+}
 .order-list {
 	display: block;
 	margin: 100px 0 60px;
@@ -137,4 +155,28 @@
 		text-decoration: none;
 		color: @primary-color;
 	}
+}
+.order-table {
+	a {
+		color: @text-color-1;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.payment-info {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	.payment-block {
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+	}
+}
+.p-text {
+	color: @green;
+	text-decoration: underline;
+	font-weight: 700;
+	margin-right: 5px;
 }

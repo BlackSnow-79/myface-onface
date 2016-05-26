@@ -525,6 +525,9 @@ img {
 .table > tbody > tr > td {
   border-bottom: 1px solid #dfdfdf;
 }
+.table > tbody > tr:hover > td {
+  background-color: #b6b6b6;
+}
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -560,7 +563,7 @@ img {
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
 }
 .table.no-border,
 .table.no-border td,
@@ -578,6 +581,9 @@ img {
 .table-label > thead > tr > th,
 .table-label > thead > tr > td {
   border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #efefef;
 }
 /*
  * Component: Products-block
@@ -1783,6 +1789,14 @@ footer.main-footer .f-bct > span.bct {
 }
 .icon.i-product:before {
   content: "\f097";
+}
+.active .icon.i-pin:before {
+  background: url(../images/icons/pin-active.png) no-repeat;
+  background-size: auto 100%;
+}
+a:hover .i-pin:before {
+  background: url(../images/icons/pin-active.png) no-repeat;
+  background-size: auto 100%;
 }
 .shop-name {
   width: 100%;
@@ -3110,6 +3124,12 @@ footer.main-footer .f-bct > span.bct {
 .icon-tools li {
   display: inline-block;
 }
+.icon-tools li a {
+  color: #727272;
+}
+.icon-tools li.active a {
+  color: #ff5722;
+}
 .icon-tools li .icon {
   margin-right: 5px;
   font-weight: bold;
@@ -3356,13 +3376,14 @@ footer.main-footer .f-bct > span.bct {
   color: #b6b6b6;
 }
 .wrap-user {
+  width: 100%;
   min-height: 500px;
 }
 .user-account-header {
   width: 100%;
   float: left;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .user-account-header a {
   color: #212121;
@@ -3451,6 +3472,23 @@ footer.main-footer .f-bct > span.bct {
 .general-product-row .m-product-info {
   padding: 10px;
 }
+.user-head {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+.user-title {
+  font-size: 16px;
+  font-weight: 700;
+  float: left;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.order-status {
+  margin-right: -15px;
+  float: right;
+}
 .order-list {
   display: block;
   margin: 100px 0 60px;
@@ -3478,6 +3516,28 @@ footer.main-footer .f-bct > span.bct {
 .order-list-more:hover {
   text-decoration: none;
   color: #ff5722;
+}
+.order-table a {
+  color: #212121;
+}
+.order-table a:hover {
+  text-decoration: underline;
+}
+.payment-info {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.payment-info .payment-block {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.p-text {
+  color: #3ac562;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-right: 5px;
 }
 select.bs-select-hidden,
 select.selectpicker {

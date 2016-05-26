@@ -1,19 +1,21 @@
 <nav class="user-account-nav">
-	<ul class="nav navbar-nav">
-    <li class="active">
-    	<a href="user-account-general.html">Thông tin chung</a>
-    </li>
-    <li>
-    	<a href="user-account-order-info.html">Kiểm tra đơn hàng</a>
-    </li>
-    <li>
-    	<a href="#">Thông tin giao hàng</a>
-    </li>
-    <li>
-    	<a href="#">Thông tin thanh toán</a>
-    </li>
-    <li>
-    	<a href="#">Điểm thưởng - Điểm tích lũy</a>
-    </li>
-  </ul>
+	<div class="col-md-11 col-md-offset-1">
+		<ul class="nav navbar-nav">
+	    <li class="{% if current_page == 'user-account-general' %}active{% endif %}">
+	    	<a href="user-account-general.html">Thông tin chung</a>
+	    </li>
+	    <li class="{% if current_page == 'user-account-order-info' %}active{% endif %}">
+	    	<a href="user-account-order-info.html">Kiểm tra đơn hàng</a>
+	    </li>
+	    <li class="{% if current_page == 'user-account-address-book' %}active{% endif %}">
+	    	<a href="user-account-address-book.html">Thông tin giao hàng</a>
+	    </li>
+	    <li class="{% if current_page == 'user-account-payment-option' %}active{% endif %}">
+	    	<a href="user-account-payment-option.html">Thông tin thanh toán</a>
+	    </li>
+	    <li class="{% if current_page == 'user-account-gift-code' %}active{% endif %}">
+	    	<a href="user-account-gift-code.html">Điểm thưởng - Điểm tích lũy</a>
+	    </li>
+	  </ul>
+	</div>
 </nav>

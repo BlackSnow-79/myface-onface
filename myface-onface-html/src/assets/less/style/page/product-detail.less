@@ -102,6 +102,14 @@
 	padding: 0;
 	li {
 		display: inline-block;
+		a {
+			color: @text-color-2;
+		}
+		&.active {
+			a {
+				color: @primary-color;
+			}
+		}
 		.icon {
 			margin-right: 5px;
 			font-weight: bold;

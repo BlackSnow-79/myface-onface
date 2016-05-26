@@ -1,8 +1,9 @@
+{% set current_page = 'user-account-order-info' %}
 {% extends "layout/_layout-myface-shop.html" %}
 {% block page-container %}
 <!--main-content-->
 <main class="container">
-	<div class="col-md-11 col-md-offset-1 wrap-user">
+	<div class="wrap-user">
 		<!--user-account-header-->
 		{% include "block/_account-header.html" %}
 		<!--/.user-account-header-->
@@ -10,7 +11,69 @@
 		{% include "block/_account-nav.html" %}
 		<!--./user-account-nav-->
 		<!--user-account-content-->
-		<div class="user-account-content general-content">
+		<div class="user-account-content order-content">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="user-head">
+					<h2 class="user-title">Thông tin đơn hàng</h2>
+					<div class="col-md-3 order-status">
+						<select class="form-control">
+							<option>Tất cả</option>
+							<option>Đặt hàng thành công</option>
+							<option>Đã xác nhận</option>
+							<option>Chưa liên lạc được</option>
+							<option>Đang chuẩn bị hàng</option>
+							<option>Đã đóng gói</option>
+							<option>Đang giao hàng</option>
+							<option>Đã giao hàng</option>
+							<option>Hủy đơn hàng</option>
+							<option>Thanh toán thành công</option>
+							<option>Thanh toán thất bại</option>
+						</select>
+					</div>
+				</div>
+				<div class="order-table-wrap">
+					<table class="table table-striped table-bordered order-table">
+						<thead>
+							<tr>
+								<th class="">Mã đơn hàng</th>
+								<th class="">Ngày đặt hàng</th>
+								<th class="">Sản phẩm mua</th>
+								<th class="">Tổng thanh toán</th>					
+								<th class="">Trạng thái đơn hàng</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for x in [1,2,3,4,5]%}
+							<tr>
+								<td><a href="#" class="">#12486578929</a></td>
+								<td><span>04/11/2015</span></td>
+								<td><span>Bộ 3 nồi thủy tinh Amberline Luminarc</span></td>
+								<td>
+									<span>1.000.000</span>
+								</td>
+								<td>
+									<span>Chưa giao hàng</span>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#" class="">#12486578929</a></td>
+								<td><span>07/05/2016</span></td>
+								<td><span>bộ bình ly Rotterdam Butterfly 5 món L4806 </span></td>
+								<td>
+									<span>1.000.000</span>
+								</td>
+								<td>
+									<span>Giao hàng thành công</span>
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+				<div class="full-width load-more">
+				  <button class="btn btn-loadmore">Xem đơn hàng tiếp theo</button>
+				</div>
+			</div>
 		</div><!--./user-account-content-->
 	</div>
 </main>
