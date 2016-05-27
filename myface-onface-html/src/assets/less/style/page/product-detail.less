@@ -80,6 +80,41 @@
 			padding-bottom: 20px;
 		}
 	}
+	.readmore {
+		text-decoration: underline;
+		font-weight: normal;
+		color: @text-color-1;
+		&:hover {
+			color: @primary-color;
+			text-decoration: none;
+		}
+	}	
+	.safe-block {
+		border-bottom: 0;
+	}
+}
+.block-title {
+	&,
+	a {
+		color: @text-color-1;
+		font-weight: 700;
+		font-size: 18px;
+		&:hover {
+			color: @primary-color;
+		}
+	}
+	.adr &,
+	.safe-block &,
+	.tags-property & {
+		margin-bottom: 15px;
+	}
+}
+.tags-property {
+	.item-property-label {
+		color: @text-color-1;
+		font-weight: 700 !important;
+		font-size: 18px;
+	}
 }
 .shipping-block {
 	position: relative;

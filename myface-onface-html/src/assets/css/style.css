@@ -391,6 +391,18 @@ img {
   font: normal normal normal 14px/1 FontAwesome;
   content: "\f077";
 }
+.add-p-form-btn {
+  width: 100%;
+  color: #727272;
+  border: 1px solid #dfdfdf;
+}
+.add-p-form-btn i {
+  color: #3ac562;
+  margin-right: 5px;
+}
+.add-p-form-btn:hover {
+  background-color: transparent;
+}
 /*
  * Component: Form
  * ---------------
@@ -3101,6 +3113,38 @@ a:hover .i-pin:before {
 .mf-product-info-block .info-block.pin-block {
   padding-bottom: 20px;
 }
+.mf-product-info-block .readmore {
+  text-decoration: underline;
+  font-weight: normal;
+  color: #212121;
+}
+.mf-product-info-block .readmore:hover {
+  color: #ff5722;
+  text-decoration: none;
+}
+.mf-product-info-block .safe-block {
+  border-bottom: 0;
+}
+.block-title,
+.block-title a {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+}
+.block-title:hover,
+.block-title a:hover {
+  color: #ff5722;
+}
+.adr .block-title,
+.safe-block .block-title,
+.tags-property .block-title {
+  margin-bottom: 15px;
+}
+.tags-property .item-property-label {
+  color: #212121;
+  font-weight: 700 !important;
+  font-size: 18px;
+}
 .shipping-block {
   position: relative;
 }
@@ -3538,6 +3582,11 @@ a:hover .i-pin:before {
   text-decoration: underline;
   font-weight: 700;
   margin-right: 5px;
+}
+.p-group-1 .checkbox {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #727272;
 }
 select.bs-select-hidden,
 select.selectpicker {
