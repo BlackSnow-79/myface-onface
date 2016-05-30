@@ -180,7 +180,9 @@
                   <div class="input-group send-group">
                     <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn">
                     <span class="input-group-btn">
-                      <button class="btn btn-primary btn-buy-submit" type="button"><span class="icon"></span>Đặt mua<span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span></button>
+                      <button class="btn btn-primary btn-buy-submit" type="button" data-toggle="modal" data-target="#order-success-modal">
+                      	<span class="icon"></span>Đặt mua<span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                      </button>
                     </span>
                   </div>
                 </div><!--./add phone number-->
@@ -302,7 +304,9 @@
             </div><!--/.product-property-->
 
             <div class="add-cart-block">
-              <button class="btn btn-primary btn-buy-now"><span class="icon"></span><span class="lr-text">Đặt mua</span><br><span class="sc-text">Nhận hàng - Trả tiền sau</span></button>
+              <button class="btn btn-primary btn-buy-now">
+              	<span class="icon"></span><span class="lr-text">Đặt mua</span><br><span class="sc-text">Nhận hàng - Trả tiền sau</span>
+              </button>
               <!--lightbox-wrap-->
               <div class="lightbox-wrap lightbox-1">
                 <!--add phone number-->
@@ -310,7 +314,9 @@
                   <div class="input-group send-group">
                     <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn">
                     <span class="input-group-btn">
-                      <button class="btn btn-primary btn-buy-submit" type="button"><span class="icon"></span>Đặt mua<span class="icon"></span></button>
+                      <button class="btn btn-primary btn-buy-submit" type="button" data-toggle="modal" data-target="#order-success-modal">
+                      	<span class="icon"></span>Đặt mua<span class="icon"></span>
+                      </button>
                     </span>
                   </div>
                 </div><!--./add phone number-->
@@ -388,4 +394,5 @@
   {% include "block/_fixed-block.html" %}
   <!--/.fixed-block-->
 </main>
+{% include "block/modal/_order-success-modal.html" %}
 {% endblock %}

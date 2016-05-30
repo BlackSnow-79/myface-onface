@@ -403,6 +403,52 @@ img {
 .add-p-form-btn:hover {
   background-color: transparent;
 }
+.btn-radius {
+  background-color: transparent;
+  color: #212121;
+  border-color: #dfdfdf;
+  border-radius: 20px;
+}
+.btn-radius:hover,
+.btn-radius:active,
+.btn-radius:focus,
+.btn-radius:active:hover,
+.btn-radius:active:focus {
+  color: #fff;
+  border-color: #ff5722;
+  background-color: #ff5722;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-view-more {
+  background-color: transparent;
+  color: #212121;
+  border-color: #dfdfdf;
+  border-radius: 20px;
+  padding: 6px 20px;
+  margin-top: 10px;
+}
+.btn-view-more:hover,
+.btn-view-more:active,
+.btn-view-more:focus,
+.btn-view-more:active:hover,
+.btn-view-more:active:focus {
+  color: #fff;
+  border-color: #ff5722;
+  background-color: #ff5722;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-view-more i {
+  color: #727272;
+  margin-left: 5px;
+}
+.btn-view-more .shop-name {
+  font-weight: 600;
+}
+.btn-view-more:hover i {
+  color: #fff;
+}
 /*
  * Component: Form
  * ---------------
@@ -903,6 +949,60 @@ img {
   border: 1px solid #dfdfdf;
   border-top: 0;
   border-radius: 0 0 3px 3px;
+}
+.n-modal .modal-header {
+  padding: 0;
+}
+.n-modal .close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  opacity: 1;
+  background: url(../images/icons/close.png);
+  background-size: 100% 100%;
+}
+.n-modal .close:hover {
+  opacity: 1;
+  background-size: 100% 100%;
+}
+.n-modal .modal-footer {
+  background-color: #f2f2f2;
+}
+.n-modal .modal-footer p {
+  margin: 0;
+}
+#order-success-modal .modal-header {
+  border-color: transparent;
+}
+#order-success-modal .modal-title {
+  color: #212121;
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 0;
+}
+#order-success-modal .thanks-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+#order-success-modal .thanks-text .shop-name {
+  color: #ff5722;
+}
+#order-success-modal .invoice-text {
+  font-size: 16px;
+}
+#order-success-modal .invoice-number {
+  color: #3ac562;
+  font-weight: 600;
+}
+#order-success-modal .mf-view-more {
+  font-weight: 600;
+  text-decoration: underline;
+}
+#order-success-modal .mf-view-more:hover {
+  text-decoration: none;
 }
 .panel-default {
   border-color: #dde0ef;
@@ -1810,7 +1910,7 @@ a:hover .i-pin:before {
   background: url(../images/icons/pin-active.png) no-repeat;
   background-size: auto 100%;
 }
-.shop-name {
+h2.shop-name {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1819,23 +1919,23 @@ a:hover .i-pin:before {
   padding: 10px 0;
   text-transform: capitalize;
 }
-.shop-name > a > span {
+h2.shop-name > a > span {
   display: inline-block;
   overflow: hidden;
 }
-.shop-name .shop-img {
+h2.shop-name .shop-img {
   width: 20px;
   height: 20px;
   margin-right: 8px;
   border-radius: 50%;
   background-color: #dfdfdf;
 }
-.shop-name .shop-img img {
+h2.shop-name .shop-img img {
   width: 100%;
   min-height: 100%;
   display: block;
 }
-.shop-name .shop-name-text {
+h2.shop-name .shop-name-text {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
