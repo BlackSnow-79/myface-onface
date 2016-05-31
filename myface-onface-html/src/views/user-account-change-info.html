@@ -11,8 +11,57 @@
 		{% include "block/_account-nav.html" %}
 		<!--./user-account-nav-->
 		<!--user-account-content-->
-		<div class="user-account-content general-content">
-			
+		<div class="user-account-content change-content">
+			<div class="col-md-11 col-md-offset-1">
+				<!--form-wrap-->
+				<div class="form-wrap">
+					<!--form-horizontal-->
+					<div class="form-horizontal change-info-form">
+						<h4 class="col-md-offset-1 form-title">Thay đổi thông tin</h4>
+						<div class="col-md-4 col-md-offset-1 form-left">
+		    			<div class="form-group checkout-group-1">
+	              <label for="" class="control-label">Họ tên:</label>
+	              <input type="text" class="form-control" placeholder="Ví dụ: Nguyễn Văn A">
+		            <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	            </div>
+	            <div class="form-group checkout-group-2">
+	              <label for="" class="control-label">Giới tính:</label>
+	              <div class="default-dropdown">
+									<select class="form-control">
+	                  <option>Nam</option>
+	                  <option>Nữ</option>
+	                </select>
+	              </div>
+	            </div>
+	            <div class="form-group checkout-group-3">
+	              <label for="" class="control-label">Ngày sinh:</label>
+	              <div class="date-picker-group">
+		              <input class="form-control date-picker" placeholder="10/05/2016">
+		            </div>
+		            <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	            </div>
+	            <div class="form-group checkout-group-4">
+	              <label for="" class="control-label">Email:</label>
+	              <input type="email" class="form-control">
+	              <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	            </div>
+	            <div class="form-group checkouta-group-5">
+	              <label for="" class="control-label">Số điện thoại:</label>
+	              <input type="tel" class="form-control">
+	              <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	            </div>
+	            <div class="form-group p-group-1">
+		            <input type="submit" class="btn btn-primary update-p-form-btn" value="Cập nhật thông tin">
+	            </div>
+			    	</div>
+			    	<div class="col-md-2 form-right">
+			    		<a class="btn change-pass-link-btn" href="user-account-change-password.html">
+			    			Thay đổi mật khẩu 
+			    		</a>
+			    	</div>
+		    	</div><!--/.form-horizontal-->
+				</div><!--/.form-wrap-->
+			</div>
 		</div><!--./user-account-content-->
 	</div>
 </main>

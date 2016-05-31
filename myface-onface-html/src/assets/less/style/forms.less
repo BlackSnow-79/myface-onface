@@ -146,3 +146,28 @@
     color: @primary-color; 
   }
 }  
+.date-picker-group {
+	width: 100%;
+	float: left;
+	position: relative;
+	&:after {
+		content: "\f073";
+		width: 30px;
+		height: 34px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		text-align: center;
+		padding-top: 9px;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 18px;
+		color: @text-color-2;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+	.form-control {
+	  background-color: transparent;
+	}
+}

@@ -1,0 +1,47 @@
+{% extends "checkout-step-1.html" %}
+{% block page-containerclass%}checkout checkout-myface{% endblock %}
+{% block header%}
+<header>
+	<div class="container">
+		<div class="col-xs-12 col-sm-6 col-lg-3 shop-logo">
+			<a href="index.html" title="myFace Shop">
+				<h1 class="logo-text">
+					<img class="" src="assets/images/logo/logo.png" alt="myface">	
+				</h1>
+			</a>
+		</div>
+		<!--checkout-process-->
+		<div class="col-xs-12 col-lg-6 checkout-process">
+			<ul class="progressbar">
+				<li class="completed">Địa chỉ nhận hàng</li>
+				<li class="completed">Thông tin thanh toán</li>
+				<li class="active">Đặt hàng - xong</li>
+			</ul>
+		</div><!--/.checkout-process-->
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="row hotline">
+				<span class="hotline-text">Hotline hỗ trợ:<a class="hotline-number" href="tel:+1900636798">1900 636 798</a></span>				<span class="note">(08-18h, T2-T7)</span>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+{% block page-container %}
+<main class="container checkout-step-3">
+	<div class="col-md-offset-3 col-md-6">
+		<div class="step-3-block st-bl-1">
+			<label class="step-block-title"> <span><i class="fa fa-check-circle"></i> </span>Đặt hàng thành công</label>
+			<p>Mã đơn hàng của bạn là: <span class="invoice-number">#101200160311.</span></p>
+		</div>
+		<div class="divider"></div>
+		<div class="step-3-block st-bl-2">
+			<p><span class="shop-name">myFace</span> cảm ơn bạn đã ghé thăm & mua hàng</p>
+			<p>Nếu có bất kì vấn đề gì liên quan đến giao nhận & hàng hóa, bạn đừng ngần ngại liên hệ với Shop, Shop sẽ trả lời và hỗ trợ bạn trong thời gian ngắn nhất</p>
+		</div>
+		<div class="divider"></div>
+		<div class="step-3-block st-bl-3">
+			<a class="backshop-btn" href="index.html">Tiếp tục mua sắm tại <label class="shop-name">myFace</label> <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+</main>
+{% endblock %}

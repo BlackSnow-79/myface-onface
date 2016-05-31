@@ -61,6 +61,13 @@
 					color: @text-color-1;
 					padding: 6px 15px;
 				}
+				&.active {
+					background-color: #dfdfdf; 
+					a {
+						color: #212121;
+    				font-weight: 600;
+					}
+				}
 			}
 			&.more-nav {	
 				a {
@@ -185,5 +192,20 @@
 		margin-top: 10px;
 		margin-bottom: 15px;
 		color: @text-color-2;
+	}
+}
+.change-info-form {
+	.control-label {
+		margin-bottom: 5px;
+		font-weight: normal;
+	}
+	.change-pass-link-btn {
+		margin-left: 15px;
+		margin-top: 28px;
+	}
+	.form-title {
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 600;
 	}
 }

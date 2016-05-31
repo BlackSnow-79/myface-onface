@@ -51,4 +51,15 @@
 		border-bottom-color: transparent;
 		margin-bottom: 0;
 	}
+	.bread-crumb-item {
+		& + li {
+			&:before {
+				position: absolute;
+				top: 17px;
+				left: -2px;
+		    color: @text-color-1;
+		    content: "/\00a0";
+			}
+		}
+	}
 }

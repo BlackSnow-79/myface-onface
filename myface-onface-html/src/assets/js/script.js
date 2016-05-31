@@ -93,4 +93,11 @@ $(document).ready(function() {
 	$(window).resize(function() { 
     setSizes1(); 
   });
+   /*date picker*/
+  $(function () {
+    $('.date-picker').datetimepicker({
+        viewMode: 'years',
+        format: 'DD/MM/YYYY'
+    });
+	});
 });
