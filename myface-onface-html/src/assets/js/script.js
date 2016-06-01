@@ -100,4 +100,9 @@ $(document).ready(function() {
         format: 'DD/MM/YYYY'
     });
 	});
+	//add-address-form 
+	$('.add-p-form-btn').click(function(){
+		$(this).hide();
+	  $('.add-address-form').show('slow');
+  });
 });

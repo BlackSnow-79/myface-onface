@@ -393,7 +393,7 @@ img {
 }
 .add-p-form-btn,
 .change-pass-link-btn {
-  width: 100%;
+  width: 165px;
   color: #727272;
   border: 1px solid #dfdfdf;
   background-color: #dfdfdf;
@@ -452,6 +452,15 @@ img {
 }
 .btn-view-more:hover i {
   color: #fff;
+}
+.btn-box-tool {
+  min-width: 20px;
+  color: #727272;
+  padding: 5px;
+  background: transparent;
+}
+.btn-box-tool:hover {
+  color: #ff5722;
 }
 /*
  * Component: Form
@@ -3754,6 +3763,42 @@ h2.shop-name .shop-name-text {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+}
+.address-list {
+  width: 100%;
+  margin-top: 30px;
+  float: left;
+}
+.address-list .accordion-section:first-child .address {
+  border-top: 1px solid #dfdfdf;
+}
+.accordion,
+.accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.address {
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+.address li {
+  list-style: none;
+  padding: 0;
+}
+.address li p {
+  margin-bottom: 0;
+}
+.address-details {
+  padding: 20px 0;
+}
+.box-tools button:first-child {
+  margin-right: 10px;
+}
+.add-address-form {
+  display: none;
 }
 .checkout-myface header .shop-logo {
   position: relative;
