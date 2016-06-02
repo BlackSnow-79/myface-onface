@@ -1,0 +1,80 @@
+.mf-register {
+	footer {
+		max-width: 750px;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		color: @text-color-1;
+		.hotline-number {
+			text-decoration: none;
+			color: @text-color-1;
+		}
+	}
+	main {
+		max-width: 750px;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+	}
+	header {
+		> div {
+			max-width: 750px;
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+.help-line {
+  > li {
+  	> a {
+  		padding-top: 25px;
+  		padding-bottom: 25px;
+  	}
+  }
+}
+.login-main {
+	width: 100%;
+	float: left;
+	padding: 20px 5px;
+	margin-top: 35px;
+	border: @border;
+	border-radius: 4px;
+	.btn-lg-by-face {
+		margin-bottom: 20px;
+	}
+}
+.tabs-login {
+	padding: 0;
+	margin: 0 0 20px;
+	.tab-item {
+		a {	
+			color: @text-color-2;
+			font-size: 16px;
+			font-weight: 600;
+			padding-bottom: 0;
+			padding-top: 0;
+			&:before {
+				content: "\f10c";
+		    width: 15px;
+		    height: 15px;
+		    display: inline-block;
+		    font: normal normal normal 14px/1 FontAwesome;
+		    font-size: 14px;
+		    text-align: left;
+			}
+			&:hover {
+				color: @primary-color;
+			}
+		}
+		&.active {
+			a {
+				color: @text-color-1;
+				&:before {
+					content: "\f192";
+				}
+			}
+		}
+	}
+}

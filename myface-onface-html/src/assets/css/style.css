@@ -1129,6 +1129,7 @@ img {
 }
 .header-row-1 {
   border-bottom: 1px solid #dfdfdf;
+  height: 70px;
 }
 .header-row-1 .navbar {
   height: 70px;
@@ -3195,6 +3196,9 @@ h2.shop-name .shop-name-text {
   float: left;
   position: relative;
 }
+.mf-product-wrap .product-container {
+  margin-bottom: 20px;
+}
 .mf-product-content {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
@@ -3295,6 +3299,10 @@ h2.shop-name .shop-name-text {
 .safe-block .block-title,
 .tags-property .block-title {
   margin-bottom: 15px;
+}
+.adr .shop-list-row {
+  margin-right: -10px;
+  margin-left: -10px;
 }
 .tags-property .item-property-label {
   color: #212121;
@@ -3769,6 +3777,11 @@ h2.shop-name .shop-name-text {
   margin-top: 30px;
   float: left;
 }
+.address-list .accordion-section {
+  margin-bottom: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .address-list .accordion-section:first-child .address {
   border-top: 1px solid #dfdfdf;
 }
@@ -3800,18 +3813,89 @@ h2.shop-name .shop-name-text {
 .add-address-form {
   display: none;
 }
+.checkout-myface header .myfaceshop-logo,
 .checkout-myface header .shop-logo {
   position: relative;
 }
+.checkout-myface header .myfaceshop-logo a,
 .checkout-myface header .shop-logo a {
   display: block;
   padding: 15px 0;
 }
+.checkout-myface header .myfaceshop-logo a:before,
 .checkout-myface header .shop-logo a:before {
   display: none;
 }
 .checkout-myface header .logo-text {
   height: 42px;
+}
+.mf-register footer {
+  max-width: 750px;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  color: #212121;
+}
+.mf-register footer .hotline-number {
+  text-decoration: none;
+  color: #212121;
+}
+.mf-register main {
+  max-width: 750px;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.mf-register header > div {
+  max-width: 750px;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+.help-line > li > a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.login-main {
+  width: 100%;
+  float: left;
+  padding: 20px 5px;
+  margin-top: 35px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+}
+.login-main .btn-lg-by-face {
+  margin-bottom: 20px;
+}
+.tabs-login {
+  padding: 0;
+  margin: 0 0 20px;
+}
+.tabs-login .tab-item a {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.tabs-login .tab-item a:before {
+  content: "\f10c";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  text-align: left;
+}
+.tabs-login .tab-item a:hover {
+  color: #ff5722;
+}
+.tabs-login .tab-item.active a {
+  color: #212121;
+}
+.tabs-login .tab-item.active a:before {
+  content: "\f192";
 }
 select.bs-select-hidden,
 select.selectpicker {

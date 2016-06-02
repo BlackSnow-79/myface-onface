@@ -1,0 +1,34 @@
+{% extends "_layout-base.html" %}
+{% block page-containerclass%}help-center{% endblock %}
+<!--header-->
+{% block header%}
+<header class="header-row-1 header-without-search">
+	<div class="container">
+		<div class="col-xs-12 col-sm-6 col-lg-3 myfaceshop-logo">
+			<a href="index.html" title="myFace Shop">
+				<h1 class="logo-text">
+					<img class="" src="assets/images/logo/logo.png" alt="myface">	
+				</h1>
+			</a>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-9">
+			<div class="row hotline">
+				<span class="hotline-text">Hotline hỗ trợ:<a class="hotline-number" href="tel:+1900636798">1900 636 798</a></span>
+				<span class="note">(08-18h, T2-T7)</span>
+			</div>
+		</div>
+	</div>
+</header>
+{% endblock %}
+<!--page-container-->
+{% block page-container %}{% endblock %}
+<!--footer-->
+{% block footer%}
+{% include "../block/_footer-onface.html" %}
+{% endblock %}
+<!--modal-->
+{% block modal%}
+{% include "../block/modal/_invoice-modal.html" %}
+{% include "../block/modal/_invoice-emty-modal.html" %}
+{% include "../block/modal/_alert-modal.html" %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout/_layout-register.html" %}
+{% block page-container %}
+<main class="container">
+	<div class=" login-main">
+		<ul class="tabs-login">
+      <li class="tab-item tab-single">
+      	<a href="register.html">Đăng ký</a>
+      </li>
+      <li class="tab-item tab-single active">
+      	<a href="log-in.html">Đăng nhập</a>
+      </li>
+    </ul>
+		<div class="col-md-6 log-form-left">
+			<button class="btn btn-default btn-lg-by-face"><i class="fa fa-facebook"></i>Đăng nhập siêu gọn bằng Facebook</button>
+			<p class="log-text">myFace Shop khuyến khích đăng ký bằng Facebook, nhanh hơn, nhiều tiện ích hơn. Chỉ mất 3 giây để đăng ký<p>
+		</div>
+		<div class="col-md-6 log-form-right">
+			<h4 class="form-title">Đăng nhập tài khoản</h4>
+			<div class="form-group">
+	      <label for="" class="control-label">Số điện thoại hoặc Email</label>
+	      <input type="tel" class="form-control" placeholder="Ví dụ: 0902559591">
+	      <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	    </div>
+			<div class="form-group">
+	      <label for="" class="control-label">Mật khẩu</label>
+	      <input type="password" class="form-control">
+	      <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+	    </div>
+		</div>
+	</div>
+</main>
+{% endblock %}
