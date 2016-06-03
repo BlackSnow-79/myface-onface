@@ -162,6 +162,29 @@ img {
 .horizontal-list > li {
   display: inline-block;
 }
+.list-with-icon {
+  width: 100%;
+  float: left;
+  padding: 0;
+  list-style: none;
+}
+.list-with-icon li {
+  position: relative;
+  padding-left: 40px;
+}
+.list-with-icon li:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 18px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+}
 /*
  * Component: Button
  * -----------------
@@ -366,14 +389,27 @@ img {
   background: url(../images/icons/like.png) no-repeat center center;
 }
 .btn-lg-by-face {
+  position: relative;
+  height: 40px;
+  padding: 9px 12px;
   border-color: #3a5897;
   color: #3a5897;
   text-align: left;
+  line-height: 1.7;
 }
 .btn-lg-by-face i {
-  width: 20px;
+  width: 25px;
 }
-.btn-lg-by-face:hover {
+.btn-lg-by-face i:before {
+  position: absolute;
+  top: 12px;
+  font-size: 22px;
+}
+.btn-lg-by-face:hover,
+.btn-lg-by-face:active,
+.btn-lg-by-face:active:focus,
+.btn-lg-by-face:visited,
+.btn-lg-by-face:focus {
   background: #3a5897;
   border-color: #3a5897;
 }
@@ -590,7 +626,6 @@ img {
 }
 .date-picker-group {
   width: 100%;
-  float: left;
   position: relative;
 }
 .date-picker-group:after {
@@ -612,6 +647,7 @@ img {
 }
 .date-picker-group .form-control {
   background-color: transparent;
+  cursor: pointer;
 }
 /*
  * Component: Table
@@ -3848,14 +3884,28 @@ h2.shop-name .shop-name-text {
   margin-bottom: 30px;
 }
 .mf-register header > div {
-  max-width: 750px;
+  max-width: 780px;
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
-.help-line > li > a {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.help-nav .nav {
+  float: right;
+  margin: 0;
+}
+.help-nav .nav > li {
+  width: auto;
+  display: inline-block;
+}
+.help-nav .nav > li > a {
+  padding: 25px 5px;
+  text-decoration: underline;
+  color: #212121;
+}
+.help-nav .nav > li > a:hover {
+  text-decoration: none;
+  color: #ff5722;
+  background-color: transparent;
 }
 .login-main {
   width: 100%;
@@ -3866,7 +3916,11 @@ h2.shop-name .shop-name-text {
   border-radius: 4px;
 }
 .login-main .btn-lg-by-face {
+  width: 256px;
   margin-bottom: 20px;
+  background: #3a5897;
+  border-color: #3a5897;
+  color: #fff;
 }
 .tabs-login {
   padding: 0;
@@ -3896,6 +3950,91 @@ h2.shop-name .shop-name-text {
 }
 .tabs-login .tab-item.active a:before {
   content: "\f192";
+}
+.log-form-right .form-title {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dfdfdf;
+  font-weight: 600;
+  font-size: 17px;
+}
+.log-form-right .control-label {
+  font-weight: normal;
+}
+.log-form-right .color-radio span:before {
+  top: 0;
+}
+.log-form-right .checkbox {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.log-form-right .forget-pass-mgs,
+.log-form-right .lg-a-text {
+  color: #212121;
+  text-decoration: underline;
+  float: right;
+}
+.log-form-right .forget-pass-mgs:hover,
+.log-form-right .lg-a-text:hover {
+  color: #ff5722;
+  text-decoration: none;
+}
+.log-form-right .lg-a-text {
+  float: none;
+  font-weight: 600;
+}
+.log-form-right .form-group {
+  position: relative;
+}
+.log-form-right .dk-text {
+  text-decoration: underline;
+}
+.log-form-right .dk-text:hover {
+  text-decoration: none;
+}
+.register-step-2 {
+  display: none;
+}
+.benifit-list {
+  margin-top: 20px;
+  float: left;
+}
+.benifit-list .title {
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .benifit-list {
+    padding: 15px;
+  }
+}
+.bf-list li {
+  margin-bottom: 10px;
+}
+.bf-list li:before {
+  content: "\f05d";
+  color: #3ac562;
+  left: 15px;
+}
+@media (min-width: 768px) {
+  .bf-list li:last-child {
+    margin-top: -15px;
+    margin-bottom: 0;
+  }
+}
+.bf-text {
+  font-style: italic;
+  float: right;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .bf-text {
+    margin-top: -40px;
+  }
 }
 select.bs-select-hidden,
 select.selectpicker {

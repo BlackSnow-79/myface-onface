@@ -19,20 +19,32 @@
 	}
 	header {
 		> div {
-			max-width: 750px;
+			max-width: 780px;
 			float: none;
 			margin-right: auto;
 			margin-left: auto;
 		}
 	}
 }
-.help-line {
-  > li {
-  	> a {
-  		padding-top: 25px;
-  		padding-bottom: 25px;
-  	}
-  }
+.help-nav {
+	.nav {
+		float: right;
+		margin: 0;
+		> li {
+			width: auto;
+			display: inline-block;
+			> a {
+				padding: 25px 5px;
+   			text-decoration: underline;
+   			color: @text-color-1;
+ 				&:hover {
+ 					text-decoration: none;
+ 					color: @primary-color;
+ 					background-color: transparent;
+   			}
+			}
+		}
+	}
 }
 .login-main {
 	width: 100%;
@@ -42,7 +54,11 @@
 	border: @border;
 	border-radius: 4px;
 	.btn-lg-by-face {
+		width: 256px;
 		margin-bottom: 20px;
+		background: #3a5897;
+    border-color: #3a5897;
+    color: #fff;
 	}
 }
 .tabs-login {
@@ -77,4 +93,90 @@
 			}
 		}
 	}
+}
+.log-form-right {
+	.form-title {
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 20px;
+		padding-bottom: 8px;
+		border-bottom: @border;
+		font-weight: 600;
+		font-size: 17px; 
+	}
+	.control-label {
+		font-weight: normal;
+	}
+	.color-radio {
+		span:before {
+			top: 0;
+		}
+	}
+	.checkbox {
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.forget-pass-mgs,
+	.lg-a-text {
+		color: @text-color-1;
+		text-decoration: underline;
+		float: right;
+		&:hover {
+			color: @primary-color;
+			text-decoration: none;
+		}
+	}
+	.lg-a-text {
+		float: none;
+		font-weight: 600;
+	}
+	.form-group {
+		position: relative;
+	}
+	.dk-text {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.register-step-2 {
+	display: none;
+}
+.benifit-list {
+	margin-top: 20px;
+	float: left;
+	.title {
+		font-weight: 700;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	@media (max-width: @screen-xs-max) {
+		padding: 15px;
+  }
+}
+.bf-list {
+	li {
+		margin-bottom: 10px;
+		&:before {
+			content: "\f05d";
+			color: @green;
+			left: 15px;
+		}
+		@media (min-width: @screen-sm-min) {
+			&:last-child {
+				margin-top: -15px;
+				margin-bottom: 0;
+			}
+	  }
+	}
+}
+.bf-text {
+	font-style: italic;
+	float: right;
+	text-align: right;
+	@media (min-width: @screen-sm-min) {
+		margin-top: -40px;
+  }
 }

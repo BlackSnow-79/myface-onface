@@ -105,4 +105,9 @@ $(document).ready(function() {
 		$(this).hide();
 	  $('.add-address-form').show('slow');
   });
+  //register
+  $('.rg-step-1-btn').click(function(){
+	  $('.register-step-1').hide('slow');
+	  $('.register-step-2').show('slow');
+  });
 });

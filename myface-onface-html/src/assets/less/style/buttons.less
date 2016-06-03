@@ -209,13 +209,26 @@
   }
 }
 .btn-lg-by-face {
+	position: relative;
+	height: 40px;
+	padding: 9px 12px;
   border-color: #3a5897;
   color: #3a5897;
   text-align: left;
+  line-height: 1.7;
   i {
-    width: 20px;
+    width: 25px;
+    &:before {
+    	position: absolute;
+    	top: 12px;
+    	font-size: 22px;
+    }
   }
-  &:hover {
+  &:hover,
+  &:active,
+  &:active:focus,
+  &:visited,
+  &:focus {
     background: #3a5897;
     border-color: #3a5897;
   }
