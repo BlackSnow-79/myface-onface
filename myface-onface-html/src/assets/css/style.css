@@ -4043,6 +4043,29 @@ h2.shop-name .shop-name-text {
 .support-center header .container {
   padding: 0;
 }
+.support-center header .hotline {
+  position: relative;
+  padding-left: 43px;
+}
+.support-center header .hotline:before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  background-image: url(../images/icons/hotline.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .support-center header .hotline:before {
+    top: 4px;
+  }
+}
+.support-center header .hotline .hotline-number {
+  font-size: 18px;
+}
 .cover-img {
   width: 100%;
   height: 175px;
@@ -4066,6 +4089,187 @@ h2.shop-name .shop-name-text {
   width: 100%;
   height: 45px;
   background-color: #f0f1f3;
+  margin-bottom: 15px;
+}
+.support-container {
+  padding-top: 15px;
+}
+.support-div-1,
+.support-div-2 {
+  width: 100%;
+}
+.sp-title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 21px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.sp-content {
+  width: 100%;
+  padding: 10px 0;
+}
+.sidebar-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-list li {
+  width: 100%;
+}
+.sidebar-list li a {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  color: #727272;
+}
+.sidebar-list li a:hover {
+  background-color: #f0f1f3;
+}
+.sidebar-list li.active a {
+  color: #212121;
+  font-weight: 600;
+}
+.sp-label {
+  padding: 12px 10px;
+  padding-left: 23px;
+  font-weight: 600;
+  font-size: 16px;
+  float: left;
+  position: relative;
+}
+.sp-label:before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  background-image: url(../images/icons/home.png);
+  background-repeat: no-repeat;
+}
+.invoice-sp-link {
+  background-color: #ff7540;
+  color: #fff;
+  padding: 14px 16px;
+  padding-left: 46px;
+  position: relative;
+  transition: all 0.2s ease-in-out 0s;
+}
+.invoice-sp-link:hover,
+.invoice-sp-link:focus,
+.invoice-sp-link:active:focus {
+  background-color: #ff5722;
+  color: #fff;
+}
+.invoice-sp-link:before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  background-image: url(../images/icons/help.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .invoice-sp-link:before {
+    top: 14px;
+    left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .invoice-sp-link {
+    margin-right: -15px;
+    padding-left: 0;
+    text-indent: -999px;
+  }
+}
+@media (min-width: 992px) {
+  .link-icon-wrap {
+    width: 20%;
+  }
+}
+@media (max-width: 991px) {
+  .link-icon-wrap {
+    margin-bottom: 30px;
+  }
+}
+.link-icon-support {
+  width: 100%;
+  height: 145px;
+  display: block;
+  float: left;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.link-icon-support > * {
+  width: 100%;
+  display: block;
+}
+.link-icon-support label {
+  height: 80px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.link-icon-support .text {
+  text-align: center;
+  color: #727272;
+}
+.link-icon-support:hover {
+  border-color: #ff5722;
+}
+.sp-icon {
+  width: 68px;
+  height: 68px;
+  display: block;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+.sp-icon.icon1 {
+  background: url(../images/icons/icon/1.png) no-repeat;
+}
+.sp-icon.icon2 {
+  background: url(../images/icons/icon/2.png) no-repeat;
+}
+.sp-icon.icon3 {
+  background: url(../images/icons/icon/3.png) no-repeat;
+}
+.sp-icon.icon4 {
+  background: url(../images/icons/icon/4.png) no-repeat;
+}
+.sp-icon.icon5 {
+  background: url(../images/icons/icon/5.png) no-repeat;
 }
 select.bs-select-hidden,
 select.selectpicker {

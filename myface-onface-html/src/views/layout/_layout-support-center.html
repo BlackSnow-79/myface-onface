@@ -34,7 +34,9 @@
 		</div>
 	</div>
 	<nav class="support-nav">
-		<div class="container">nav
+		<div class="container">
+			<span class="sp-label">Trung tâm hỗ trợ myFace Shop</span>
+			<a class="pull-right invoice-sp-link" href="#">Hổ trợ giải quyết đơn hàng</a>
 		</div>
 	</nav>
 	{% block support-center %}
@@ -47,4 +49,5 @@
 {% endblock %}
 <!--modal-->
 {% block modal%}
+	{% include "../block/modal/_contact-modal.html" %}
 {% endblock %}
