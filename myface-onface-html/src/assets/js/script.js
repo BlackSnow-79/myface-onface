@@ -110,4 +110,20 @@ $(document).ready(function() {
 	  $('.register-step-1').hide('slow');
 	  $('.register-step-2').show('slow');
   });
+  //support-center
+  $('.sidebar-tab-selector').click(function(){
+		if($(this).hasClass('drop-active')) {
+      $(this).removeClass('drop-active');
+    }
+    else {
+      $(this).addClass('drop-active');
+    }
+	});	
+	$(function(){
+		$('.sidebar-tab-selector').text($('.sidebar-drop .active a').text());
+		$('.sidebar-drop li a').click(function(){
+			$('.sidebar-tab-selector').text($(this).text());
+			$('.sidebar-tab-selector').val($(this).text());
+		});
+	});
 });

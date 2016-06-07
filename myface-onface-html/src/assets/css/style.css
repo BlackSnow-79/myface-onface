@@ -6,6 +6,7 @@
 html,
 body {
   min-height: 100%;
+  min-width: 320px;
 }
 .layout-boxed html,
 .layout-boxed body {
@@ -584,6 +585,7 @@ img {
 /*form-horizontal*/
 .form-horizontal .control-label {
   text-align: left;
+  font-weight: 600;
 }
 .form-horizontal .form-inline .form-group {
   margin-left: 0;
@@ -4106,9 +4108,52 @@ h2.shop-name .shop-name-text {
   font-size: 21px;
   border-bottom: 1px solid #dfdfdf;
 }
+@media (max-width: 767px) {
+  .sp-title {
+    font-size: 19px;
+  }
+}
 .sp-content {
   width: 100%;
   padding: 10px 0;
+}
+.sp-content .panel {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.sp-content .panel:first-child {
+  margin-top: -10px;
+}
+.sp-content .panel-heading {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.sp-content .panel-heading a {
+  color: #ff5722;
+  font-weight: 600;
+}
+.sp-content .panel-heading a.collapsed {
+  color: #212121;
+}
+.sp-content .panel-heading a.collapsed:hover {
+  color: #ff5722;
+}
+.sp-content .panel-body {
+  background-color: #f0f1f3;
+  padding: 50px 35px;
+  color: #727272;
+  border: 0;
+  border-left: 3px solid #ff5722;
+}
+.sp-content .panel-body p {
+  margin-bottom: 0;
+}
+.sidebar-label {
+  width: 100%;
+  position: relative;
 }
 .sidebar-list {
   width: 100%;
@@ -4131,6 +4176,52 @@ h2.shop-name .shop-name-text {
 .sidebar-list li.active a {
   color: #212121;
   font-weight: 600;
+}
+@media (max-width: 991px) {
+  .sidebar-drop {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    border: 1px solid #dfdfdf;
+  }
+}
+.sidebar-tab-selector {
+  display: none;
+}
+@media (max-width: 991px) {
+  .sidebar-tab-selector {
+    display: block;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    padding: 10px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .sidebar-tab-selector:hover {
+    background-color: #f0f1f3;
+    color: #212121;
+  }
+  .sidebar-tab-selector:focus,
+  .sidebar-tab-selector:active:focus {
+    color: #212121;
+  }
+  .sidebar-tab-selector.drop-active + .sidebar-drop {
+    display: block;
+    background: #fff;
+  }
+  .sidebar-tab-selector:before {
+    float: right;
+    margin-top: -1px;
+    margin-right: 5px;
+    display: inline;
+    font-size: 20px;
+    font-family: FontAwesome;
+    height: auto;
+    content: "\f107";
+    text-shadow: none;
+  }
 }
 .sp-label {
   padding: 12px 10px;
@@ -4270,6 +4361,95 @@ h2.shop-name .shop-name-text {
 }
 .sp-icon.icon5 {
   background: url(../images/icons/icon/5.png) no-repeat;
+}
+.img-label {
+  color: #fff;
+  text-align: center;
+  padding: 28px 15px;
+}
+.sp-ct-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .sp-ct-title {
+    font-size: 20px;
+  }
+}
+.sp-ct-text {
+  line-height: 1.4;
+}
+@media (min-width: 992px) {
+  #contact-modal .modal-dialog {
+    width: 810px;
+    margin-top: 15%;
+  }
+}
+#contact-modal .modal-content {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#contact-modal .modal-header {
+  border: 0;
+}
+#contact-modal .modal-body {
+  background-color: #fd9021;
+  background-image: url(../images/upload/banner/img-sp.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top left;
+  padding: 0 15px;
+  border-radius: 3px;
+}
+@media (min-width: 1170px) {
+  #contact-modal .modal-body {
+    background-size: 50% 100%;
+  }
+}
+@media (max-width: 767px) {
+  #contact-modal .modal-body {
+    background-image: none;
+  }
+}
+#contact-modal .content-label {
+  background-color: #fff;
+  padding: 36px 30px;
+  border-radius: 0 3px 3px 0;
+}
+@media (min-width: 1170px) {
+  #contact-modal .content-label {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+@media (max-width: 767px) {
+  #contact-modal .content-label {
+    padding: 30px 15px;
+    border-radius: 0 0 3px 3px;
+  }
+}
+#contact-modal .content-label .form-group {
+  margin-bottom: 9px;
+}
+#contact-modal .content-label input.form-control {
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#contact-modal .content-label textarea {
+  height: 100px;
+  resize: none;
+}
+#contact-modal .content-label .p-group-1 {
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+#contact-modal .content-label .p-group-1 .btn {
+  padding: 10px;
+  width: 165px;
 }
 select.bs-select-hidden,
 select.selectpicker {
