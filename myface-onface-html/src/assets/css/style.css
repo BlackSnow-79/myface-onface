@@ -626,6 +626,12 @@ img {
 .color-radio input:hover + span:before {
   color: #ff5722;
 }
+.color-radio.square input + span:before {
+  content: "\f096";
+}
+.color-radio.square input:checked + span:before {
+  content: "\f14a";
+}
 .date-picker-group {
   width: 100%;
   position: relative;
@@ -3925,6 +3931,73 @@ h2.shop-name .shop-name-text {
 }
 .add-address-form {
   display: none;
+}
+.gift-title {
+  font-weight: 700;
+}
+.giftcode-block {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.giftcode-block > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+.coin {
+  height: 45px;
+  font-size: 26px;
+  padding-left: 72px;
+  padding-top: 5px;
+  background: url('../images/icons/coins.png') no-repeat top left;
+  background-size: 65px 45px;
+}
+.giftcode-history {
+  margin-bottom: 20px;
+}
+.giftcode-history a {
+  color: #212121;
+  text-decoration: underline;
+}
+.giftcode-table-wrap table th {
+  background-color: #efefef;
+}
+.giftcode-table-wrap .gift-des {
+  padding-right: 60px;
+}
+.giftcode-table-wrap .gift-des a {
+  color: #3ac562;
+  text-decoration: underline;
+}
+.giftcode-table-wrap .btn-tool {
+  width: 165px;
+}
+.giftcode-table-wrap .btn-tool .btn-box-tool {
+  margin-left: 10px;
+}
+.giftcode-table-wrap .gift-date {
+  width: 110px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 7px;
+  text-align: center;
+  background-color: #f0f1f3;
+  color: #727272;
+}
+.giftcode-table-wrap .available .gift-date {
+  background-color: transparent;
+  color: #3ac562;
+}
+.remove-radio .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.remove-radio .checkbox span:before {
+  top: 2px;
 }
 .checkout-myface header .myfaceshop-logo,
 .checkout-myface header .shop-logo {

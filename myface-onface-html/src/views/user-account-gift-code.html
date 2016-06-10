@@ -11,7 +11,131 @@
 		{% include "block/_account-nav.html" %}
 		<!--./user-account-nav-->
 		<!--user-account-content-->
-		<div class="user-account-content general-content">
+		<div class="user-account-content giftcode-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="user-head">
+						<h2 class="user-title">Thông tin khuyến mãi - điểm thưởng</h2>
+					</div>
+					<div class="payment-info">
+						<p class="payment-text">
+							<span class="p-text">Tips:</span> Thường xuyên kiểm tra phần thông tin này sẽ giúp bạn không bỏ lỡ những Gift code & myXu dành cho bạn.
+						</p>
+						<p class="gift-title">Điểm thưởng - điểm tích lũy</p>
+						<div class="row giftcode-wrap">
+							<div class="col-md-5">
+								<div class="giftcode-block">
+									<div class="col-sm-6 giftcode-now">
+										<p class="gift-title">Số myXu bạn đang có</p>
+										<div class="coin">
+											900
+										</div>
+									</div>
+									<div class="col-sm-6 giftcode-future">
+										<p class="gift-title">Số myXu bạn sắp nhận được</p>
+										<div class="coin">
+											300
+										</div>
+									</div>
+								</div>
+								<p class="giftcode-history">
+									<a href="#">Lịch sử điểm thưởng</a>
+								</p>
+								<div class="codehistory-table-wrap">
+									<table class="table table-bordered">
+										<tbody>
+											<tr class="new available">
+												<td>+500</td>
+												<td>-200</td>
+												<td class="gift-des">
+													Hoạt động từ đơn hàng <strong>#53867485656</strong>
+												</td>
+												<td>Đã chuyển</td>
+											</tr>
+											<tr class="new available">
+												<td>+5000</td>
+												<td></td>
+												<td class="gift-des">
+													myFace tặng tuần lễ mua sắm 30/04 <br> 01/05
+												</td>
+												<td>Chờ duyệt</td>
+											</tr>
+											<tr class="new available">
+												<td>+500</td>
+												<td>-200</td>
+												<td class="gift-des">
+													Hoạt động từ đơn hàng <strong>#53867485656</strong>
+												</td>
+												<td>Đã chuyển</td>
+											</tr>
+											<tr class="new available">
+												<td>+500</td>
+												<td></td>
+												<td class="gift-des">
+													Hoạt động từ đơn hàng <strong>#53867485656</strong>
+												</td>
+												<td>Đã chuyển</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-7">
+								<div class="giftcode-table-wrap">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="">Ngày gửi</th>
+												<th class="" colspan="2">
+													Thông tin
+													<div class="pull-right remove-radio">
+														<div class="checkbox color-radio square">
+											      	<label class="remember-text">
+											    	 		<input type="checkbox" name="" id="" value="">
+																<span>Tự động xóa tin hết hiệu lực</span>
+											      	</label>
+											      </div>
+											    </div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											{% for x in [1,2,3]%}
+											<tr class="new available">
+												<td>07/05/2016</td>
+												<td class="gift-des">
+													myFace dành tặng bạn Giftcode <strong>Face4554</strong>, giảm giá 100.000đ cho mọi đơn hàng trên 600.000đ. 
+													<a class="" href="#">Chi tiết</a>
+												</td>
+												<td class="btn-tool">
+													<span class="gift-date">Còn hiệu lực</span>
+													<button type="button" class="btn btn-box-tool" title="xóa">
+							            	<i class="fa fa-times" aria-hidden="true"></i>
+							            </button>
+												</td>
+											</tr>
+											<tr>
+												<td>07/05/2016</td>
+												<td class="gift-des">
+													myFace dành tặng bạn Giftcode <strong>Face4554</strong>, giảm giá 100.000đ cho mọi đơn hàng trên 600.000đ. 
+													<a class="" href="#">Chi tiết</a>
+												</td>
+												<td class="btn-tool">
+													<span class="gift-date">Hết hiệu lực</span>
+													<button type="button" class="btn btn-box-tool" title="xóa">
+							            	<i class="fa fa-times" aria-hidden="true"></i>
+							            </button>
+												</td>
+											</tr>
+											{% endfor %}
+										</tbody>
+									</table>
+								</div>
+							</div>
+			      </div>
+					</div>
+				</div>
+			</div>
 		</div><!--./user-account-content-->
 	</div>
 </main>

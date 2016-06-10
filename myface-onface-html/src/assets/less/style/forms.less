@@ -146,6 +146,14 @@
   input:hover + span:before {
     color: @primary-color; 
   }
+  &.square {
+  	input + span:before {
+	    content: "\f096";
+	  }
+	  input:checked + span:before {
+    	content: "\f14a";
+	  }
+  }
 }  
 .date-picker-group {
 	width: 100%;
