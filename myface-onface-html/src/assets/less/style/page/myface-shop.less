@@ -112,6 +112,7 @@
   	line-height: 20px;
   	color: @text-color-1;
   	font-weight: 600;
+  	text-transform: lowercase;
 		&:hover {
 			color: @primary-color;
 		}
@@ -123,6 +124,9 @@
 	    font: normal normal normal 14px/1 FontAwesome;
 	    font-size: 14px;
 	    text-align: right;
+		}
+		&::first-letter {
+		  text-transform: uppercase;
 		}
   }
   &.active > a {

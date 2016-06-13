@@ -126,6 +126,12 @@
 						padding: 0 15px 0 20px;
 					}
 					&.invoice-tracking {
+						line-height: 1;
+						position: absolute;
+						bottom: 3px;
+						left: 65px;
+						font-size: 12px;
+						padding: 0;
 					}
 				}
 			}
@@ -218,17 +224,6 @@
 		}
 	}
 }
-.invoice-tracking {
-	padding: 0 !important;
-	display: inline-block !important;
-	line-height: 1;
-	position: absolute;
-	bottom: 3px;
-	right: 0;
-}
-.account-label-2 {
-	font-size: 12px;
-}
 .cart-block {
 	width: 67px;
 	.cart-link {	
@@ -265,8 +260,10 @@
 	&.mf-cate-nav {
 		.category-nav {
 			border: 0;
+			min-width: 1170px;
 		}
 		.cate-item {
+			display: inline-block;
 			> a {
 				height: 61px;
 				margin-top: -1px;
@@ -280,6 +277,7 @@
 	}
 }
 .cate-list {
+	margin: 0;
 	.cate-item {
 		> a {
 			padding-top: 4px;

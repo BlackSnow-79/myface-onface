@@ -1297,6 +1297,14 @@ img {
 .account-nav .nav li.account-block a.account-toggle {
   padding: 0 15px 0 20px;
 }
+.account-nav .nav li.account-block a.invoice-tracking {
+  line-height: 1;
+  position: absolute;
+  bottom: 3px;
+  left: 65px;
+  font-size: 12px;
+  padding: 0;
+}
 .account-nav .nav li.cart-block a {
   padding: 0 15px;
 }
@@ -1378,17 +1386,6 @@ img {
   font-size: 14px;
   text-align: right;
 }
-.invoice-tracking {
-  padding: 0 !important;
-  display: inline-block !important;
-  line-height: 1;
-  position: absolute;
-  bottom: 3px;
-  right: 0;
-}
-.account-label-2 {
-  font-size: 12px;
-}
 .cart-block {
   width: 67px;
 }
@@ -1423,6 +1420,10 @@ img {
 }
 .header-row-2.mf-cate-nav .category-nav {
   border: 0;
+  min-width: 1170px;
+}
+.header-row-2.mf-cate-nav .cate-item {
+  display: inline-block;
 }
 .header-row-2.mf-cate-nav .cate-item > a {
   height: 61px;
@@ -1432,6 +1433,9 @@ img {
 .header-row-2.shopper-menu {
   height: auto;
   overflow: visible;
+}
+.cate-list {
+  margin: 0;
 }
 .cate-list .cate-item > a {
   padding-top: 4px;
@@ -2934,6 +2938,7 @@ h2.shop-name .shop-name-text {
   line-height: 20px;
   color: #212121;
   font-weight: 600;
+  text-transform: lowercase;
 }
 .tab-item > a:hover {
   color: #ff5722;
@@ -2946,6 +2951,9 @@ h2.shop-name .shop-name-text {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 14px;
   text-align: right;
+}
+.tab-item > a::first-letter {
+  text-transform: uppercase;
 }
 .tab-item.active > a,
 .tab-item.active > a:hover,
@@ -4598,6 +4606,55 @@ h2.shop-name .shop-name-text {
 #contact-modal .content-label .p-group-1 .btn {
   padding: 10px;
   width: 165px;
+}
+@media (max-width: 1199px) {
+  .account-nav {
+    width: auto;
+  }
+  .account-nav .nav {
+    margin: 0;
+  }
+  .account-nav .nav li.account-block,
+  .account-nav .nav li.cart-block {
+    width: auto;
+    float: left;
+  }
+  .account-nav .nav li.account-block > a,
+  .account-nav .nav li.cart-block > a {
+    padding: 0;
+  }
+  .account-nav .nav li.account-block > a.account-toggle,
+  .account-nav .nav li.cart-block > a.account-toggle {
+    width: auto;
+    padding: 0;
+  }
+  .account-nav .nav li .account-label {
+    display: none;
+  }
+  .account-nav .nav li .invoice-tracking {
+    display: none;
+  }
+  .wrap-banner {
+    height: auto;
+  }
+  .wrap-banner .banner-left,
+  .wrap-banner .banner-right {
+    width: 100%;
+  }
+  .wrap-banner .banner-1,
+  .wrap-banner .banner-2,
+  .wrap-banner .banner-3 {
+    height: auto;
+  }
+  .wrap-banner .banner-2,
+  .wrap-banner .banner-3 {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .search-nav {
+    display: none;
+  }
 }
 select.bs-select-hidden,
 select.selectpicker {
