@@ -34,7 +34,7 @@
 					width: 75px;
 					height: 50px;
 					border-radius: 4px;
-					padding: 1px;
+					overflow: hidden;
 					margin-right: 6px;
 					img {
 						border-radius: 4px;
@@ -49,6 +49,7 @@
 	.product-detail {
 		width: 100%;
 		float: left;
+		overflow: hidden;
 		.product-intro {
 			position: relative;
 		}
@@ -63,6 +64,25 @@
 			&:before {
 				content: "\f147";
 				font-size: 19px;
+			}
+		}
+		table {
+			width: 100% !important;
+			tbody {
+				tr {
+					td {
+						vertical-align: middle !important;
+						border: @border !important;
+						padding: 12px 8px;
+    				line-height: 1.42857143;
+						&:first-child {
+							font-weight: 600 !important;
+						}
+					}
+				}
+			}
+			p {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -286,9 +306,18 @@
 		}
 		.item-property-values {
 			.property-select {
+				margin-right: 8px;
 				a {
+					height: 32px;
+					padding-top: 1px;
+					padding-bottom: 1px;
 					border-color: @line-color-1;
 					color: @text-color-1;
+				}
+				&.active {
+					a {
+						border-width: 2px;
+					}
 				}
 				&.active,
 				&:hover {

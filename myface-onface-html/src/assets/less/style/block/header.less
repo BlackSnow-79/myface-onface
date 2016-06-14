@@ -25,9 +25,9 @@
 }
 .search-nav {
 	width: 66%;
-	max-width: 750px;
+	max-width: 766px;
 	float: left;
-	padding: 0 0 0 15px;
+	padding: 0 0 0 18px;
 }
 .header-search {
 	width: 100%;
@@ -36,18 +36,28 @@
 	border-radius: @border-radius;
 }
 .cate-search {
-	.dropdown-toggle {
-		min-width: 70px !important;
-		height: 38px;
-		padding-top: 8px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-		border-color: transparent;
-		&:hover,
-		&:focus,
-		&:active {
-			background-color: transparent;
-			color: @text-color-1;
+	&.btn-group {
+		.dropdown-toggle {
+			min-width: 78px !important;
+			height: 38px;
+			padding-top: 8px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+			border-color: transparent;
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: transparent;
+				color: @text-color-1;
+			}
+			.caret {
+				right: 20px;
+				margin-right: 0;
+		    margin-top: -2px;
+		    border-top: 4px solid;
+		    border-right: 4px solid transparent;
+		    border-left: 4px solid transparent;
+			}
 		}
 	}
 	&.open {
@@ -62,13 +72,7 @@
 			}
 		}
 	}
-	.caret {
-		right: 17px !important;
-    margin-top: -1px !important;
-    border-top: 4px solid !important;
-    border-right: 4px solid transparent !important;
-    border-left: 4px solid transparent !important;
-	}
+	
 }
 .input-search {
 	height: 38px;
@@ -103,14 +107,12 @@
 	}
 }
 .account-nav {
-	width: 275px;
 	padding-right: 15px;
 	float: right;
 	.nav {
 		float: right;
 		li {
 			&.account-block {
-				width: 190px;
 				a {
 					color: @text-color-1;
 					&:hover,
@@ -257,10 +259,12 @@
 	background-color: @bg-color-3;
 	border-bottom: @border;
 	margin-bottom: 20px;
+	.navbar {
+		min-width: 1170px;
+	}
 	&.mf-cate-nav {
 		.category-nav {
 			border: 0;
-			min-width: 1170px;
 		}
 		.cate-item {
 			display: inline-block;
