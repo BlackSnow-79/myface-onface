@@ -54,7 +54,7 @@
 	.nav {
 		float: right;
 		li {
-			&.change-info-btn {	
+			&.change-info-btn {
 				a {
 					border: @border;
 					border-radius: 3px;
@@ -62,14 +62,14 @@
 					padding: 6px 15px;
 				}
 				&.active {
-					background-color: #dfdfdf; 
+					background-color: #dfdfdf;
 					a {
 						color: #212121;
     				font-weight: 600;
 					}
 				}
 			}
-			&.more-nav {	
+			&.more-nav {
 				a {
 					color: @text-color-2;
 					padding: 6px 15px;
@@ -112,7 +112,7 @@
 		margin-bottom: 1px;
 		padding-right: 1px;
 	}
-	.m-product-info { 
+	.m-product-info {
 		padding: 10px;
 	}
 }
@@ -312,10 +312,19 @@
   box-sizing: border-box;
 }
 .address {
-	padding: 20px 0;
+	padding: 20px 0 20px 20px;
 	margin: 0;
 	list-style: none;
   border-bottom: @border;
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f1db";
+  }
 	li {
 		list-style: none;
 		padding: 0;
@@ -333,6 +342,25 @@
 			margin-right: 10px;
 		}
 	}
+}
+.add-default-btn {
+  width: 165px;
+  color: @text-color-2;
+  border: @border;
+  background-color: @line-color-1;
+  float: right;
+  position: relative;
+  &.default {
+    &:before {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      margin-top: -8px;
+      font: normal normal normal 14px/1 FontAwesome;
+      content: "\f058";
+      color: @green;
+    }
+  }
 }
 .add-address-form {
 	display: none;
@@ -391,7 +419,7 @@
 		border: @border;
 		border-radius: 3px;
 		display: inline-block;
-		padding: 7px; 
+		padding: 7px;
 		text-align: center;
 		background-color: @bg-color-3;
 		color: @text-color-2;

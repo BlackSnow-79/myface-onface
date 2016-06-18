@@ -1,4 +1,4 @@
-footer{ 
+footer{
 	&.text-center {
 		width: 100%;
 		padding: 20px 0;
@@ -38,7 +38,7 @@ footer{
 				margin-bottom: 0;
 			}
 			.li-item {
-				padding: 3px 0; 
+				padding: 3px 0;
 				> a {
 					color: #767676;
 					&:hover {
@@ -126,4 +126,25 @@ footer{
 .readmore {
 	text-decoration: underline;
 	font-weight: bold;
+}
+@media (max-width: @screen-sm-max) {
+    .footer-row-1 {
+        > div {
+            > div {
+                width: 100%;
+            }
+        }
+    }
+    .f-block-4,
+    .f-block-5 {
+        display: none;
+    }
+    .f-block-2 {
+        li {
+            display: none;
+            &.f-phone {
+                display: block;
+            }
+        }
+    }
 }
