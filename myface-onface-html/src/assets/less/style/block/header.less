@@ -6,6 +6,26 @@
 		padding: 15px 0;
 		margin-bottom: 0;
 	}
+  @media (max-width: @screen-md-max) {
+    .open {
+      .dropdown-menu {
+        position: absolute;
+        background-color: #fff;
+        top: 40px;
+        right: -35px;
+        -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+      }
+      .login-dropdown {
+        li {
+          a {
+            line-height: 1.25;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
 .myfaceshop-logo {
 	width: 130px;
@@ -159,6 +179,23 @@
 	left: auto;
   right: 0;
   width: auto;
+  width: 203px;
+  li {
+    a {
+      padding: 4px 15px;
+      color: @text-color-2;
+    }
+    &:last-child {
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        margin: 3px 0;
+        border-top: @border;
+      }
+    }
+  }
 }
 .login-dropdown {
 	top: 23px;
@@ -166,7 +203,7 @@
 	right: 0;
 	width: 280px;
 	height: 370px;
-	padding: 15px;
+	padding: 17px 10px;
 	border-top-right-radius: 3px !important;
   border-top-left-radius: 3px !important;
 	border: @border;
@@ -190,6 +227,35 @@
 
 		}
 	}
+  .form-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .lg-divider {
+    height: 1px;
+    width: 50px;
+    margin: 20px auto;
+    border-top: 1px dotted @line-color-1;
+  }
+  .form-group {
+    margin-bottom: 13px;
+    input {
+      height: 40px;
+    }
+  }
+  .lg-row-4 {
+    margin-bottom: 20px;
+  }
+  .lg-row-5 {
+    margin-bottom: 17px;
+  }
+  .lg-a-text {
+    font-weight: 600;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 .account-img {
 	width: 38px;
@@ -460,7 +526,7 @@
 	&:last-child {
 		border-right: 0;
 	}
-    @media (max-width: @screen-md-max) {
-        display: inline-block;
-    }
+  @media (max-width: @screen-md-max) {
+    display: inline-block;
+  }
 }
