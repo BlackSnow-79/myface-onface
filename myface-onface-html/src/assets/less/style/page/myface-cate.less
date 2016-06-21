@@ -1,7 +1,7 @@
 .category-1-name {
 	width: 100%;
 	font-size: 30px;
-	font-weight: bold; 
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 	float: left;
@@ -12,6 +12,15 @@
 		height: 90px;
 		text-align: center;
 		overflow: hidden;
+
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        width: 100%;
+        -ms-overflow-style: none;
+        overflow-y: -moz-scrollbars-none;
 	}
 	.cate-item {
 		margin-right: 20px;
@@ -27,7 +36,7 @@
 			border-radius: 6px;
 			&:hover {
 				border-color: @primary-color;
-			}	
+			}
 		}
 		&.active {
 			a {
@@ -83,6 +92,11 @@
 		float: right;
 		margin-right: -12px;
 	}
+    main & > {
+        @media (max-width: @screen-md-max) {
+            display: none;
+        }
+    }
 }
 .tab-single {
 	a {

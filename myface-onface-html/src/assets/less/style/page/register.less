@@ -60,12 +60,19 @@
     border-color: #3a5897;
     color: #fff;
 	}
+  .tab-item > a {
+    text-transform: none;
+  }
+  @media (max-width: @screen-xs-max) {
+    margin-top: 0;
+    border: 0;
+  }
 }
 .tabs-login {
 	padding: 0;
 	margin: 0 0 20px;
 	.tab-item {
-		a {	
+		a {
 			color: @text-color-2;
 			font-size: 16px;
 			font-weight: 600;
@@ -102,7 +109,7 @@
 		padding-bottom: 8px;
 		border-bottom: @border;
 		font-weight: 600;
-		font-size: 17px; 
+		font-size: 17px;
 	}
 	.control-label {
 		font-weight: normal;

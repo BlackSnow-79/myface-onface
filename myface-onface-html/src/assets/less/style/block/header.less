@@ -378,6 +378,35 @@
         overflow-y: -moz-scrollbars-none;
     }
 }
+.shopper-menu {
+    @media (max-width: @screen-sm-max) {
+        .navbar {
+            min-width: 0;
+            height: auto;
+            .tabs-menu {
+                position: relative;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+                white-space: nowrap;
+                width: 100%;
+                -ms-overflow-style: none;
+                overflow-y: -moz-scrollbars-none;
+                margin-left: 0;
+                margin-right: 0;
+                .tab-item {
+                    &:first-child {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+                &.pull-right {
+                    float: left !important;
+                }
+            }
+        }
+    }
+}
 .cate-list {
 	margin: 0;
 	.cate-item {
