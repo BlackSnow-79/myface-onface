@@ -2212,6 +2212,17 @@ select.selectpicker {
   height: auto;
   overflow: visible;
 }
+.breadcrumbs-nav .navbar {
+  min-width: 0;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  width: 100%;
+  -ms-overflow-style: none;
+  overflow-y: -moz-scrollbars-none;
+}
 .cate-list {
   margin: 0;
 }
@@ -2440,9 +2451,6 @@ footer.main-footer .f-bct > span.bct {
   font-weight: bold;
 }
 @media (max-width: 991px) {
-  .footer-row-1 > div > div {
-    width: 100%;
-  }
   .f-block-4,
   .f-block-5 {
     display: none;
