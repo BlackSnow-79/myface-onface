@@ -154,6 +154,16 @@ img {
 .navbar {
   border-radius: 0;
 }
+.touch-slide {
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  overflow-y: -moz-scrollbars-none;
+}
 select.bs-select-hidden,
 select.selectpicker {
   display: none !important;
@@ -4117,6 +4127,12 @@ h2.shop-name .shop-name-text {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
 }
+@media (max-width: 767px) {
+  .mf-product-content {
+    border: 0;
+    padding: 0;
+  }
+}
 .mf-product-info-block {
   padding-top: 0;
   border-top: 0;
@@ -4151,6 +4167,27 @@ h2.shop-name .shop-name-text {
 }
 .mf-product-info-block .product-gallery .thumnail .items .item.active {
   border-color: #ff5722;
+}
+@media (max-width: 767px) {
+  .mf-product-info-block .product-gallery {
+    padding-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .mf-product-info-block .product-gallery .thumnail-inner {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow-y: -moz-scrollbars-none;
+  }
+  .mf-product-info-block .product-gallery .thumnail-inner .items {
+    top: 0;
+  }
 }
 .mf-product-info-block .product-detail {
   width: 100%;
@@ -4243,6 +4280,7 @@ h2.shop-name .shop-name-text {
   position: relative;
 }
 .shipping-block .shipping-action {
+  display: block;
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -4370,6 +4408,12 @@ h2.shop-name .shop-name-text {
   width: 100%;
   height: auto;
 }
+@media (max-width: 767px) {
+  .stage-wrap {
+    padding: 0;
+    border: 0;
+  }
+}
 .block-text {
   margin-bottom: 0;
 }
@@ -4420,9 +4464,19 @@ h2.shop-name .shop-name-text {
   display: inline;
   margin-right: 10px;
 }
+@media (max-width: 991px) {
+  .product-gallery-header .product-title {
+    font-size: 18px;
+  }
+}
 .product-date {
   display: inline-block;
   color: #727272;
+}
+@media (max-width: 991px) {
+  .product-date {
+    font-size: 12px;
+  }
 }
 .alert-box {
   width: 100%;
@@ -4488,9 +4542,17 @@ h2.shop-name .shop-name-text {
   height: 46px;
   display: block;
   background: url(../images/icons/close.png) no-repeat;
+  background-size: 100% 100%;
 }
 .close-btn:hover {
   background: url(../images/icons/close-hover.png) no-repeat;
+  background-size: 100% 100%;
+}
+@media (max-width: 991px) {
+  .close-btn {
+    width: 32px;
+    height: 32px;
+  }
 }
 .shop-list-row .m-product-item {
   padding: 0 10px;
