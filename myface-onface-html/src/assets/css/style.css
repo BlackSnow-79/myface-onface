@@ -4470,6 +4470,11 @@ h2.shop-name .shop-name-text {
 .detail-nav > li.arrow-right {
   text-align: right;
 }
+@media (max-width: 991px) {
+  .detail-nav {
+    display: none;
+  }
+}
 .close-back {
   width: auto;
   height: auto;
