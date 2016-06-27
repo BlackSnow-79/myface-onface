@@ -2411,12 +2411,54 @@ select.selectpicker {
 .cate-dtlk > a:hover .cate-icon {
   background-image: url(../images/icons/cate-icon/dtlk-hover.png);
 }
+.cate-dtlk-dienthoai .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-dienthoai.png);
+}
+.cate-dtlk-dienthoai > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-dienthoai-hover.png);
+}
+.cate-dtlk-maytinhbang .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-maytinhbang.png);
+}
+.cate-dtlk-maytinhbang > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-maytinhbang-hover.png);
+}
+.cate-dtlk-phukien .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-phukien.png);
+}
+.cate-dtlk-phukien > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/dtlk-phukien-hover.png);
+}
 /*cate laptop*/
 .cate-lt .cate-icon {
   background-image: url(../images/icons/cate-icon/lt.png);
 }
 .cate-lt > a:hover .cate-icon {
   background-image: url(../images/icons/cate-icon/lt-hover.png);
+}
+.cate-lt-maytinh .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-maytinh.png);
+}
+.cate-lt-maytinh > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-maytinh-hover.png);
+}
+.cate-lt-thietbimaytinh .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbimaytinh.png);
+}
+.cate-lt-thietbimaytinh > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbimaytinh-hover.png);
+}
+.cate-lt-thietbimang .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbimang.png);
+}
+.cate-lt-thietbimang > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbimang-hover.png);
+}
+.cate-lt-thietbivanphong .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbivanphong.png);
+}
+.cate-lt-thietbivanphong > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/lt-thietbivanphong-hover.png);
 }
 /*cate mỹ phẩm*/
 .cate-mp .cate-icon {
@@ -2425,12 +2467,66 @@ select.selectpicker {
 .cate-mp > a:hover .cate-icon {
   background-image: url(../images/icons/cate-icon/mp-hover.png);
 }
+.cate-mp-trangdiem .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-trangdiem.png);
+}
+.cate-mp-trangdiem > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-trangdiem-hover.png);
+}
+.cate-mp-chamsocda .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-chamsocda.png);
+}
+.cate-mp-chamsocda > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-chamsocda-hover.png);
+}
+.cate-mp-chamsoctoc .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-chamsoctoc.png);
+}
+.cate-mp-chamsoctoc > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-chamsoctoc-hover.png);
+}
+.cate-mp-nuochoa .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-nuochoa.png);
+}
+.cate-mp-nuochoa > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-nuochoa-hover.png);
+}
+.cate-mp-rangmieng .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-rangmieng.png);
+}
+.cate-mp-rangmieng > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/mp-rangmieng-hover.png);
+}
 /*cate hàng tiêu dùng*/
 .cate-htd .cate-icon {
   background-image: url(../images/icons/cate-icon/htd.png);
 }
 .cate-htd > a:hover .cate-icon {
   background-image: url(../images/icons/cate-icon/htd-hover.png);
+}
+.cate-htd-dodungnhabep .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dodungnhabep.png);
+}
+.cate-htd-dodungnhabep > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dodungnhabep-hover.png);
+}
+.cate-htd-thietbinghenhin .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-thietbinghenhin.png);
+}
+.cate-htd-thietbinghenhin > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-thietbinghenhin-hover.png);
+}
+.cate-htd-thietbigiadinh .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-thietbigiadinh.png);
+}
+.cate-htd-thietbigiadinh > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-thietbigiadinh-hover.png);
+}
+.cate-htd-dolanh .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dolanh.png);
+}
+.cate-htd-dolanh > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dolanh-hover.png);
 }
 footer.text-center {
   width: 100%;
