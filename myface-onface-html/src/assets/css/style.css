@@ -2277,16 +2277,17 @@ select.selectpicker {
   background-color: #ff5722;
 }
 .cate-list .cate-item > a:hover .cate-name {
-  font-weight: 600;
   color: #fff;
 }
 .cate-list .cate-item .cate-name {
-  font-weight: 600;
   color: #727272;
   text-transform: lowercase;
 }
 .cate-list .cate-item .cate-name:first-letter {
   text-transform: uppercase;
+}
+.cate-list .cate-item.cate-lt > a .cate-icon {
+  width: 45px;
 }
 .promotion-list {
   float: right;
@@ -2322,7 +2323,6 @@ select.selectpicker {
   margin-bottom: 2px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 100%;
 }
 /*cate thời trang*/
 .cate-tt .cate-icon {
@@ -2522,11 +2522,11 @@ select.selectpicker {
 .cate-htd-thietbigiadinh > a:hover .cate-icon {
   background-image: url(../images/icons/cate-icon/htd-thietbigiadinh-hover.png);
 }
-.cate-htd-dolanh .cate-icon {
-  background-image: url(../images/icons/cate-icon/htd-dolanh.png);
+.cate-htd-dienlanh .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dienlanh.png);
 }
-.cate-htd-dolanh > a:hover .cate-icon {
-  background-image: url(../images/icons/cate-icon/htd-dolanh-hover.png);
+.cate-htd-dienlanh > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/htd-dienlanh-hover.png);
 }
 footer.text-center {
   width: 100%;
@@ -4129,6 +4129,9 @@ h2.shop-name .shop-name-text {
   display: inline-block;
   float: none;
 }
+.catebar .cate-item .cate-icon {
+  height: 32px;
+}
 .catebar .cate-item > a {
   width: 90px;
   height: 90px;
@@ -4140,6 +4143,10 @@ h2.shop-name .shop-name-text {
 }
 .catebar .cate-item > a:hover {
   border-color: #ff5722;
+  background: #fff;
+}
+.catebar .cate-item > a:hover .cate-name {
+  color: #ff5722;
 }
 .catebar .cate-item.active a {
   background-color: #dfdfdf;
@@ -5337,6 +5344,130 @@ h2.shop-name .shop-name-text {
 @media (min-width: 768px) {
   .bf-text {
     margin-top: -40px;
+  }
+}
+.forgetpass-modal {
+  text-align: center;
+}
+.forgetpass-modal .modal-header {
+  height: 60px;
+  border-bottom: 0;
+  background-color: #ebebeb;
+  border-radius: 6px 6px 0 0;
+}
+.forgetpass-modal .modal-header .close {
+  margin-top: -8px;
+  margin-right: -5px;
+  font-size: 16px;
+}
+.forgetpass-modal .modal-header .modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+}
+.forgetpass-modal .modal-body {
+  padding: 10px 10px 0;
+}
+@media (min-width: 992px) {
+  .forgetpass-modal .modal-dialog {
+    width: 320px;
+    margin-top: 10%;
+  }
+}
+.forgetpass-form {
+  width: 100%;
+  margin-top: 10px;
+}
+.forgetpass-form p {
+  color: #727272;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 25px;
+}
+.forgetpass-form .form-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.forgetpass-form .form-group input {
+  height: 40px;
+}
+.forgetpass-form .btn {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+}
+.resetting-pass {
+  width: 100%;
+  min-height: 100%;
+  background-color: #ebebeb;
+}
+.resetting-pass .logo-icon {
+  width: 100%;
+}
+.resetting-pass .logo-icon:before {
+  content: "";
+  width: 119px;
+  height: 41px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/icons/logo-icon.png);
+}
+.resetting-pass .forgetpass-form {
+  width: 100%;
+  margin: 127px auto 0;
+}
+.resetting-pass .forgetpass-form .form-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+.resetting-pass .forgetpass-form .form-inner {
+  background-color: #fff;
+  padding: 15px 10px 10px;
+  border-radius: 4px;
+}
+.resetting-pass .forgetpass-form .form-inner .control-label {
+  color: #727272;
+  font-weight: normal;
+}
+.resetting-pass .forgetpass-form .form-group {
+  margin-bottom: 10px;
+}
+.resetting-pass .forgetpass-form .form-group:last-child {
+  margin-bottom: 0;
+}
+.resetting-pass .forgetpass-form .input-group .input-group-addon {
+  border-color: #dfdfdf;
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+  color: #b6b6b6;
+}
+.resetting-pass .forgetpass-form .input-group .form-control {
+  border-left: 0;
+  padding-left: 0;
+}
+.resetting-pass .forgetpass-form .input-group .form-control:focus {
+  border-color: #dfdfdf;
+}
+.resetting-pass .forgetpass-form .cancel-btn {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 16px;
+}
+.resetting-pass .forgetpass-form .cancel-btn a {
+  color: #727272;
+}
+.resetting-pass .forgetpass-form .cancel-btn a:hover {
+  color: #ff5722;
+}
+@media (min-width: 992px) {
+  .resetting-pass .forgetpass-form {
+    width: 320px;
   }
 }
 .support-center header {

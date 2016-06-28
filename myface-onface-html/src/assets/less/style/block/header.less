@@ -423,19 +423,24 @@
 				border-color: @primary-color;
 				background-color: @primary-color;
 				.cate-name {
-					font-weight: 600;
 					color: #fff;
 				}
 			}
 		}
 		.cate-name {
-			font-weight: 600;
 			color: @text-color-2;
             text-transform: lowercase;
             &:first-letter {
                 text-transform: uppercase;
             }
 		}
+        &.cate-lt {
+            > a {
+                .cate-icon {
+                    width: 45px;
+                }
+            }
+        }
 	}
 }
 .promotion-list {

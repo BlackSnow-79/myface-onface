@@ -1,0 +1,42 @@
+{% extends "layout/_layout-base.html" %}
+{% block bodyclass%}resetting-pass{% endblock %}
+<!--header-->
+{% block header%}
+{% endblock %}
+<!--page-container-->
+{% block page-container %}
+<main>
+  <div class="forgetpass-form">
+    <div class="logo-icon">
+    </div>
+    <h2 class="form-title">Đặt lại mật khẩu</h2>
+    <div class="form-inner">
+      <div class="form-group">
+        <label for="" class="control-label">Nhập mật khẩu mới</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+          <input type="password" class="form-control">
+        </div>
+        <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+      </div>
+      <div class="form-group">
+        <label for="" class="control-label">Nhập lại mật khẩu mới</label>
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+          <input type="password" class="form-control">
+        </div>
+        <label for="" class="error">Vui lòng nhập đủ thông tin</label>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Đặt lại mật khẩu">
+      </div>
+    </div>
+    <div class="form-group cancel-btn">
+      <a href="index.html">Hủy</a>
+    </div>
+  </div>
+</main>
+{% endblock %}
+<!--footer-->
+{% block footer%}
+{% endblock %}

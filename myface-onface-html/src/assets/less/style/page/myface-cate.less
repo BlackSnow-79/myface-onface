@@ -26,6 +26,9 @@
 		margin-right: 20px;
 		display: inline-block;
 		float: none;
+        .cate-icon {
+            height: 32px;
+        }
 		> a {
 			width: 90px;
 			height: 90px;
@@ -36,6 +39,10 @@
 			border-radius: 6px;
 			&:hover {
 				border-color: @primary-color;
+                background: #fff;
+                .cate-name {
+                    color: @primary-color;
+                }
 			}
 		}
 		&.active {
