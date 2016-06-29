@@ -1062,6 +1062,11 @@ select.selectpicker {
   margin-top: 1px;
   background: url(../images/icons/buy.png) no-repeat center center;
 }
+@media (max-width: 1199px) {
+  .btn-buy-now {
+    margin-bottom: 10px;
+  }
+}
 .btn-add-cart {
   position: relative;
   width: 110px;
@@ -1768,6 +1773,7 @@ select.selectpicker {
 }
 .n-modal .modal-footer p {
   margin: 0;
+  color: #727272;
 }
 #order-success-modal .modal-header {
   border-color: transparent;
@@ -2221,16 +2227,39 @@ select.selectpicker {
   height: auto;
   overflow: visible;
 }
+.breadcrumbs-nav {
+  margin-bottom: 28px;
+}
 .breadcrumbs-nav .navbar {
   min-width: 0;
-  position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
+  min-height: 40px;
   width: 100%;
-  -ms-overflow-style: none;
-  overflow-y: -moz-scrollbars-none;
+  height: 40px;
+  position: relative;
+  white-space: nowrap;
+}
+.breadcrumbs-nav .navbar > ul > li > a {
+  padding: 10px 0;
+}
+.breadcrumbs-nav .navbar > ul > li > a .fa-home {
+  width: 18px;
+  height: 20px;
+  display: block;
+  background-image: url(../images/icons/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.breadcrumbs-nav .navbar > ul > li > a .fa-home:before {
+  content: "";
+}
+.breadcrumbs-nav .navbar > ul > li:nth-child(2) {
+  padding: 9px 0;
+}
+.breadcrumbs-nav .navbar > ul > li:nth-child(2) > a {
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
 }
 @media (max-width: 991px) {
   .shopper-menu .navbar {
@@ -2282,6 +2311,7 @@ select.selectpicker {
 .cate-list .cate-item .cate-name {
   color: #727272;
   text-transform: lowercase;
+  margin-top: 5px;
 }
 .cate-list .cate-item .cate-name:first-letter {
   text-transform: uppercase;
@@ -2323,6 +2353,10 @@ select.selectpicker {
   margin-bottom: 2px;
   background-repeat: no-repeat;
   background-position: center center;
+  background-image: url(../images/icons/cate-icon/iconmd.png);
+}
+.cate-item > a:hover .cate-icon {
+  background-image: url(../images/icons/cate-icon/iconmd-hover.png);
 }
 /*cate thời trang*/
 .cate-tt .cate-icon {
@@ -2381,16 +2415,16 @@ select.selectpicker {
   background-image: url(../images/icons/cate-icon/mb-hover.png);
 }
 .cate-mb-dodungbe .cate-icon {
-  background-image: url(../images/icons/cate-icon/mp-dodungbe.png);
+  background-image: url(../images/icons/cate-icon/mb-dodungbe.png);
 }
 .cate-mb-dodungbe > a:hover .cate-icon {
-  background-image: url(../images/icons/cate-icon/mp-dodungbe-hover.png);
+  background-image: url(../images/icons/cate-icon/mb-dodungbe-hover.png);
 }
 .cate-mb-dochoibe .cate-icon {
-  background-image: url(../images/icons/cate-icon/mb.png);
+  background-image: url(../images/icons/cate-icon/mb-dochoibe.png);
 }
 .cate-mb-dochoibe > a:hover .cate-icon {
-  background-image: url(../images/icons/cate-icon/mb-hover.png);
+  background-image: url(../images/icons/cate-icon/mb-dochoibe-hover.png);
 }
 .cate-mb-thucphambe .cate-icon {
   background-image: url(../images/icons/cate-icon/mb-thucphambe.png);
@@ -4105,11 +4139,16 @@ h2.shop-name .shop-name-text {
 }
 .category-1-name {
   width: 100%;
+  margin-top: 35px;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   float: left;
+}
+.catebar .category-nav {
+  margin-bottom: 15px;
 }
 .catebar .cate-list {
   height: 90px;
@@ -4125,12 +4164,18 @@ h2.shop-name .shop-name-text {
   overflow-y: -moz-scrollbars-none;
 }
 .catebar .cate-item {
-  margin-right: 20px;
+  margin-right: 18px;
   display: inline-block;
   float: none;
+  white-space: normal;
 }
 .catebar .cate-item .cate-icon {
   height: 32px;
+  margin-bottom: 0;
+}
+.catebar .cate-item .cate-name {
+  line-height: 14px;
+  margin-top: 10px;
 }
 .catebar .cate-item > a {
   width: 90px;
@@ -4184,6 +4229,9 @@ h2.shop-name .shop-name-text {
 .filterbar .tabs-menu.filter-menu,
 .filterbar .tabs-menu.filter-property {
   margin-right: 0;
+}
+.filterbar .tabs-menu.filter-menu .tab-item a {
+  font-weight: normal;
 }
 .filterbar .filter-property {
   float: right;
@@ -4265,11 +4313,14 @@ h2.shop-name .shop-name-text {
   border-bottom-color: transparent;
   margin-bottom: 0;
 }
+.usershop-bar .bread-crumb-item a {
+  color: #727272;
+}
 .usershop-bar .bread-crumb-item + li:before {
   position: absolute;
-  top: 17px;
-  left: -2px;
-  color: #212121;
+  top: 12px;
+  left: -3px;
+  color: #727272;
   content: "/\00a0";
 }
 .usershop-bar .bread-crumb-item:last-child a {
@@ -4303,11 +4354,11 @@ h2.shop-name .shop-name-text {
 .mf-product-info-block .shop-name {
   padding: 10px 0 0;
 }
-.mf-product-info-block .shop-img {
+.mf-product-info-block .shop-name .shop-img {
   width: 25px;
   height: 25px;
 }
-.mf-product-info-block .shop-name-text {
+.mf-product-info-block .shop-name .shop-name-text {
   font-size: 18px;
   line-height: 25px;
 }
@@ -4359,6 +4410,10 @@ h2.shop-name .shop-name-text {
 }
 .mf-product-info-block .product-detail .product-intro {
   position: relative;
+}
+.mf-product-info-block .product-detail .title {
+  font-weight: bold;
+  font-size: 18px;
 }
 .mf-product-info-block .product-detail .intro-action {
   position: absolute;
@@ -4486,7 +4541,7 @@ h2.shop-name .shop-name-text {
 }
 .lightbox-wrap {
   position: absolute;
-  top: -58px;
+  top: -60px;
   left: 0;
   z-index: 9;
   display: none;
@@ -4518,6 +4573,11 @@ h2.shop-name .shop-name-text {
 .add-number-to-buy .send-group .btn-buy-submit {
   border-radius: 30px;
 }
+@media (max-width: 1199px) {
+  .add-number-to-buy {
+    width: 100%;
+  }
+}
 .like-group-wrap {
   width: 100%;
   position: relative;
@@ -4526,6 +4586,12 @@ h2.shop-name .shop-name-text {
 .lightbox-1 .close-back {
   top: -19px;
   right: -20px;
+}
+@media (max-width: 1199px) {
+  .lightbox-1 .close-back {
+    top: -30px;
+    right: -1px;
+  }
 }
 .lightbox-2 {
   width: 100%;
@@ -4536,6 +4602,14 @@ h2.shop-name .shop-name-text {
 .lightbox-2 .close-back {
   top: -23px;
   right: 0px;
+}
+@media (max-width: 1199px) {
+  .lightbox-2 {
+    padding: 0;
+  }
+  .lightbox-2 .close-back {
+    top: -32px;
+  }
 }
 .like-box {
   width: 490px;
@@ -4554,6 +4628,20 @@ h2.shop-name .shop-name-text {
 }
 .like-box .i-cart:before {
   width: 18px;
+}
+@media (max-width: 767px) {
+  .like-box {
+    width: 100%;
+    height: auto;
+  }
+  .like-box li {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .like-box .buy-now {
+    margin-bottom: 0;
+  }
 }
 .number-box {
   float: right;
@@ -5441,18 +5529,11 @@ h2.shop-name .shop-name-text {
 .resetting-pass .forgetpass-form .form-group:last-child {
   margin-bottom: 0;
 }
-.resetting-pass .forgetpass-form .input-group .input-group-addon {
-  border-color: #dfdfdf;
-  border-radius: 3px 0 0 3px;
-  border-right: 0;
-  color: #b6b6b6;
-}
-.resetting-pass .forgetpass-form .input-group .form-control {
-  border-left: 0;
-  padding-left: 0;
-}
-.resetting-pass .forgetpass-form .input-group .form-control:focus {
-  border-color: #dfdfdf;
+.resetting-pass .forgetpass-form .form-group input[type="password"] {
+  padding-left: 36px;
+  background-image: url(../images/icons/pass.png);
+  background-repeat: no-repeat;
+  background-position: 13px 13px;
 }
 .resetting-pass .forgetpass-form .cancel-btn {
   text-align: center;

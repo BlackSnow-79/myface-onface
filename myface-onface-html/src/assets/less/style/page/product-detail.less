@@ -19,14 +19,14 @@
 	border-top: 0;
 	.shop-name {
 		padding: 10px 0 0;
-	}
-	.shop-img {
-		width: 25px;
-		height: 25px;
-	}
-	.shop-name-text {
-		font-size: 18px;
-		line-height: 25px;
+    .shop-img {
+      width: 25px;
+      height: 25px;
+    }
+    .shop-name-text {
+      font-size: 18px;
+      line-height: 25px;
+    }
 	}
 	.product-gallery {
 		margin-top: 10px;
@@ -70,6 +70,10 @@
 		.product-intro {
 			position: relative;
 		}
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
 		.intro-action {
 			position: absolute;
 			top: 0;
@@ -211,7 +215,7 @@
 }
 .lightbox-wrap {
 	position: absolute;
-	top: -58px;
+	top: -60px;
 	left: 0;
 	z-index: 9;
 	display: none;
@@ -246,6 +250,9 @@
 			border-radius: 30px;
 		}
 	}
+  @media (max-width: @screen-md-max) {
+    width: 100%;
+  }
 }
 .like-group-wrap {
 	width: 100%;
@@ -256,6 +263,10 @@
 	.close-back {
 		top: -19px;
     right: -20px;
+    @media (max-width: @screen-md-max) {
+      top: -30px;
+      right: -1px;
+    }
 	}
 }
 .lightbox-2 {
@@ -267,6 +278,12 @@
 		top: -23px;
     right: 0px;
 	}
+  @media (max-width: @screen-md-max) {
+    padding: 0;
+    .close-back {
+      top: -32px;
+    }
+  }
 }
 .like-box {
 	width: 490px;
@@ -287,6 +304,18 @@
 			width: 18px;
 		}
 	}
+  @media (max-width: @screen-xs-max) {
+    width: 100%;
+    height: auto;
+    li {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .buy-now {
+      margin-bottom: 0;
+    }
+  }
 }
 .number-box {
 	float: right;
