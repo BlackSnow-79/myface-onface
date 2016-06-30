@@ -7,7 +7,70 @@
 <!--main-content-->
 <main class="container">
 	<!--filterbar-->
-	{% include "block/_filter-bar.html" %}
+	<div class="filterbar is-sticky">
+    <!--tabs-bar-->
+    <nav class="navbar tabs-bar">
+      {% include "block/_tabs-menu.html" %}
+      <!--filter-->
+      <ul class="tabs-menu filter-menu">
+        <li class="tab-item tab-label">
+          <label>Mức giá:</label>
+        </li>
+        <li class="active tab-item tab-single">
+          <a href="#">Dưới 100k</a>
+        </li>
+        <li class="tab-item tab-single">
+          <a href="#">Từ 100k-200k</a>
+        </li>
+        <li class="tab-item tab-single">
+          <a href="#">Từ 200k-300k</a>
+        </li>
+        <li class="tab-item tab-single">
+          <a href="#">Từ 300k-500k</a>
+        </li>
+        <li class="tab-item">
+          <a href="#">Mức giá khác</a>
+          <ul class="dropdown-menu tab-sub">
+            <li class="active"><a href="#">Mức giá khác 1</a></li>
+            <li><a href="#">Mức giá khác 2</a></li>
+            <li><a href="#">Mức giá khác 3</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!--filter-->
+      <ul class="tabs-menu filter-property">
+        <li class="tab-item">
+          <a href="#">Màu sắc</a>
+          <ul class="dropdown-menu tab-sub">
+            <li class="active"><a href="#">Màu sắc 1</a></li>
+            <li><a href="#">Màu sắc 2</a></li>
+            <li><a href="#">Màu sắc 3</a></li>
+            <li><a href="#">Màu sắc 1</a></li>
+            <li><a href="#">Màu sắc 2</a></li>
+            <li><a href="#">Màu sắc 3</a></li>
+            <li><a href="#">Màu sắc 1</a></li>
+            <li><a href="#">Màu sắc 2</a></li>
+            <li><a href="#">Màu sắc 3</a></li>
+            <li><a href="#">Màu sắc 1</a></li>
+            <li><a href="#">Màu sắc 2</a></li>
+            <li><a href="#">Màu sắc 3</a></li>
+            <li><a href="#">Màu sắc 1</a></li>
+            <li><a href="#">Màu sắc 2</a></li>
+            <li><a href="#">Màu sắc 3</a></li>
+          </ul>
+        </li>
+        <li class="tab-item">
+          <a href="#">Kích thước</a>
+          <ul class="dropdown-menu tab-sub">
+            <li class="active"><a href="#">Kích thước 1</a></li>
+            <li><a href="#">Kích thước 2</a></li>
+            <li><a href="#">Kích thước 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav><!--/.tabs-bar-->
+  </div>
   <!--product-block-->
   <!--wrap-product-->
   {% include "block/_m-product-list-block.html" %}
