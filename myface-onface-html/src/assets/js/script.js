@@ -141,4 +141,5 @@ $(document).ready(function() {
       $('main .is-sticky').removeClass('container');
     }
   });
+  $('.banner-1').slick();
 });
