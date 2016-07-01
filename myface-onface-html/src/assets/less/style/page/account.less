@@ -3,6 +3,7 @@
 	min-height: 500px;
 }
 .user-account-header {
+  position: relative;
 	width: 100%;
 	float: left;
 	margin-top: 30px;
@@ -36,7 +37,7 @@
 }
 .user-name {
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: bold;
 }
 .user-contact-info {
 	margin-bottom: 10px;
@@ -51,6 +52,7 @@
 	}
 }
 .user-account-change-nav {
+  padding: 0;
 	.nav {
 		float: right;
 		li {
@@ -441,4 +443,34 @@
 			}
 		}
 	}
+}
+@media (max-width: @screen-md-max) {
+  .user-account-img {
+    min-width: 0;
+    width: auto;
+    float: left;
+    .user-img {
+      float: left;
+    }
+  }
+  .user-account-change-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: @screen-sm-max) {
+  .user-img {
+    width: 100px;
+    height: 100px;
+  }
+  .user-name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .user-img {
+    width: 75px;
+    height: 75px;
+  }
 }

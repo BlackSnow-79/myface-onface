@@ -141,5 +141,10 @@ $(document).ready(function() {
       $('main .is-sticky').removeClass('container');
     }
   });
-  $('.banner-1').slick();
+  $('.banner-1').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    adaptiveWight: true
+  });
 });

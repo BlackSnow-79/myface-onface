@@ -2012,6 +2012,7 @@ select.selectpicker {
 }
 .header-row-1 {
   height: 70px;
+  border-bottom: 1px solid #dfdfdf;
 }
 .header-row-1 .navbar {
   height: 70px;
@@ -2075,9 +2076,9 @@ select.selectpicker {
   color: #212121;
 }
 .cate-search.btn-group .dropdown-toggle .caret {
-  right: 20px;
+  right: 13px;
   margin-right: 0;
-  margin-top: -2px;
+  margin-top: -1px;
   border-top: 4px solid;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
@@ -2260,7 +2261,7 @@ select.selectpicker {
   display: block;
 }
 .account-label .account-label-1 {
-  width: 109px;
+  max-width: 109px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2307,6 +2308,7 @@ select.selectpicker {
   height: 60px;
   background-color: #f0f1f3;
   margin-bottom: 20px;
+  margin-top: -1px;
 }
 .header-row-2 .navbar {
   min-width: 1170px;
@@ -2451,7 +2453,13 @@ select.selectpicker {
 }
 .promotion-list {
   float: right;
-  margin-right: -15px;
+  padding-right: 15px;
+}
+.promotion-list .promotion-1 a {
+  border-left: 1px solid #dfdfdf;
+}
+.promotion-list .promotion-3 a {
+  border-right: 1px solid #dfdfdf;
 }
 @media (max-width: 1199px) {
   .promotion-list {
@@ -4007,6 +4015,7 @@ h2.shop-name .shop-name-text {
   margin-bottom: 0;
 }
 .wrap-banner {
+  width: 100%;
   height: 415px;
   margin-bottom: 15px;
   float: left;
@@ -4041,8 +4050,10 @@ h2.shop-name .shop-name-text {
   min-height: 100%;
   border-radius: 3px;
 }
-.banner-1 .arrow {
-  display: none;
+@media (max-width: 1199px) {
+  .banner-1 .arrow {
+    opacity: 1;
+  }
 }
 .arrow {
   width: 30px;
@@ -4997,6 +5008,7 @@ h2.shop-name .shop-name-text {
   min-height: 500px;
 }
 .user-account-header {
+  position: relative;
   width: 100%;
   float: left;
   margin-top: 30px;
@@ -5028,7 +5040,7 @@ h2.shop-name .shop-name-text {
 }
 .user-name {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
 }
 .user-contact-info {
   margin-bottom: 10px;
@@ -5041,6 +5053,9 @@ h2.shop-name .shop-name-text {
   position: absolute;
   top: 0px;
   left: -8px;
+}
+.user-account-change-nav {
+  padding: 0;
 }
 .user-account-change-nav .nav {
   float: right;
@@ -5389,6 +5404,36 @@ h2.shop-name .shop-name-text {
 }
 .remove-radio .checkbox span:before {
   top: 2px;
+}
+@media (max-width: 1199px) {
+  .user-account-img {
+    min-width: 0;
+    width: auto;
+    float: left;
+  }
+  .user-account-img .user-img {
+    float: left;
+  }
+  .user-account-change-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .user-img {
+    width: 100px;
+    height: 100px;
+  }
+  .user-name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .user-img {
+    width: 75px;
+    height: 75px;
+  }
 }
 .checkout-myface header .myfaceshop-logo,
 .checkout-myface header .shop-logo {
