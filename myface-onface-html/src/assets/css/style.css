@@ -5434,6 +5434,11 @@ h2.shop-name .shop-name-text {
     width: 75px;
     height: 75px;
   }
+  .user-account-change-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 .checkout-myface header .myfaceshop-logo,
 .checkout-myface header .shop-logo {
