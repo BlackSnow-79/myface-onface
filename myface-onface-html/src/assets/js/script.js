@@ -123,7 +123,6 @@ $(document).ready(function() {
 		$('.sidebar-tab-selector').text($('.sidebar-drop .active a').text());
 		$('.sidebar-drop li a').click(function(){
 			$('.sidebar-tab-selector').text($(this).text());
-			$('.sidebar-tab-selector').val($(this).text());
 		});
 	});
   /*fixed navigator*/

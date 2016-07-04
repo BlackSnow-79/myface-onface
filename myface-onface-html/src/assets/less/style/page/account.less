@@ -37,7 +37,7 @@
 }
 .user-name {
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 600;
 }
 .user-contact-info {
 	margin-bottom: 10px;
@@ -460,12 +460,36 @@
   }
 }
 @media (max-width: @screen-sm-max) {
+  .user-account-img {
+    padding-left: 0;
+  }
   .user-img {
     width: 100px;
     height: 100px;
   }
+  .user-account-info {
+    padding: 0;
+  }
   .user-name {
     margin-top: 10px;
+  }
+  .user-account-nav {
+    > div {
+      padding: 0;
+    }
+    .navbar-nav {
+      margin: 0;
+      .touch-slide;
+      li {
+        display: inline-block;
+        float: none;
+      }
+    }
+  }
+  .user-account-content {
+    > div {
+      padding: 0;
+    }
   }
 }
 @media (max-width: @screen-xs-max) {
@@ -473,9 +497,46 @@
     width: 75px;
     height: 75px;
   }
+  .user-account-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .tool-info {
+      width: 100%;
+      float: left;
+      margin-top: 10px;
+      li {
+        margin-right: 0;
+        width: 24%;
+        text-align: center;
+        .icon-text {
+          display: none;
+        }
+      }
+    }
+  }
+  .user-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .user-contact-info {
+    .mail-info {
+      &:before {
+        display: none;
+      }
+    }
+  }
   .user-account-change-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: none;
+  }
+  .user-account-content {
+    padding-top: 20px;
+  }
+  .order-list {
+    margin: 0;
+  }
+  .address {
+    &:before {
+      display: none;
+    }
   }
 }

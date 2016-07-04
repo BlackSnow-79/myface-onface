@@ -5040,7 +5040,7 @@ h2.shop-name .shop-name-text {
 }
 .user-name {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .user-contact-info {
   margin-bottom: 10px;
@@ -5421,12 +5421,39 @@ h2.shop-name .shop-name-text {
   }
 }
 @media (max-width: 991px) {
+  .user-account-img {
+    padding-left: 0;
+  }
   .user-img {
     width: 100px;
     height: 100px;
   }
+  .user-account-info {
+    padding: 0;
+  }
   .user-name {
     margin-top: 10px;
+  }
+  .user-account-nav > div {
+    padding: 0;
+  }
+  .user-account-nav .navbar-nav {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow-y: -moz-scrollbars-none;
+  }
+  .user-account-nav .navbar-nav li {
+    display: inline-block;
+    float: none;
+  }
+  .user-account-content > div {
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -5434,10 +5461,41 @@ h2.shop-name .shop-name-text {
     width: 75px;
     height: 75px;
   }
+  .user-account-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .user-account-header .tool-info {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+  }
+  .user-account-header .tool-info li {
+    margin-right: 0;
+    width: 24%;
+    text-align: center;
+  }
+  .user-account-header .tool-info li .icon-text {
+    display: none;
+  }
+  .user-name {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .user-contact-info .mail-info:before {
+    display: none;
+  }
   .user-account-change-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: none;
+  }
+  .user-account-content {
+    padding-top: 20px;
+  }
+  .order-list {
+    margin: 0;
+  }
+  .address:before {
+    display: none;
   }
 }
 .checkout-myface header .myfaceshop-logo,
@@ -5892,7 +5950,7 @@ h2.shop-name .shop-name-text {
   color: #212121;
   font-weight: 600;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .sidebar-drop {
     display: none;
     width: 100%;
@@ -5904,12 +5962,12 @@ h2.shop-name .shop-name-text {
 .sidebar-tab-selector {
   display: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .sidebar-tab-selector {
     display: block;
     border: 1px solid #dfdfdf;
     border-radius: 3px;
-    padding: 10px;
+    padding: 8px 10px;
     color: #212121;
     font-size: 16px;
     font-weight: 600;
