@@ -1229,6 +1229,7 @@ select.selectpicker {
 }
 .btn-lg-by-face {
   position: relative;
+  width: 100%;
   height: 40px;
   padding: 9px 12px;
   border-color: #3a5897;
@@ -2846,9 +2847,7 @@ footer.main-footer .f-bct > span.bct {
   width: 358px;
   height: 358px;
   overflow: hidden;
-}
-.product-gallery .stage img {
-  width: 100%;
+  text-align: center;
 }
 .product-gallery .thumnail {
   width: 358px;
@@ -4501,6 +4500,7 @@ h2.shop-name .shop-name-text {
 }
 .mf-product-info-block .shop-name {
   padding: 10px 0 0;
+  line-height: 0;
 }
 .mf-product-info-block .shop-name .shop-img {
   width: 25px;
@@ -4516,6 +4516,7 @@ h2.shop-name .shop-name-text {
 }
 .mf-product-info-block .product-gallery {
   margin-top: 10px;
+  padding: 0;
 }
 .mf-product-info-block .product-gallery .thumnail {
   width: 100%;
@@ -4553,6 +4554,11 @@ h2.shop-name .shop-name-text {
   }
   .mf-product-info-block .product-gallery .thumnail-inner .items {
     top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .mf-product-info-block .product-info {
+    padding-left: 30px;
   }
 }
 .mf-product-info-block .product-detail {
@@ -4665,6 +4671,7 @@ h2.shop-name .shop-name-text {
 }
 .shipping-block .shipping-action:before {
   content: "\f055";
+  width: auto;
 }
 .icon-tools {
   list-style: none;
@@ -5006,12 +5013,14 @@ h2.shop-name .shop-name-text {
 .wrap-user {
   width: 100%;
   min-height: 500px;
+  float: left;
+  margin-top: 35px;
+  margin-bottom: 5px;
 }
 .user-account-header {
   position: relative;
   width: 100%;
   float: left;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 .user-account-header a {
@@ -5022,6 +5031,19 @@ h2.shop-name .shop-name-text {
 }
 .user-account-header .icon-tools li {
   margin-right: 10px;
+}
+.user-account-header .icon-tools li a {
+  color: #212121;
+}
+.user-account-header .icon-tools li .icon {
+  margin-right: 2px;
+}
+.user-account-header .icon-tools li .icon:before {
+  width: auto;
+  margin-right: 5px;
+}
+.user-account-header .icon-tools li .icon.i-pin:before {
+  width: 12px;
 }
 .user-account-img {
   min-width: 165px;
@@ -5040,10 +5062,11 @@ h2.shop-name .shop-name-text {
 }
 .user-name {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .user-contact-info {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .user-contact-info .mail-info {
   position: relative;
@@ -5101,7 +5124,7 @@ h2.shop-name .shop-name-text {
 .user-account-content {
   width: 100%;
   float: left;
-  padding-top: 30px;
+  margin-top: 35px;
 }
 .general-product-row .m-product-item {
   padding: 0;
