@@ -1,9 +1,11 @@
 .wrap-user {
-	width: 100%;
 	min-height: 500px;
   float: left;
   margin-top: 35px;
   margin-bottom: 5px;
+  margin-left: -15px;
+  margin-right: -15px;
+  box-sizing: border-box;
 }
 .user-account-header {
   position: relative;
@@ -37,9 +39,6 @@
 		}
 	}
 }
-.user-account-img {
-	min-width: 165px;
-}
 .user-img {
 	width: 121px;
 	height: 121px;
@@ -56,9 +55,11 @@
 	font-size: 20px;
 	font-weight: bold;
   margin-bottom: 0;
+  line-height: 1.25;
 }
 .user-contact-info {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+  line-height: 1.4;
 	.mail-info {
 		position: relative;
 		&:before {
@@ -70,7 +71,9 @@
 	}
 }
 .user-account-change-nav {
-  padding: 0;
+  padding-left: 0;
+  margin-left: -10px;
+  margin-top: 2px;
 	.nav {
 		float: right;
 		li {
@@ -91,9 +94,20 @@
 			}
 			&.more-nav {
 				a {
+          height: 34px;
+          overflow: hidden;
 					color: @text-color-2;
-					padding: 6px 15px;
+					padding: 7px 10px;
 					border: 1px solid transparent;
+          &:hover {
+            border-radius: 3px;
+          }
+          i {
+            &:before {
+              font-size: 19px;
+              line-height: 1.2;
+            }
+          }
 				}
 			}
 		}
@@ -126,6 +140,15 @@
 	float: left;
 	margin-top: 35px;
 }
+.order-content {
+  .load-more {
+    margin: 15px 0 5px;
+    .btn-loadmore {
+      border-width: 2px;
+      font-weight: 600;
+    }
+  }
+}
 .general-product-row {
 	.m-product-item {
 		padding: 0;
@@ -133,7 +156,7 @@
 		padding-right: 1px;
 	}
 	.m-product-info {
-		padding: 10px;
+		padding: 0;
 	}
 }
 .user-head {
@@ -165,7 +188,7 @@
 	}
 	.item-property-values {
 		.property-select {
-	    margin: 0px 4px 8px 0;
+	    margin: 0px 7px 8px 0;
 	    a {
 	    	padding: 4px 8px;
 	    }
@@ -302,7 +325,18 @@
 	}
 	.change-pass-link-btn {
 		margin-left: 15px;
-		margin-top: 28px;
+		margin-top: 30px;
+    background: @bg-color-3;
+    &:after {
+      content: "\f044";
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 15px;
+      color: #727272;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-left: 12px;
+    }
 	}
 	.form-title {
 		text-transform: uppercase;
@@ -475,6 +509,8 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: auto;
+    margin: 0;
   }
 }
 @media (max-width: @screen-sm-max) {
@@ -516,12 +552,11 @@
     height: 75px;
   }
   .user-account-header {
-    margin-top: 20px;
     margin-bottom: 20px;
     .tool-info {
       width: 100%;
       float: left;
-      margin-top: 10px;
+      margin-top: 50px;
       li {
         margin-right: 0;
         width: 24%;
@@ -533,7 +568,6 @@
     }
   }
   .user-name {
-    margin-bottom: 5px;
     font-size: 18px;
   }
   .user-contact-info {
@@ -543,18 +577,43 @@
       }
     }
   }
-  .user-account-change-nav {
-    display: none;
-  }
-  .user-account-content {
-    padding-top: 20px;
-  }
-  .order-list {
-    margin: 0;
-  }
   .address {
     &:before {
       display: none;
     }
+  }
+  .user-account-change-nav {
+    top: 70px;
+    right: auto;
+    left: 105px;
+    .nav {
+      li {
+        display: inline-block;
+        background-color: #fff;
+      }
+    }
+  }
+  .user-account-content {
+    margin-top: 15px;
+  }
+  .order-list {
+    margin: 0;
+  }
+  .change-content {
+    .form-right {
+      padding: 0;
+      .change-pass-link-btn {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+  .order-status {
+    width: 100%;
+    float: left;
+    margin-right: 0;
+    margin-top: 10px;
+    padding: 0;
   }
 }

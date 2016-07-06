@@ -46,9 +46,11 @@
 		margin-top: -2px;
 	}
 	tbody {
-		.price {
+		.price,
+    .shop-name {
 			margin: 8px 0;
 			display: block;
+      line-height: 1;
 		}
 	}
 	.price {
@@ -89,4 +91,15 @@
 .invoice-price-label {
 	font-size: 14px;
 	font-weight: bold;
+}
+.checkout-box-1 {
+  label {
+    text-decoration: underline;
+  }
+  i {
+    color: @text-color-2;
+  }
+  span {
+    font-style: italic;
+  }
 }

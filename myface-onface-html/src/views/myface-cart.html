@@ -6,7 +6,7 @@
 		<div class="col-xs-12 col-sm-6 col-lg-3 shop-logo">
 			<a href="index.html" title="myFace Shop">
 				<h1 class="logo-text">
-					<img class="" src="assets/images/logo/logo.png" alt="myface">	
+					<img class="" src="assets/images/logo/logo.png" alt="myface">
 				</h1>
 			</a>
 		</div>
@@ -31,15 +31,16 @@
 		  	<table class="table table-nopadding invoice-table">
           <thead>
             <tr>
-              <th class="col-xs-5 text-left">Sản phẩm</th>
+              <th class="col-xs-4 text-left">Sản phẩm</th>
+              <th class="col-xs-2 text-right">Shop bán sản phẩm</th>
               <th class="col-xs-2 text-center">Giá tiền</th>
               <th class="col-xs-3 text-center">Số lượng</th>
               <th class="col-xs-1 text-right">Thành tiền</th>
             </tr>
           </thead>
           <!--gift-->
-          <tbody class="gift"> 
-          	{% for x in [1,2] %} 
+          <tbody class="gift">
+          	{% for x in [1,2] %}
           	<tr>
               <td>
               	<span class="gift-icon"></span>
@@ -50,12 +51,15 @@
                   <div class="product-info">
                   	<span class="gift-span">[ Quà tặng]</span>
                     <span class="product-title">Tai nghe siêu chất lượng Sennheiser HD229 Màu Đen</span>
-                    <span class="property">Màu: 
-                    	<span class="property-value">Đen</span>, Size: 
+                    <span class="property">Màu:
+                    	<span class="property-value">Đen</span>, Size:
                     	<span class="property-value">S</span>
                     </span>
                   </div>
                 </div>
+              </td>
+              <td class="text-right">
+                <span class="shop-name">Halo Shop</span>
               </td>
               <td class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
@@ -68,8 +72,8 @@
               </td>
             </tr>
             {% endfor %}
-          </tbody><!--/.gift--> 
-          <tbody> 
+          </tbody><!--/.gift-->
+          <tbody>
             <tr>
               <td>
                 <div class="item">
@@ -78,12 +82,15 @@
                   </div>
                   <div class="product-info">
                     <span class="product-title">Tai nghe Sennheiser HD229 Đen</span>
-                    <span class="property">Màu: 
-                    	<span class="property-value">Đen</span>, Size: 
+                    <span class="property">Màu:
+                    	<span class="property-value">Đen</span>, Size:
                     	<span class="property-value">S</span>
                     </span>
                   </div>
                 </div>
+              </td>
+              <td class="text-right">
+                <span class="shop-name">black Snow Shop</span>
               </td>
               <td class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
@@ -108,12 +115,15 @@
                   </div>
                   <div class="product-info">
                     <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
-                    <span class="property">Màu: 
-                    	<span class="property-value">Đen</span>, Size: 
+                    <span class="property">Màu:
+                    	<span class="property-value">Đen</span>, Size:
                     	<span class="property-value">S</span>
                     </span>
                   </div>
                 </div>
+              </td>
+              <td class="text-right">
+                <span class="shop-name">black Snow Shop</span>
               </td>
               <td class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
@@ -137,8 +147,9 @@
 	</div>
 	<div class="col-xs-12 col-md-3">
 		<div class="box checkout-box-1">
-			<p>Đơn hàng của bạn cần trên <strong>150.000</strong>đ để được <strong>miễn phí</strong> vận chuyển tại TP.HCM, Hà Nội.</p>
-			<span>(trên <strong>300.000</strong>đ đối với Tỉnh/Thành khác)</span>
+      <label class="chechout-box-note">Lưu ý:</label>
+			<p>Với đơn hàng có sản phẩm của nhiều Shop khác nhau, phí vận chuyển & cách thức giao hàng có thể sẽ khác nhau</p>
+			<i>(Shop sẽ liên hệ để xác nhận phí giao hàng với bạn)</i>
 		</div>
 		<!--box-cart-->
 		<div class="box-cart">
