@@ -1,11 +1,14 @@
 .wrap-user {
 	min-height: 500px;
-  float: left;
   margin-top: 35px;
   margin-bottom: 5px;
-  margin-left: -15px;
-  margin-right: -15px;
-  box-sizing: border-box;
+  clear: both;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 .user-account-header {
   position: relative;
@@ -86,6 +89,7 @@
 				}
 				&.active {
 					background-color: #dfdfdf;
+          border-radius: 3px;
 					a {
 						color: #212121;
     				font-weight: 600;
@@ -134,6 +138,19 @@
 			}
 		}
 	}
+  .notifi-label {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -11px;
+    right: 20px;
+    background-color: @green;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 600;
+  }
 }
 .user-account-content {
 	width: 100%;
@@ -143,9 +160,22 @@
 .order-content {
   .load-more {
     margin: 15px 0 5px;
-    .btn-loadmore {
-      border-width: 2px;
-      font-weight: 600;
+  }
+}
+.address-content {
+  .user-title {
+    margin-top: 0;
+  }
+  .form-wrap {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+  }
+  .form-horizontal {
+    .form-group {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -178,25 +208,24 @@
 }
 .order-list {
 	display: block;
-	margin: 100px 0 60px;
+  margin: 115px 0 75px;
 	.item-property-label,
 	.item-property-values {
 		display: block;
 	}
 	.item-property-label {
 		width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 10px;
 	}
 	.item-property-values {
 		.property-select {
-	    margin: 0px 7px 8px 0;
+	    margin: 0px 10px 8px 0;
 	    a {
 	    	padding: 4px 8px;
 	    }
 		}
 	}
-}
-.order-side {
-	margin-right: -30px;
 }
 .order-list-more {
 	text-decoration: underline;
@@ -344,9 +373,24 @@
 		font-weight: 600;
 	}
 }
+.change-pass-content {
+  .form-title {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+  .form-horizontal  {
+    label {
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+  }
+}
 .address-list {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 25px;
 	float: left;
 	.accordion-section {
 		margin-bottom: 0;
@@ -358,6 +402,15 @@
 			}
 		}
 	}
+  .box-tools {
+    margin-top: 5px;
+    button {
+      padding: 0;
+      i {
+        font-size: 15px;
+      }
+    }
+  }
 }
 .accordion,
 .accordion * {
@@ -480,7 +533,7 @@
 	}
 	.available {
 		.gift-date {
-			background-color: transparent;
+			background-color: #fff;
 			color: @green;
 		}
 	}
@@ -545,6 +598,12 @@
       padding: 0;
     }
   }
+  .order-list {
+    margin: 20px 0 15px;
+    ul {
+      margin-bottom: 0;
+    }
+  }
 }
 @media (max-width: @screen-xs-max) {
   .user-img {
@@ -578,8 +637,18 @@
     }
   }
   .address {
+    padding-left: 0;
     &:before {
       display: none;
+    }
+    .col-sm-2 {
+      width: 60px;
+      margin-top: 10px;
+      float: left;
+    }
+    .col-sm-4 {
+      float: right;
+      margin-top: 10px;
     }
   }
   .user-account-change-nav {
@@ -588,16 +657,14 @@
     left: 105px;
     .nav {
       li {
-        display: inline-block;
+        display: block;
+        float: left;
         background-color: #fff;
       }
     }
   }
   .user-account-content {
     margin-top: 15px;
-  }
-  .order-list {
-    margin: 0;
   }
   .change-content {
     .form-right {
@@ -617,3 +684,57 @@
     padding: 0;
   }
 }
+@media (min-width: @screen-lg-min) {
+  .wrap-user {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .user-account-left-side {
+    width: 480px;
+  }
+  .user-account-left-right {
+    width: 360px;
+    margin-left: 105px;
+  }
+  .add-address-form {
+    width: 70%;
+    .form-horizontal {
+      .col-sm-4 {
+        width: 42%;
+      }
+      .col-sm-8 {
+        width: 58%;
+      }
+      .col-sm-offset-4 {
+        margin-left: 42%;
+      }
+    }
+  }
+  .address-details {
+    .col-md-8 {
+      width: 70%;
+      .form-horizontal {
+        .col-sm-4 {
+          width: 42%;
+        }
+        .col-sm-8 {
+          width: 58%;
+        }
+        .col-sm-offset-4 {
+          margin-left: 42%;
+        }
+      }
+    }
+  }
+  .update-p-form-btn {
+    width: 165px;
+    height: 42px;
+  }
+  .change-info-form,
+  .change-pass-content {
+    .update-p-form-btn {
+      margin-top: 22px;
+    }
+  }
+}
+
