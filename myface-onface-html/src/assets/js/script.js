@@ -146,4 +146,8 @@ $(document).ready(function() {
     infinite: true,
     adaptiveWight: true
   });
+  /*remove css inline for img*/
+  $('img').each(function () {
+    $(this).removeAttr('style')
+  });
 });

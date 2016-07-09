@@ -28,7 +28,7 @@
 		<div class="panel panel-default">
 		  <div class="panel-heading">Giỏ hàng của bạn <span class="amount">(Đang có<span class="orange-text"> 03</span> sản phẩm)</span></div>
 		  <div class="panel-body">
-		  	<table class="table table-nopadding invoice-table">
+		  	<table class="table table-nopadding invoice-table rwd-table">
           <thead>
             <tr>
               <th class="col-xs-4 text-left">Sản phẩm</th>
@@ -42,7 +42,7 @@
           <tbody class="gift">
           	{% for x in [1,2] %}
           	<tr>
-              <td>
+              <td data-th="Sản phẩm">
               	<span class="gift-icon"></span>
                 <div class="item">
                   <div class="product-img">
@@ -58,16 +58,16 @@
                   </div>
                 </div>
               </td>
-              <td class="text-right">
+              <td data-th="Shop bán sản phẩm" class="text-right">
                 <span class="shop-name">Halo Shop</span>
               </td>
-              <td class="text-center">
+              <td data-th="Giá tiền" class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
               </td>
-              <td class="text-center">
-                <input class="btn disable-amount" value="1" disabled="">
+              <td data-th="Số lượng" class="text-center">
+                <span><input class="btn disable-amount" value="1" disabled=""></span>
               </td>
-              <td class="text-right">
+              <td data-th="Thành tiền" class="text-right">
                 <span class="price">0<sup>đ</sup></span>
               </td>
             </tr>
@@ -75,7 +75,7 @@
           </tbody><!--/.gift-->
           <tbody>
             <tr>
-              <td>
+              <td data-th="Sản phẩm">
                 <div class="item">
                   <div class="product-img">
                     <img src="assets/images/upload/product/product-4.jpg" alt="myface">
@@ -89,26 +89,28 @@
                   </div>
                 </div>
               </td>
-              <td class="text-right">
+              <td data-th="Shop bán sản phẩm" class="text-right">
                 <span class="shop-name">black Snow Shop</span>
               </td>
-              <td class="text-center">
+              <td data-th="Giá tiền" class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
               </td>
-              <td class="text-center">
-                <select class="selectpicker select-amount">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
+              <td data-th="Số lượng" class="text-center">
+                <span>
+                  <select class="selectpicker select-amount">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </span>
                 <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
               </td>
-              <td class="text-right">
+              <td data-th="Thành tiền" class="text-right">
                 <span class="price">1.350.000<sup>đ</sup></span>
               </td>
             </tr>
             <tr>
-              <td>
+              <td data-th="Sản phẩm">
                 <div class="item">
                   <div class="product-img">
                     <img src="assets/images/upload/product/product-2.jpg" alt="myface">
@@ -122,21 +124,23 @@
                   </div>
                 </div>
               </td>
-              <td class="text-right">
+              <td data-th="Shop bán sản phẩm" class="text-right">
                 <span class="shop-name">black Snow Shop</span>
               </td>
-              <td class="text-center">
+              <td data-th="Giá tiền" class="text-center">
                 <span class="price">1.350.000<sup>đ</sup></span>
               </td>
-              <td class="text-center">
-                <select class="selectpicker select-amount">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                </select>
+              <td data-th="Số lượng" class="text-center">
+                <span>
+                  <select class="selectpicker select-amount">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </span>
                 <p class="invoice-remove remove-btn"><i class="fa fa-times-circle"></i> <span>Bỏ sản phẩm</span></p>
               </td>
-              <td class="text-right">
+              <td data-th="Thành tiền" class="text-right">
                 <span class="price">1.350.000<sup>đ</sup></span>
               </td>
             </tr>

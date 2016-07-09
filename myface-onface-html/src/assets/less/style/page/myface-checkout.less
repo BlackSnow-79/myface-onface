@@ -1,5 +1,5 @@
 .checkout-myface {
-	header {	
+	header {
 		.myfaceshop-logo,
 		.shop-logo {
 			position: relative;
@@ -15,4 +15,66 @@
 			height: 42px;
 		}
 	}
+  .panel-default {
+    .panel-heading {
+      background-color: @bg-color-4;
+      border-color: @bg-color-4;
+    }
+  }
+  .box {
+    margin-bottom: 30px;
+  }
+  .btn-secondary {
+    background-color: @secondary-color;
+    border-color: @secondary-color;
+    &:hover {
+      background-color: @btn-color-2;
+      border-color: @btn-color-2;
+    }
+  }
+}
+@media (max-width: @screen-xs-max) {
+  .checkout-myface {
+    header {
+      height: 70px;
+      .container {
+        > div:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+  .cart {
+    .invoice-table {
+      border-collapse: collapse;
+      tbody,
+      tbody.gift {
+        td {
+          overflow: hidden;
+        }
+        .price,
+        .shop-name,
+        .item {
+          width: auto;
+          display: table-cell;
+        }
+        .item {
+          padding: 0 !important;
+          .product-img {
+            display: none;
+          }
+          .product-info {
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .gift-icon {
+          display: none;
+        }
+      }
+    }
+  }
+  .btn-pay {
+    width: 100%;
+  }
 }
