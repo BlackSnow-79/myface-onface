@@ -150,4 +150,13 @@ $(document).ready(function() {
   $('img').each(function () {
     $(this).removeAttr('style')
   });
+  /*search-mobile*/
+  $(function () {
+    $( '.show-search-active').click(function(e) {
+      $('body').addClass('show-search');
+    })
+    $( '.search-close').click(function(e) {
+      $('body').removeClass('show-search');
+    });
+  });
 });
