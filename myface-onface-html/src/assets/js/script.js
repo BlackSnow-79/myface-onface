@@ -159,4 +159,17 @@ $(document).ready(function() {
       $('body').removeClass('show-search');
     });
   });
+  /*product-info on mobile
+  function setProductinfo() {
+    var windowWidth = $(window).width();
+    if(windowWidth < 768){
+      $('.product-info').appendTo('.product-info-mobile');
+    }
+    else {
+      $('.product-info-mobile').detach();
+    }
+  }
+  $(window).on('resize', function(event){
+    setProductinfo();
+  });*/
 });
