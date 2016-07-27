@@ -4594,6 +4594,64 @@ h2.shop-name .shop-name-text {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.shop-about-dropdown {
+  top: 23px;
+  left: auto;
+  right: 0;
+  width: 280px;
+  height: 370px;
+  padding: 17px 10px;
+  border-top-right-radius: 3px !important;
+  border-top-left-radius: 3px !important;
+  border: 1px solid #dfdfdf;
+  top: 100%;
+  width: 300px;
+  height: auto;
+}
+.shop-about-dropdown li .checkbox {
+  width: auto;
+  display: inline-block;
+  margin: 0;
+}
+.shop-about-dropdown li .checkbox span:before {
+  top: 0;
+}
+.shop-about-dropdown li .lg-a-text {
+  padding: 0;
+  line-height: 1.25;
+}
+.shop-about-dropdown li .lg-button {
+  width: 100%;
+}
+.shop-about-dropdown .form-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.shop-about-dropdown .lg-divider {
+  height: 1px;
+  width: 50px;
+  margin: 20px auto;
+  border-top: 1px dotted #dfdfdf;
+}
+.shop-about-dropdown .form-group {
+  margin-bottom: 13px;
+}
+.shop-about-dropdown .form-group input {
+  height: 40px;
+}
+.shop-about-dropdown .lg-row-4 {
+  margin-bottom: 20px;
+}
+.shop-about-dropdown .lg-row-5 {
+  margin-bottom: 17px;
+}
+.shop-about-dropdown .lg-a-text {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.shop-about-dropdown .lg-a-text:hover {
+  text-decoration: none;
+}
 .mf-product-wrap {
   width: 100%;
   float: left;
@@ -4621,6 +4679,7 @@ h2.shop-name .shop-name-text {
 .mf-product-info-block {
   padding-top: 0;
   border-top: 0;
+  line-height: 20px;
 }
 .mf-product-info-block .shop-name {
   padding: 10px 0 0;
@@ -4647,7 +4706,7 @@ h2.shop-name .shop-name-text {
   height: 66px;
 }
 .mf-product-info-block .product-gallery .thumnail .items .item {
-  width: 75px;
+  width: 77px;
   height: 50px;
   border-radius: 4px;
   overflow: hidden;
@@ -5058,6 +5117,35 @@ h2.shop-name .shop-name-text {
   float: left;
   border: 1px solid #dfdfdf;
   margin-top: 20px;
+}
+.shop-info-box {
+  width: 100%;
+  float: left;
+  border: 1px solid #dfdfdf;
+  margin-top: 20px;
+}
+.shop-info-box label {
+  margin-bottom: 0;
+}
+.shop-info-box .shop-name {
+  font-weight: bold;
+}
+.shop-info-box .lb {
+  font-weight: bold;
+}
+.shop-info-box .contact-info-row a {
+  color: #212121;
+}
+.shop-info-box .contact-info-row a:hover {
+  color: #ff5722;
+}
+.shop-info-box .more-product {
+  color: #212121;
+  text-decoration: underline;
+}
+.shop-info-box .more-product:hover {
+  color: #ff5722;
+  text-decoration: none;
 }
 .detail-nav {
   list-style: none;
@@ -6147,7 +6235,7 @@ h2.shop-name .shop-name-text {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/icons/logo-icon.png);
+  background-image: url(../images/icon/logo-icon.png);
 }
 .resetting-pass .forgetpass-form {
   width: 100%;
@@ -6544,7 +6632,6 @@ h2.shop-name .shop-name-text {
 @media (min-width: 992px) {
   #contact-modal .modal-dialog {
     width: 810px;
-    margin-top: 15%;
   }
 }
 #contact-modal .modal-content {

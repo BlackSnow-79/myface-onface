@@ -21,6 +21,7 @@
 .mf-product-info-block {
 	padding-top: 0;
 	border-top: 0;
+  line-height: 20px;
 	.shop-name {
 		padding: 10px 0 0;
     line-height: 0;
@@ -49,7 +50,7 @@
 			height: 66px;
 			.items {
 				.item {
-					width: 75px;
+					width: 77px;
 					height: 50px;
 					border-radius: 4px;
 					overflow: hidden;
@@ -456,16 +457,16 @@
 		font-size: 25px;
 		display: inline;
 		margin-right: 10px;
-        @media (max-width: @screen-sm-max) {
-            font-size: 18px;
-        }
+      @media (max-width: @screen-sm-max) {
+          font-size: 18px;
+      }
 	}
 }
 .product-date {
 	display: inline-block;
 	color: @text-color-2;
     @media (max-width: @screen-sm-max) {
-        font-size: 12px;
+      font-size: 12px;
     }
 }
 .alert-box {
@@ -473,6 +474,34 @@
 	float: left;
 	border: @border;
 	margin-top: 20px;
+}
+.shop-info-box {
+  label {
+    margin-bottom: 0;
+  }
+  .shop-name {
+    font-weight: bold;
+  }
+  .alert-box;
+  .lb {
+    font-weight: bold;
+  }
+  .contact-info-row {
+    a {
+      color: @text-color-1;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .more-product {
+    color: @text-color-1;
+    text-decoration: underline;
+    &:hover {
+      color: @primary-color;
+      text-decoration: none;
+    }
+  }
 }
 .detail-nav {
 	list-style: none;
