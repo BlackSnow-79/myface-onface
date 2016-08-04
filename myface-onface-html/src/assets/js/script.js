@@ -89,9 +89,15 @@ $(document).ready(function() {
 		var containerW = $('.m-product-img').width();
 		$('.m-product-img').height(containerW * 0.75);
   }
+  function setSizes2() {
+    var containerW = $('.stage').width();
+    $('.stage').height(containerW * 0.75);
+  }
   setSizes1();
+  setSizes2();
 	$(window).resize(function() {
     setSizes1();
+    setSizes2();
   });
    /*date picker*/
   $(function () {
@@ -159,17 +165,4 @@ $(document).ready(function() {
       $('body').removeClass('show-search');
     });
   });
-  /*product-info on mobile
-  function setProductinfo() {
-    var windowWidth = $(window).width();
-    if(windowWidth < 768){
-      $('.product-info').appendTo('.product-info-mobile');
-    }
-    else {
-      $('.product-info-mobile').detach();
-    }
-  }
-  $(window).on('resize', function(event){
-    setProductinfo();
-  });*/
 });
