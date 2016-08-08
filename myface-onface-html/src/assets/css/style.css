@@ -4770,6 +4770,11 @@ h2.shop-name .shop-name-text {
 }
 .mf-product-info-block .product-detail .product-intro {
   position: relative;
+  color: #727272;
+}
+.mf-product-info-block .product-detail .product-intro .title,
+.mf-product-info-block .product-detail .product-intro table {
+  color: #212121;
 }
 .mf-product-info-block .product-detail .title {
   font-weight: bold;
@@ -5132,6 +5137,9 @@ h2.shop-name .shop-name-text {
   background-color: #fff;
   border-color: #ff5722;
   color: #212121;
+}
+.mf-product-property .tags-property .item-property-values .property-select a {
+  color: #727272;
 }
 .product-gallery-header {
   width: 100%;
