@@ -2876,6 +2876,9 @@ footer.main-footer .f-bct > span.bct {
   margin-right: 20px;
   margin-left: -5px;
 }
+footer.main-footer .f-bct > span.bct img {
+  width: 140px;
+}
 .footer-link-1 {
   color: #4355a5;
   border-color: #4355a5;
